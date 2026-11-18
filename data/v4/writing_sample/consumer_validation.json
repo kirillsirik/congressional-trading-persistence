@@ -1,0 +1,33 @@
+{
+  "empirical_inputs_used": false,
+  "CLI": [
+    {
+      "consumer": "A1_purchases",
+      "exit_code": 0,
+      "synthetic": true
+    },
+    {
+      "consumer": "A1_securities",
+      "exit_code": 0,
+      "synthetic": true
+    },
+    {
+      "consumer": "A3",
+      "exit_code": 0,
+      "synthetic": true
+    },
+    {
+      "consumer": "A4",
+      "exit_code": 0,
+      "synthetic": true
+    },
+    {
+      "consumer": "spread_limit",
+      "exit_code": 0,
+      "synthetic": true
+    }
+  ],
+  "consumer_sha256": "e34b7336edc13f714269ece04c1539582116d954cfdafd23513ea598563a56ec",
+  "test_sha256": "17b77d36771dd0fe3723fdf2e0c9a20254487e34d374677b1aaff30c585eb354",
+  "dependency_sha256": "0961d130b79fc0115ea83118477b05a66a9ca8b2b595e57d9f6b37ca3d5a1c02"
+}

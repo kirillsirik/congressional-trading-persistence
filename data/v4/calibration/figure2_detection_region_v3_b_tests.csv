@@ -1,0 +1,41 @@
+test,test_name,analysis_set,fraction,k,H_mean,variant,effect_bp_at_target,effect_se_bp,status,max_power_on_grid,n_panels,grid,panel_set,sample
+T1_blk20_2s,block-clustered mean test,R1,0.005,,,wins,,,not_reached,0.23,500,power_common,A0_T_purchase_AB_L20_both_keepdups,persistence_households_purchases
+T1_blk20_2s,block-clustered mean test,R1,0.01,,,wins,,,not_reached,0.606,500,power_common,A0_T_purchase_AB_L20_both_keepdups,persistence_households_purchases
+T1_blk20_2s,block-clustered mean test,R1,0.02,,,wins,2348.5075335693978,50.36622168626636,interpolated,0.958,500,power_common,A0_T_purchase_AB_L20_both_keepdups,persistence_households_purchases
+T1_blk20_2s,block-clustered mean test,R1,0.05,,,wins,891.67733033307,43.06695025365975,interpolated,1.0,500,power_common,A0_T_purchase_AB_L20_both_keepdups,persistence_households_purchases
+T1_blk20_2s,block-clustered mean test,R1,0.1,,,wins,429.26003223759176,22.999470212219403,interpolated,1.0,500,power_common,A0_T_purchase_AB_L20_both_keepdups,persistence_households_purchases
+T1_blk20_2s,block-clustered mean test,R1,0.2,,,wins,217.0732296884169,11.283939113238322,interpolated,1.0,500,power_common,A0_T_purchase_AB_L20_both_keepdups,persistence_households_purchases
+T1_blk20_2s,block-clustered mean test,R1,0.5,,,wins,84.72558306584416,1.4166739323139068,interpolated,1.0,500,power_common,A0_T_purchase_AB_L20_both_keepdups,persistence_households_purchases
+T1_blk20_2s,block-clustered mean test,R1,1.0,,,wins,42.44900015605047,0.7353280734610492,interpolated,1.0,500,power_common,A0_T_purchase_AB_L20_both_keepdups,persistence_households_purchases
+T2_I1cal_ES,placebo-test tau2,R1,0.005,,,wins,,,not_reached,0.038,500,power_common,A0_T_purchase_AB_L20_both_keepdups,persistence_households_purchases
+T2_I1cal_ES,placebo-test tau2,R1,0.01,,,wins,,,not_reached,0.046,500,power_common,A0_T_purchase_AB_L20_both_keepdups,persistence_households_purchases
+T2_I1cal_ES,placebo-test tau2,R1,0.02,,,wins,,,not_reached,0.048,500,power_common,A0_T_purchase_AB_L20_both_keepdups,persistence_households_purchases
+T2_I1cal_ES,placebo-test tau2,R1,0.05,,,wins,,,not_reached,0.044,500,power_common,A0_T_purchase_AB_L20_both_keepdups,persistence_households_purchases
+T2_I1cal_ES,placebo-test tau2,R1,0.1,,,wins,,,not_reached,0.048,500,power_common,A0_T_purchase_AB_L20_both_keepdups,persistence_households_purchases
+T2_I1cal_ES,placebo-test tau2,R1,0.2,,,wins,,,not_reached,0.046,500,power_common,A0_T_purchase_AB_L20_both_keepdups,persistence_households_purchases
+T2_I1cal_ES,placebo-test tau2,R1,0.5,,,wins,,,not_reached,0.044,500,power_common,A0_T_purchase_AB_L20_both_keepdups,persistence_households_purchases
+T2_I1cal_ES,placebo-test tau2,R1,1.0,,,wins,,,not_reached,0.748,500,power_common,A0_T_purchase_AB_L20_both_keepdups,persistence_households_purchases
+T2_I2b_ES,household bootstrap tau2,R1,0.005,,,wins,,,not_reached,0.066,500,power_common,A0_T_purchase_AB_L20_both_keepdups,persistence_households_purchases
+T2_I2b_ES,household bootstrap tau2,R1,0.01,,,wins,,,not_reached,0.062,500,power_common,A0_T_purchase_AB_L20_both_keepdups,persistence_households_purchases
+T2_I2b_ES,household bootstrap tau2,R1,0.02,,,wins,,,not_reached,0.07,500,power_common,A0_T_purchase_AB_L20_both_keepdups,persistence_households_purchases
+T2_I2b_ES,household bootstrap tau2,R1,0.05,,,wins,,,not_reached,0.076,500,power_common,A0_T_purchase_AB_L20_both_keepdups,persistence_households_purchases
+T2_I2b_ES,household bootstrap tau2,R1,0.1,,,wins,,,not_reached,0.068,500,power_common,A0_T_purchase_AB_L20_both_keepdups,persistence_households_purchases
+T2_I2b_ES,household bootstrap tau2,R1,0.2,,,wins,,,not_reached,0.082,500,power_common,A0_T_purchase_AB_L20_both_keepdups,persistence_households_purchases
+T2_I2b_ES,household bootstrap tau2,R1,0.5,,,wins,,,not_reached,0.078,500,power_common,A0_T_purchase_AB_L20_both_keepdups,persistence_households_purchases
+T2_I2b_ES,household bootstrap tau2,R1,1.0,,,wins,2909.004315574951,49.191480976955816,interpolated,0.874,500,power_common,A0_T_purchase_AB_L20_both_keepdups,persistence_households_purchases
+T3,best-household test,R1,0.005,,,wins,,,not_reached,0.084,500,power_common,A0_T_purchase_AB_L20_both_keepdups,persistence_households_purchases
+T3,best-household test,R1,0.01,,,wins,,,not_reached,0.132,500,power_common,A0_T_purchase_AB_L20_both_keepdups,persistence_households_purchases
+T3,best-household test,R1,0.02,,,wins,,,not_reached,0.314,500,power_common,A0_T_purchase_AB_L20_both_keepdups,persistence_households_purchases
+T3,best-household test,R1,0.05,,,wins,1828.591039613391,90.23445061475934,interpolated,0.976,500,power_common,A0_T_purchase_AB_L20_both_keepdups,persistence_households_purchases
+T3,best-household test,R1,0.1,,,wins,760.4372838364122,16.52645995389783,interpolated,1.0,500,power_common,A0_T_purchase_AB_L20_both_keepdups,persistence_households_purchases
+T3,best-household test,R1,0.2,,,wins,362.8504351000795,6.479277353255148,interpolated,1.0,500,power_common,A0_T_purchase_AB_L20_both_keepdups,persistence_households_purchases
+T3,best-household test,R1,0.5,,,wins,153.2303927313674,2.0149156497889575,interpolated,1.0,500,power_common,A0_T_purchase_AB_L20_both_keepdups,persistence_households_purchases
+T3,best-household test,R1,1.0,,,wins,76.71230310057878,0.9424399709982106,interpolated,1.0,500,power_common,A0_T_purchase_AB_L20_both_keepdups,persistence_households_purchases
+T4_z2,tail test,R1,0.005,,,wins,,,not_reached,0.322,500,power_common,A0_T_purchase_AB_L20_both_keepdups,persistence_households_purchases
+T4_z2,tail test,R1,0.01,,,wins,,,not_reached,0.728,500,power_common,A0_T_purchase_AB_L20_both_keepdups,persistence_households_purchases
+T4_z2,tail test,R1,0.02,,,wins,1329.511570341456,17.16502098777013,interpolated,1.0,500,power_common,A0_T_purchase_AB_L20_both_keepdups,persistence_households_purchases
+T4_z2,tail test,R1,0.05,,,wins,693.2198999608278,7.025186939321021,interpolated,1.0,500,power_common,A0_T_purchase_AB_L20_both_keepdups,persistence_households_purchases
+T4_z2,tail test,R1,0.1,,,wins,538.3600770529424,12.995647204441608,interpolated,1.0,500,power_common,A0_T_purchase_AB_L20_both_keepdups,persistence_households_purchases
+T4_z2,tail test,R1,0.2,,,wins,312.5180232485173,3.5009085956265005,interpolated,1.0,500,power_common,A0_T_purchase_AB_L20_both_keepdups,persistence_households_purchases
+T4_z2,tail test,R1,0.5,,,wins,156.49217655950386,2.061354532796098,interpolated,1.0,500,power_common,A0_T_purchase_AB_L20_both_keepdups,persistence_households_purchases
+T4_z2,tail test,R1,1.0,,,wins,86.46442471350915,1.5834128117183162,interpolated,1.0,500,power_common,A0_T_purchase_AB_L20_both_keepdups,persistence_households_purchases

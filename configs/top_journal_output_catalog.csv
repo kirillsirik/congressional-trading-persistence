@@ -1,0 +1,52 @@
+output_id,kind,path_stub,destination,evidence_tier,section,test_ids,content,required_status
+T01,table,main/Table_1_official_coverage,main_paper,D,data,,"official census, formats, scan states, attrition, date confidence",required
+T02,table,main/Table_2_timing_composition_dependence,main_paper,D/H/L,data,,"reporting lag, sample composition, signal/event counts, household concentration",required
+T03,table,main/Table_3_two_clock_results,main_paper,H/L,two_clock,H_P1_01;L_P1_01;H_C1_01;H_C1_02;H_C1_03,"transaction benchmark, disclosure-day response, public-action estimate, signed continuity result",required
+T04,table,main/Table_4_stability_equivalence,main_paper,H/L/D,inference,H_S1_01;H_S1_02;H_S1_03;H_S2_05;H_S2_10;H_S2_40;H_S2_60;H_S2_127;H_S2_EW;H_S2_DGTW,"aggregation, equal-household, influence, benchmark/horizon pattern, SESOI, MDE",required
+T05,table,main/Table_5_long_purchase_portfolio,main_paper,H/L,portfolio,H_P1_02;L_P1_02,"gross/net long-after-purchase performance, alpha, costs, exposure, equivalence",required
+T06,table,main_or_appendix/Table_6_secondary_timing_format,conditional_main,H,mechanisms,H_S3_01;H_S3_02;H_REC_01;H_REC_02,reporting-lag and format interactions plus same-event literature reconciliation,conditional
+F01,figure,main/Figure_1_two_clocks,main_paper,conceptual,design,,transaction date to official disclosure to feasible entry to return horizon,required
+F02,figure,main/Figure_2_coverage_lag,main_paper,D,data,,"official report counts, scan share/resolution, reporting lag, concentration",required
+F03,figure,main/Figure_3_disclosure_event_path,main_paper,H/L,event_study,H_C1_02;H_C1_03,purchase and sale cumulative paths with simultaneous bands and entry marker,required
+F04,figure,main/Figure_4_primary_forest,main_paper,H/L,primary_estimands,H_P1_01;L_P1_01;H_S1_01;H_S1_02;H_S1_03,"transaction/public estimates, event/household views, influence range, SESOI bounds",required
+F05,figure,main/Figure_5_portfolio_wealth_exposure,main_paper,H/L,portfolio,H_P1_02;L_P1_02,"net wealth, exposure-matched benchmark, risky exposure and cash share",required
+A01,table,appendix/A01_source_census_states,appendix,D,source,,detailed chamber-year terminal states and waivers,required
+A02,table,appendix/A02_public_date_provenance,appendix,D,timing,,"source-era date rules, manual validation, confidence strata",required
+A03,table,appendix/A03_vendor_date_reconciliation,appendix,D,timing,,official-vendor date discrepancies by chamber/year/format,required
+A04,table,appendix/A04_scan_inventory_agreement,appendix,D,scans,,"scan denominator, coder agreement, adjudication, audit",required
+A05,table,appendix/A05_scan_sampling_bounds,appendix,D/H/L,scans,,"Mode B inclusion probabilities, weights, and bounds",conditional_mode_B
+A06,table,appendix/A06_versions_amendments,appendix,D,versioning,,original/amendment lineage and first sufficient disclosure,required
+A07,table,appendix/A07_identity_audit,appendix,D,identity,,merge/split candidates and false-merge review,required
+A08,table,appendix/A08_security_match_audit,appendix,D,security,,"tiers, candidates, manual review, accuracy audit",required
+A09,table,appendix/A09_attrition_ledger,appendix,D,all_data_stages,,complete source-to-estimator flow,required
+A10,table,appendix/A10_descriptives,appendix,D/H/L,descriptives,,"composition by chamber, year, format, owner, direction, amount bracket",required
+A11,table,appendix/A11_horizons,appendix,H/L,robustness,H_S2_05;H_S2_10;H_P1_01;H_S2_40;H_S2_60;H_S2_127;L_P1_01,registered horizon estimates with adjusted inference,required
+A12,table,appendix/A12_benchmarks_entries,appendix,H/L,robustness,H_S2_EW;H_S2_DGTW,benchmark and timing sensitivities,required
+A13,table,appendix/A13_inference_comparison,appendix,D/H/L,inference,H_P1_01;L_P1_01,"three-way, block, jackknife, wild cluster, PSD diagnostics",required
+A14,table,appendix/A14_leave_one_household_out,appendix,D/H/L,influence,H_S1_03,all top-household leave-outs and flags,required
+A15,table,appendix/A15_aggregation_weighting_bridge,appendix,D/H/L,aggregation,H_S1_01;H_S1_02,raw row to signal to event to household to calendar-time bridge,required
+A16,table,appendix/A16_event_study_coefficients,appendix,H/L,event_study,H_C1_02;H_C1_03,"daily coefficients, covariance, simultaneous bands",required
+A17,table,appendix/A17_placebos,appendix,D,placebos,D_PLC_01;D_PLC_02;D_PLC_03,"placebo distributions, seeds, and diagnostics",required
+A18,table,appendix/A18_equivalence_mde_power,appendix,D/H/L,equivalence_power,H_P1_01;H_P1_02;L_P1_01;L_P1_02,"SESOI rationale, TOST, MDE, locked power",required
+A19,table,appendix/A19_portfolio_routing_caps,appendix,D/H/L,portfolio,H_P1_02;L_P1_02,"routing states, constraints, accepted signals",required
+A20,table,appendix/A20_cost_amount_scenarios,appendix,H/L,portfolio,H_P1_02;L_P1_02,cost bridge and amount lower/mid/upper scenarios,required
+A21,table,appendix/A21_missing_price_terminal,appendix,D,portfolio,,"missing classes, delistings, terminal dispositions",required
+A22,table,appendix/A22_return_concentration,appendix,D/H/L,portfolio,H_P1_02;L_P1_02,"contribution by household, security, lot, and calendar",required
+A23,table,appendix/A23_sale_short_diagnostics,appendix,H,portfolio,,sale avoidance and borrow-aware long-short diagnostics,conditional
+A24,table,appendix/A24_legacy_registry,appendix,H,legacy,,complete immutable legacy 209/327-test registry and labels,required
+A25,table,appendix/A25_prediction_legacy,appendix,H,prediction,,"legacy purged splits, calibration, thresholds, strategy results",conditional_if_reproduced
+A26,table,appendix/A26_source_R1_R12,appendix,D/H,legacy_source,,historical source robustness and nonestimable items,required
+A27,table,appendix/A27_literature_reconciliation,appendix,H,literature,H_REC_01;H_REC_02,same-event disclosure-day and strict-next-close estimates,required
+A28,table,appendix/A28_cross_software_validation,appendix,D,validation,,"coefficient, covariance, adjustment, equivalence comparisons",required
+A29,table,appendix/A29_coverage_simulations,appendix,D,validation,,"DGPs, draws, coverage, widths, failures",required
+A30,table,appendix/A30_provenance_claims,appendix,D/H/L,reporting,,numbers ledger and claim ledger coverage,required
+R01,ledger,release/source_census_ledger,release,D,source,,report-level discovery and terminal disposition,required
+R02,ledger,release/scan_ledger,release,D,scans,,"scan inventory, sampling/coding, adjudication, audit",required
+R03,ledger,release/attrition_ledger,release,D,all_data_stages,,row-level source-to-analysis dispositions,required
+R04,ledger,release/hypothesis_results,release,H/L,analysis,,canonical result frame for every registry row,required
+R05,ledger,release/portfolio_routing_ledger,release,D/H/L,portfolio,,one terminal route per signal,required
+R06,ledger,release/portfolio_lot_ledger,release,D/H/L,portfolio,,"lot-level entry, marks, costs, exits, disposition",required
+R07,ledger,release/numbers_ledger,release,D/H/L,reporting,,100 percent displayed-cell provenance,required
+R08,ledger,release/claim_ledger,release,D/H/L,reporting,,"claim support, tier, caveat, allowed language",required
+R09,report,release/reproduction_report,release,D,release,,"clean-clone hashes, tests, deviations",required
+R10,report,release/optional_extension_status,release,D,optional,,explicit disabled/enabled state and activation hash,required

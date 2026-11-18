@@ -1,0 +1,29 @@
+field,released,dedup,kind,description
+EligiblePurchases,20945.0,19448.0,int,eligible purchase signals offered to the account
+Positions,5640.0,5609.0,int,positions opened
+Rejected,15305.0,13839.0,int,candidate signals not admitted
+InvestedFraction,0.8518101571725668,0.8518340831574839,pct,average invested fraction
+MaxExposure,0.0832760839240228,0.0832760839240228,pct,maximum realized single-security exposure
+Turnover,9.484606122951115,9.479597286654029,pct,annualized one-way turnover
+AnnualizedReturn,0.0578755516162967,0.0620562297258124,pct,annualized total-account return
+Benchmark,0.1009940160593603,0.1013277846360096,pct,"exposure-matched benchmark return, annualized"
+Sharpe,0.3324372849141265,0.3584652762580048,num,annualized Sharpe ratio
+RejectedLotCap,12845.0,11386.0,int,candidate signals not admitted because 50 positions were open
+RejectedCashOrCap,2161.0,2199.0,int,candidate signals not admitted for want of cash or by the 5% security cap
+RejectedTiming,299.0,254.0,int,candidate signals not admitted because no entry price was available
+Days,3497.0,3497.0,int,trading days in the account path
+MeanOpenLots,38.07349156419789,37.91535601944524,num,mean number of open positions per trading day
+DaysNoPosition,0.10866456963111239,0.10866456963111239,pct,share of trading days with no open position
+DaysCashBound,0.8839004861309694,0.8839004861309694,pct,"share of trading days with at least 1 / (target fraction) = 20 open positions, where the no-leverage rule leaves no cash"
+DaysFullyInvested,0.6268229911352587,0.6193880468973406,pct,share of trading days with at least 99% of NAV invested
+DaysAtLotCap,0.26336860165856446,0.24506720045753502,pct,share of trading days with 50 open positions (the lot cap binding)
+NwMean,0.0514795836725455,0.0553565376326883,pct,"mean excess return, annualized (Newey-West lag 20)"
+NwMeanSe,0.0413790731160536,0.0408895093133198,pct,its standard error
+NwMeanP,0.2135472445059558,0.1758852079006142,p,its two-sided p
+CapmAlpha,-0.0580499029070939,-0.053766129402326,pct,"CAPM alpha, annualized"
+CapmAlphaSe,0.0227544702420582,0.0227313691404087,pct,its standard error
+CapmAlphaP,0.0107792783712569,0.0180705891974623,p,its two-sided p
+FfFiveMomAlpha,-0.0526696010967532,-0.0481598243164885,pct,"FF5+MOM alpha, annualized"
+FfFiveMomAlphaSe,0.021267830490649,0.0212334580134299,pct,its standard error
+FfFiveMomAlphaP,0.0133151426072679,0.0233833390727831,p,its two-sided p
+SameInvestedDays,0.9170717758078353,0.9170717758078353,pct,share of trading days on which the two account paths hold the same invested fraction

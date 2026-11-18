@@ -1,0 +1,165 @@
+# Canonical locked configuration — streamlined two-clock design (2026-08-17).
+#
+# This file contains every binding empirical choice of the canonical release.
+# It is loaded ONLY by trading_on_disclosure_v2.locked_config.load_locked_config,
+# which fails closed on: duplicate keys, missing keys, unknown (dead) keys, and
+# violated invariants. Do not edit after the design freeze except through a
+# recorded amendment.
+
+meta:
+  config_id: top_journal_two_clock_locked
+  design_frozen_date: 2026-08-17
+  supersedes: docs/two_clock_package/config/top_journal_analysis_contract.yaml
+  amendment_policy: recorded_amendment_only
+
+paper_scope: two_clock
+evidence_status: historical
+sample_start: 2014-01-01
+sample_end: final_available_cutoff
+
+data_review:
+  assumption: author_review
+  attestation_file: governance/PI_PARSE_REVIEW_ATTESTATION.yaml
+  description_language: author-reviewed
+  forbidden_descriptions:
+    - independently double-coded
+    - independently audited
+    - error-free
+    - externally validated in their entirety
+
+public_date:
+  official_priority: true
+  vendor_fallback_adjustment_calendar_days: -1
+  vendor_fallback_label: CAPITOL_TRADES_MINUS_ONE_CALENDAR_DAY_PROXY
+  unusable_date_action: exclude_with_attrition_reason
+  proxy_flag_field: analysis_public_date_is_proxy
+  source_field: analysis_public_date_source
+  source_native_fields_never_overwritten:
+    - official_public_date
+    - capitol_trades_publication_date_raw
+    - trade_date_official
+    - trade_date_capitol_trades_raw
+
+entry:
+  rule: first_trading_day_strictly_after_public_date
+  execution: close
+  first_return: next_close_to_close_interval
+  entry_day_return_included: false
+
+trade_date:
+  official_priority: true
+  vendor_adjustment_calendar_days: 1
+  raw_vendor_sensitivity_required: true
+
+primary_unit:
+  type: filer_report_security_public_date_direction_signal
+  mixed_direction: exclude_primary
+  preserved_aggregates:
+    - lot_count
+    - transaction_date_range
+    - amount_bracket_info
+    - owner_composition
+    - source_report_identifiers
+
+identity:
+  hierarchy:
+    - bioguide_or_official_stable_identifier
+    - normalized_name_chamber_state_service_period
+    - stable_source_specific_identifier
+  surname_only_merge: forbidden
+  outcome_guided_resolution: forbidden
+  ambiguous_merge_policy: conservative_separate_identifiers
+  source_native_household_sensitivity_required: true
+
+amendments:
+  hierarchy:
+    - explicit_official_lineage
+    - exact_duplicate_suppression
+    - amendment_public_date_for_new_or_changed
+    - unresolved_lineage_flag
+  exact_duplicate_fields:
+    - security_or_normalized_asset
+    - transaction_date
+    - direction
+    - owner
+    - amount_bracket
+  backdating: forbidden
+  unresolved_flag: AMENDMENT_LINEAGE_UNRESOLVED
+  manual_review_of_all_amendments_required: false
+
+primary_outcome:
+  horizon_trading_days: 20
+  benchmark: sp500_total_return
+  estimand: purchase_minus_sale
+  missing_return_zero_fill: forbidden
+  complete_horizon_required: true
+  delisting_rule: crsp_standard_combination
+
+primary_inference:
+  estimator: two_way_cgm
+  cluster_1: filer_uid
+  cluster_2: exact_public_entry_date
+  iid_allowed: false
+  month_clustering_allowed: false
+  finite_sample_correction: cgm_per_term
+  dof_rule: min_cluster_count_minus_one
+  calendar_overlap_companion: calendar_block_bootstrap
+  security_cluster_sensitivity: appendix
+
+horizon_robustness:
+  horizons: [5, 10, 40, 60, 127]
+  adjustment: holm
+
+source_timing_robustness:
+  variants:
+    - canonical_hierarchy
+    - raw_capitol_trades_publication_date
+    - official_date_only
+    - official_source_segment
+    - vendor_proxy_segment
+    - raw_transaction_date_benchmark
+  selective_reporting: forbidden
+
+event_band:
+  method_id: day_mult_nullimp_bwH
+  multiplier: gaussian
+  kernel: bartlett
+  bandwidth: horizon
+  null_imposed_studentization: true
+  draws: 4999
+  window: [-10, 60]
+  runtime_manifest_required: true
+
+placebos:
+  direction_permutation_within_disclosure_month: true
+  pseudo_entry_dates_within_security_year: true
+  pseudo_entry_exclusion_window_trading_days: 20
+  additional_variants: forbidden
+
+portfolio:
+  strategy: all_disclosed_purchases
+  holding_days: 20
+  security_cap_nav: 0.05
+  max_open_lots: 50
+  leverage: false
+  shorting: false
+  round_trip_cost_bps: 10
+  cost_split: half_entry_half_exit
+  idle_cash: risk_free
+  terminal_rule: liquidate_all_at_sample_end
+  train_eval_split: none
+
+multiplicity:
+  family_P1: [E20_public_action_spread]
+  family_P2_adjustment: holm
+  family_P3: reported_together_no_selection
+  family_P4: appendix_registry_only
+  senate_interaction_label: HISTORICAL_EXPLORATORY_RESULT_REQUIRING_NEW_DATA
+
+language_contract:
+  historical_evidence_only: true
+  prospective_language: forbidden
+  proxy_labeled_official: forbidden
+  signed_payoff_called_copy_trading: forbidden
+  transaction_clock_called_follower_strategy: forbidden
+  equivalence_claims_without_approved_bound: forbidden

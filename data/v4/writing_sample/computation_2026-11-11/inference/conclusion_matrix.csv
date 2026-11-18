@@ -1,0 +1,37 @@
+clock,statistic,method,estimate,ci_low,ci_high,df,includes_zero,note
+T,event_study_covariance,"conditional two-way CGM, t(G-1)",2263.582638487746,-2276.8177580762444,6803.9830350517368,37,True,results.csv tau/event_share se_block
+T,event_study_covariance,paired household bootstrap percentile,2263.582638487746,-1758.5506160643026,6620.5733141031178,,True,"4,999 common selections"
+T,event_study_covariance,CR2 IK (household),2263.582638487746,-2560.6974896981674,7087.8627666736238,11.767429850066286,True,
+T,factor_only_covariance,"conditional two-way CGM, t(G-1)",-828.81930926849839,-3493.0278355943547,1835.3892170573581,37,True,results.csv robustness/no_alpha se_block
+T,factor_only_covariance,paired household bootstrap percentile,-828.81930926849839,-3016.6865019144261,1760.0412375302751,,True,"4,999 common selections"
+T,factor_only_covariance,CR2 IK (household),-828.81930926849839,-3624.8225802379407,1967.183961700955,10.448374950873999,True,
+T,gap,paired household bootstrap percentile,3092.4019477562442,46.643562722557895,6190.4606120275221,,False,gap formed within each common draw
+T,gap,"conditional two-way CGM on score difference, t(G-1)",3092.4019477562442,91.379991081897515,6093.4239044305905,37,False,robustness module; period-A variances fixed
+T,gap,jackknife t(G-1),3092.4019477562442,-506.50930577465169,6691.3132012871401,37,True,
+T,gap,jackknife t(G*_event_study - 1) heuristic,3092.4019477562442,-1088.7789309681611,7273.5828264806496,7.1591283355501982,True,heuristic critical-value sensitivity; not calibrated for the nonlinear gap
+T,gap,jackknife t(G*_factor_only - 1) heuristic,3092.4019477562442,-2458.0368431718471,8642.8407386843355,3.1004482864894349,True,heuristic critical-value sensitivity; not calibrated for the nonlinear gap
+T,gap,jackknife t(min endpoint G* - 1) heuristic,3092.4019477562442,-2458.0368431718471,8642.8407386843355,3.1004482864894349,True,heuristic critical-value sensitivity; not calibrated for the nonlinear gap
+T,recurrence_KDD,paired household bootstrap percentile,1877.3478288672075,279.6441899662218,3067.302218797759,,False,
+T,recurrence_KDD,jackknife t(G-1),1877.3478288672075,453.93969588194818,3300.7559618524665,37,False,
+T,recurrence_KDD,jackknife t(G*_recurrence - 1),1877.3478288672075,-155.9215093932205,3910.6171671276352,3.6226214698230939,True,
+T,recurrence_KDD,jackknife t(min endpoint G* - 1) sensitivity,1877.3478288672075,-317.91044789432294,4072.6061056287381,3.1004482864894349,True,
+T,recurrence_KDD,"purchase-level two-way CGM (defining regression), t(G-1)",1877.347828867237,1174.525233012926,2580.170424721548,37,False,conditional on the early residualized D; household x 20-session block
+T,recurrence_KDD,"purchase-level CR2 household, IK dof (defining regression)",1877.347828867237,871.40659900587525,2883.2890587285988,5.6805399115812145,False,bias-reduced household clustering; ignores common calendar shocks
+P,event_study_covariance,"conditional two-way CGM, t(G-1)",1970.7334263164389,-1203.90507155765,5145.3719241905274,29,True,results.csv tau/event_share se_block
+P,event_study_covariance,paired household bootstrap percentile,1970.7334263164389,-1732.7449917214683,6339.9859809456175,,True,"4,999 common selections"
+P,event_study_covariance,CR2 IK (household),1970.7334263164389,-2507.1436392451037,6448.6104918779629,9.0070394094062376,True,
+P,factor_only_covariance,"conditional two-way CGM, t(G-1)",2175.2472353068006,-735.65712724732384,5086.151597860925,29,True,results.csv robustness/no_alpha se_block
+P,factor_only_covariance,paired household bootstrap percentile,2175.2472353068006,-856.91958010716064,7564.5178069529948,,True,"4,999 common selections"
+P,factor_only_covariance,CR2 IK (household),2175.2472353068006,-2111.4655230606372,6461.9599936742261,5.5803681279222808,True,
+P,gap,paired household bootstrap percentile,-204.51380899036167,-3219.4234787790415,1616.730530786622,,True,gap formed within each common draw
+P,gap,"conditional two-way CGM on score difference, t(G-1)",-204.51380899036167,-2040.0059676900207,1630.9783497092974,29,True,robustness module; period-A variances fixed
+P,gap,jackknife t(G-1),-204.51380899036167,-3362.9787542474996,2953.9511362667763,29,True,
+P,gap,jackknife t(G*_event_study - 1) heuristic,-204.51380899036167,-4217.2540546036707,3808.2264366229474,4.8277981726221899,True,heuristic critical-value sensitivity; not calibrated for the nonlinear gap
+P,gap,jackknife t(G*_factor_only - 1) heuristic,-204.51380899036167,-4320.0422578737016,3911.0146398929778,4.4702533102826276,True,heuristic critical-value sensitivity; not calibrated for the nonlinear gap
+P,gap,jackknife t(min endpoint G* - 1) heuristic,-204.51380899036167,-4320.0422578737016,3911.0146398929778,4.4702533102826276,True,heuristic critical-value sensitivity; not calibrated for the nonlinear gap
+P,recurrence_KDD,paired household bootstrap percentile,1957.5194900986703,381.05224597806068,2964.455957853143,,False,
+P,recurrence_KDD,jackknife t(G-1),1957.5194900986703,525.23578801497138,3389.8031921823695,29,False,
+P,recurrence_KDD,jackknife t(G*_recurrence - 1),1957.5194900986703,-544.31348387831076,4459.3524640756514,2.5021162788237121,True,
+P,recurrence_KDD,jackknife t(min endpoint G* - 1) sensitivity,1957.5194900986703,91.231775983318812,3823.807204214022,4.4702533102826276,False,
+P,recurrence_KDD,"purchase-level two-way CGM (defining regression), t(G-1)",1957.5194900986517,1368.844144683527,2546.1948355137765,29,False,conditional on the early residualized D; household x 20-session block
+P,recurrence_KDD,"purchase-level CR2 household, IK dof (defining regression)",1957.5194900986517,1144.6739458308462,2770.3650343664572,5.9757603568812838,False,bias-reduced household clustering; ignores common calendar shocks

@@ -1,0 +1,6 @@
+variant,vendor_rows,vendor_rows_matched,share_vendor_rows_matched,households_affected,p_events_total,p_events_affected,share_p_events_affected,p_purchase_events_affected,share_p_purchase_events_affected
+primary,21085,4128,0.195779,69,43693,3379,0.077335,1506,0.0719026
+raw_vendor_date,21085,46,0.00218165,11,43693,36,0.000823931,20,0.000954882
+pm1_day,21085,4132,0.195969,69,43693,3379,0.077335,1506,0.0719026
+no_bracket,21085,4330,0.205359,73,43693,3535,0.0809054,1554,0.0741943
+pm1_day_no_bracket,21085,4330,0.205359,73,43693,3535,0.0809054,1554,0.0741943

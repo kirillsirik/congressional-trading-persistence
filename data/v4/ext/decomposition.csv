@@ -1,0 +1,259 @@
+clock,analysis,variant,statistic,value,unit,placebo_p,boot_lo,boot_hi,se_block,n_events,n_households,notes
+T,decomposition,verification,max_abs_diff_Y1_recomputed_vs_cache,3.996774466941133e-09,bp,,,,,7964,38,"per-event FF5+MOM recomputation (252-session window ending 21 sessions before the anchor, intercept kept) against the forward cache"
+T,decomposition,verification,max_abs_diff_Y0_recomputed_vs_cache,1.2096279533579946e-10,bp,,,,,7964,38,"same loadings, intercept omitted from the expected return, against the cache's no-alpha column"
+T,decomposition,verification,n_events_refit_missing,0.0,count,,,,,7964,38,headline events whose re-fit could not be computed (should be 0)
+T,decomposition,verification,tau2_headline_winsorized_full_panel,2263.5826384877487,bp2,,,,,7964,38,cgm.tau2_i1 on the winsorized headline panel rebuilt here; equals the tau2 row of results.csv
+T,decomposition,no_alpha_omit,tau2_total_raw,1427.658606849599,bp2,,,,,7964,38,raw outcomes; headline households; events with both outcomes finite (0 headline events dropped for this comparison)
+T,decomposition,no_alpha_omit,tau2_base_raw,-2069.3545620372674,bp2,,,,,7964,38,raw outcomes; headline households; events with both outcomes finite (0 headline events dropped for this comparison)
+T,decomposition,no_alpha_omit,tau2_adj_raw,1916.3031028399766,bp2,,,,,7964,38,raw outcomes; headline households; events with both outcomes finite (0 headline events dropped for this comparison)
+T,decomposition,no_alpha_omit,tau2_cross_base_adj_raw,-256.9217769455917,bp2,,,,,7964,38,raw outcomes; headline households; events with both outcomes finite (0 headline events dropped for this comparison)
+T,decomposition,no_alpha_omit,tau2_cross_adj_base_raw,1837.6318429924845,bp2,,,,,7964,38,raw outcomes; headline households; events with both outcomes finite (0 headline events dropped for this comparison)
+T,decomposition,no_alpha_omit,identity_gap_raw,-2.9558577807620168e-12,bp2,,,,,7964,38,total minus the sum of the four terms (exact bilinearity: should be ~0)
+T,decomposition,no_alpha_omit,identity_rel_gap_raw,2.0704233957477277e-15,ratio,,,,,7964,38,
+T,decomposition,no_alpha_omit,tau2_total_raw_event_wls,1427.6586068495703,bp2,,,,,7964,38,estimate_tau2 (event-level WLS with the activity control) on the same raw panel
+T,decomposition,no_alpha_omit,tau2_total_wins,2263.582638487745,bp2,,,,,7964,38,each outcome winsorized at its own pooled p1/p99 by period; D = Y1w - Yxw
+T,decomposition,no_alpha_omit,tau2_base_wins,-828.8193092685003,bp2,,,,,7964,38,each outcome winsorized at its own pooled p1/p99 by period; D = Y1w - Yxw
+T,decomposition,no_alpha_omit,tau2_adj_wins,1877.3478288672093,bp2,,,,,7964,38,each outcome winsorized at its own pooled p1/p99 by period; D = Y1w - Yxw
+T,decomposition,no_alpha_omit,tau2_cross_base_adj_wins,-642.4540909484485,bp2,,,,,7964,38,each outcome winsorized at its own pooled p1/p99 by period; D = Y1w - Yxw
+T,decomposition,no_alpha_omit,tau2_cross_adj_base_wins,1857.5082098374855,bp2,,,,,7964,38,each outcome winsorized at its own pooled p1/p99 by period; D = Y1w - Yxw
+T,decomposition,no_alpha_omit,identity_gap_wins,-9.094947017729282e-13,bp2,,,,,7964,38,exact by construction when D is defined on the winsorized outcomes
+T,decomposition,no_alpha_omit,tau2_adj_wins_own_cutoffs,1499.4218866102851,bp2,,,,,7964,38,D winsorized on its own p1/p99 by period
+T,decomposition,no_alpha_omit,tau2_cross_base_adj_wins_own_cutoffs,-745.3614059349138,bp2,,,,,7964,38,
+T,decomposition,no_alpha_omit,tau2_cross_adj_base_wins_own_cutoffs,1557.8167959403913,bp2,,,,,7964,38,
+T,decomposition,no_alpha_omit,winsorization_nonlinearity_gap,780.5246711404827,bp2,,,,,7964,38,total(winsorized Y1) minus base(winsorized Yx) + the three terms with D winsorized on its own: the non-linearity of winsorization
+T,decomposition,no_alpha_omit,winsorization_effect_total,835.9240316381461,bp2,,,,,7964,38,winsorized minus raw headline on this sample
+T,decomposition,no_alpha_omit,winsorization_effect_base,1240.5352527687671,bp2,,,,,7964,38,winsorized minus raw alternative on this sample
+T,decomposition,no_alpha_omit,corr_D_AB_raw,0.5297779352374837,correlation,,,,,7964,38,w-weighted correlation across households of the period-A and period-B means of D
+T,decomposition,no_alpha_omit,corr_xD_x1_raw,0.13314822979782986,correlation,,,,,7964,38,w-weighted correlation of the residualized period-A means of D and of Y1
+T,decomposition,no_alpha_omit,mean_D_A_raw,-43.567057934442786,bp,,,,,7964,38,w-weighted mean of household period-A means of D
+T,decomposition,no_alpha_omit,mean_D_B_raw,-72.1775636556715,bp,,,,,7964,38,w-weighted mean of household period-B means of D
+T,decomposition,no_alpha_omit,corr_D_AB_wins,0.5813625928623091,correlation,,,,,7964,38,the same correlation on the winsorized outcomes
+T,decomposition,no_alpha_omit,tau2_alternative_own_sample_wins,-828.8193092684982,bp2,,,,,7964,38,"the Table 4 robustness row: the alternative outcome on its own finite sample, eligibility re-applied (differs from tau2_base_wins when the sample differs)"
+T,decomposition,no_alpha_omit,sd_D_event,267.7478513969911,bp,,,,,7964,38,event-level SD of D
+T,decomposition,no_alpha_omit,mean_D_event,-53.53700036713479,bp,,,,,7964,38,event-level mean of D
+T,decomposition,no_alpha_omit,n_events_common,7964.0,count,,,,,7964,38,headline households; events with both outcomes finite (0 headline events dropped for this comparison)
+T,decomposition,no_alpha_omit,n_events_dropped_for_common_sample,0.0,count,,,,,7964,38,
+T,decomposition,no_alpha_omit,mean_compounding_residual,-4.027373693181543,bp,,,,,7964,38,mean of D0 - (-20 x alpha-hat) (bp)
+T,decomposition,no_alpha_omit,sd_compounding_residual,35.026818995010814,bp,,,,,7964,38,
+T,decomposition,no_alpha_omit,mean_20alpha,49.50962667395324,bp,,,,,7964,38,mean of 20 x daily alpha-hat (bp)
+T,decomposition,no_alpha_omit,tau2_total_linear_alpha,1427.658606849599,bp2,,,,,7964,38,D replaced by 20 x alpha-hat (raw outcomes)
+T,decomposition,no_alpha_omit,tau2_base_linear_alpha,-2479.614859150431,bp2,,,,,7964,38,D replaced by 20 x alpha-hat (raw outcomes)
+T,decomposition,no_alpha_omit,tau2_adj_linear_alpha,1610.1321021955769,bp2,,,,,7964,38,D replaced by 20 x alpha-hat (raw outcomes)
+T,decomposition,no_alpha_omit,tau2_cross_base_adj_linear_alpha,-77.81315079567973,bp2,,,,,7964,38,D replaced by 20 x alpha-hat (raw outcomes)
+T,decomposition,no_alpha_omit,tau2_cross_adj_base_linear_alpha,2374.9545146001333,bp2,,,,,7964,38,D replaced by 20 x alpha-hat (raw outcomes)
+T,decomposition,no_alpha_omit,identity_gap_linear_alpha,-4.547473508864641e-13,bp2,,,,,7964,38,
+T,decomposition,no_alpha_refit,tau2_total_raw,1427.658606849599,bp2,,,,,7964,38,raw outcomes; headline households; events with both outcomes finite (0 headline events dropped for this comparison)
+T,decomposition,no_alpha_refit,tau2_base_raw,-2044.5795595782215,bp2,,,,,7964,38,raw outcomes; headline households; events with both outcomes finite (0 headline events dropped for this comparison)
+T,decomposition,no_alpha_refit,tau2_adj_raw,1910.1676114424047,bp2,,,,,7964,38,raw outcomes; headline households; events with both outcomes finite (0 headline events dropped for this comparison)
+T,decomposition,no_alpha_refit,tau2_cross_base_adj_raw,-265.047227498739,bp2,,,,,7964,38,raw outcomes; headline households; events with both outcomes finite (0 headline events dropped for this comparison)
+T,decomposition,no_alpha_refit,tau2_cross_adj_base_raw,1827.117782484156,bp2,,,,,7964,38,raw outcomes; headline households; events with both outcomes finite (0 headline events dropped for this comparison)
+T,decomposition,no_alpha_refit,identity_gap_raw,-1.1368683772161603e-12,bp2,,,,,7964,38,total minus the sum of the four terms (exact bilinearity: should be ~0)
+T,decomposition,no_alpha_refit,identity_rel_gap_raw,7.96316690672203e-16,ratio,,,,,7964,38,
+T,decomposition,no_alpha_refit,tau2_total_raw_event_wls,1427.6586068495703,bp2,,,,,7964,38,estimate_tau2 (event-level WLS with the activity control) on the same raw panel
+T,decomposition,no_alpha_refit,tau2_total_wins,2263.582638487745,bp2,,,,,7964,38,each outcome winsorized at its own pooled p1/p99 by period; D = Y1w - Yxw
+T,decomposition,no_alpha_refit,tau2_base_wins,-872.6010554206944,bp2,,,,,7964,38,each outcome winsorized at its own pooled p1/p99 by period; D = Y1w - Yxw
+T,decomposition,no_alpha_refit,tau2_adj_wins,1938.2923647570494,bp2,,,,,7964,38,each outcome winsorized at its own pooled p1/p99 by period; D = Y1w - Yxw
+T,decomposition,no_alpha_refit,tau2_cross_base_adj_wins,-716.3746844278527,bp2,,,,,7964,38,each outcome winsorized at its own pooled p1/p99 by period; D = Y1w - Yxw
+T,decomposition,no_alpha_refit,tau2_cross_adj_base_wins,1914.2660135792416,bp2,,,,,7964,38,each outcome winsorized at its own pooled p1/p99 by period; D = Y1w - Yxw
+T,decomposition,no_alpha_refit,identity_gap_wins,9.094947017729282e-13,bp2,,,,,7964,38,exact by construction when D is defined on the winsorized outcomes
+T,decomposition,no_alpha_refit,tau2_adj_wins_own_cutoffs,1498.5033669971142,bp2,,,,,7964,38,D winsorized on its own p1/p99 by period
+T,decomposition,no_alpha_refit,tau2_cross_base_adj_wins_own_cutoffs,-803.0416464358809,bp2,,,,,7964,38,
+T,decomposition,no_alpha_refit,tau2_cross_adj_base_wins_own_cutoffs,1548.9577436207405,bp2,,,,,7964,38,
+T,decomposition,no_alpha_refit,winsorization_nonlinearity_gap,891.7642297264656,bp2,,,,,7964,38,total(winsorized Y1) minus base(winsorized Yx) + the three terms with D winsorized on its own: the non-linearity of winsorization
+T,decomposition,no_alpha_refit,winsorization_effect_total,835.9240316381461,bp2,,,,,7964,38,winsorized minus raw headline on this sample
+T,decomposition,no_alpha_refit,winsorization_effect_base,1171.9785041575271,bp2,,,,,7964,38,winsorized minus raw alternative on this sample
+T,decomposition,no_alpha_refit,corr_D_AB_raw,0.5307592712230248,correlation,,,,,7964,38,w-weighted correlation across households of the period-A and period-B means of D
+T,decomposition,no_alpha_refit,corr_xD_x1_raw,0.13386497530158695,correlation,,,,,7964,38,w-weighted correlation of the residualized period-A means of D and of Y1
+T,decomposition,no_alpha_refit,mean_D_A_raw,-42.77144754308914,bp,,,,,7964,38,w-weighted mean of household period-A means of D
+T,decomposition,no_alpha_refit,mean_D_B_raw,-72.71861312069268,bp,,,,,7964,38,w-weighted mean of household period-B means of D
+T,decomposition,no_alpha_refit,corr_D_AB_wins,0.5746322452400209,correlation,,,,,7964,38,the same correlation on the winsorized outcomes
+T,decomposition,no_alpha_refit,sd_D_event,267.46413469657585,bp,,,,,7964,38,event-level SD of D
+T,decomposition,no_alpha_refit,mean_D_event,-53.33649238091431,bp,,,,,7964,38,event-level mean of D
+T,decomposition,no_alpha_refit,n_events_common,7964.0,count,,,,,7964,38,headline households; events with both outcomes finite (0 headline events dropped for this comparison)
+T,decomposition,no_alpha_refit,n_events_dropped_for_common_sample,0.0,count,,,,,7964,38,
+T,decomposition,no_alpha_refit,mean_E0r_minus_E0,0.20050798622270477,bp,,,,,7964,38,expected-return leg: re-fitted without intercept minus intercept omitted (bp)
+T,decomposition,no_alpha_refit,sd_E0r_minus_E0,11.93352461890298,bp,,,,,7964,38,
+T,decomposition,no_alpha_refit,mean_abs_E0r_minus_E0,5.7395962097973685,bp,,,,,7964,38,
+T,decomposition,market_adjusted,tau2_total_raw,1427.658606849599,bp2,,,,,7964,38,raw outcomes; headline households; events with both outcomes finite (0 headline events dropped for this comparison)
+T,decomposition,market_adjusted,tau2_base_raw,-2828.922222050628,bp2,,,,,7964,38,raw outcomes; headline households; events with both outcomes finite (0 headline events dropped for this comparison)
+T,decomposition,market_adjusted,tau2_adj_raw,-607.4188983724623,bp2,,,,,7964,38,raw outcomes; headline households; events with both outcomes finite (0 headline events dropped for this comparison)
+T,decomposition,market_adjusted,tau2_cross_base_adj_raw,2240.4679973838697,bp2,,,,,7964,38,raw outcomes; headline households; events with both outcomes finite (0 headline events dropped for this comparison)
+T,decomposition,market_adjusted,tau2_cross_adj_base_raw,2623.531729888818,bp2,,,,,7964,38,raw outcomes; headline households; events with both outcomes finite (0 headline events dropped for this comparison)
+T,decomposition,market_adjusted,identity_gap_raw,1.8189894035458565e-12,bp2,,,,,7964,38,total minus the sum of the four terms (exact bilinearity: should be ~0)
+T,decomposition,market_adjusted,identity_rel_gap_raw,1.2741067050755247e-15,ratio,,,,,7964,38,
+T,decomposition,market_adjusted,tau2_total_raw_event_wls,1427.6586068495703,bp2,,,,,7964,38,estimate_tau2 (event-level WLS with the activity control) on the same raw panel
+T,decomposition,market_adjusted,tau2_total_wins,2263.582638487745,bp2,,,,,7964,38,each outcome winsorized at its own pooled p1/p99 by period; D = Y1w - Yxw
+T,decomposition,market_adjusted,tau2_base_wins,-615.2682362514986,bp2,,,,,7964,38,each outcome winsorized at its own pooled p1/p99 by period; D = Y1w - Yxw
+T,decomposition,market_adjusted,tau2_adj_wins,-135.12782736029152,bp2,,,,,7964,38,each outcome winsorized at its own pooled p1/p99 by period; D = Y1w - Yxw
+T,decomposition,market_adjusted,tau2_cross_base_adj_wins,876.1208653945869,bp2,,,,,7964,38,each outcome winsorized at its own pooled p1/p99 by period; D = Y1w - Yxw
+T,decomposition,market_adjusted,tau2_cross_adj_base_wins,2137.8578367049477,bp2,,,,,7964,38,each outcome winsorized at its own pooled p1/p99 by period; D = Y1w - Yxw
+T,decomposition,market_adjusted,identity_gap_wins,4.547473508864641e-13,bp2,,,,,7964,38,exact by construction when D is defined on the winsorized outcomes
+T,decomposition,market_adjusted,tau2_adj_wins_own_cutoffs,-453.76111757381994,bp2,,,,,7964,38,D winsorized on its own p1/p99 by period
+T,decomposition,market_adjusted,tau2_cross_base_adj_wins_own_cutoffs,852.9394630573478,bp2,,,,,7964,38,
+T,decomposition,market_adjusted,tau2_cross_adj_base_wins_own_cutoffs,1688.2680547989082,bp2,,,,,7964,38,
+T,decomposition,market_adjusted,winsorization_nonlinearity_gap,791.4044744568077,bp2,,,,,7964,38,total(winsorized Y1) minus base(winsorized Yx) + the three terms with D winsorized on its own: the non-linearity of winsorization
+T,decomposition,market_adjusted,winsorization_effect_total,835.9240316381461,bp2,,,,,7964,38,winsorized minus raw headline on this sample
+T,decomposition,market_adjusted,winsorization_effect_base,2213.6539857991293,bp2,,,,,7964,38,winsorized minus raw alternative on this sample
+T,decomposition,market_adjusted,corr_D_AB_raw,-0.07079174700289784,correlation,,,,,7964,38,w-weighted correlation across households of the period-A and period-B means of D
+T,decomposition,market_adjusted,corr_xD_x1_raw,-0.1513633269852348,correlation,,,,,7964,38,w-weighted correlation of the residualized period-A means of D and of Y1
+T,decomposition,market_adjusted,mean_D_A_raw,-87.46669278971851,bp,,,,,7964,38,w-weighted mean of household period-A means of D
+T,decomposition,market_adjusted,mean_D_B_raw,-63.76293804576795,bp,,,,,7964,38,w-weighted mean of household period-B means of D
+T,decomposition,market_adjusted,corr_D_AB_wins,-0.007824632296791149,correlation,,,,,7964,38,the same correlation on the winsorized outcomes
+T,decomposition,market_adjusted,tau2_alternative_own_sample_wins,-735.4177214181983,bp2,,,,,8053,38,"the Table 4 robustness row: the alternative outcome on its own finite sample, eligibility re-applied (differs from tau2_base_wins when the sample differs)"
+T,decomposition,market_adjusted,sd_D_event,540.1417715833632,bp,,,,,7964,38,event-level SD of D
+T,decomposition,market_adjusted,mean_D_event,-73.9472542182589,bp,,,,,7964,38,event-level mean of D
+T,decomposition,market_adjusted,n_events_common,7964.0,count,,,,,7964,38,headline households; events with both outcomes finite (0 headline events dropped for this comparison)
+T,decomposition,market_adjusted,n_events_dropped_for_common_sample,0.0,count,,,,,7964,38,
+T,decomposition,no_alpha_omit,placebo_total_raw,-81.27749473918598,bp2,0.26286856571714146,-4707.544829191349,4623.068358249378,,,,"timing-only placebo, 2000 draws; boot_lo / boot_hi = 5th / 95th percentiles; placebo_p = share of draws at or above the actual value"
+T,decomposition,no_alpha_omit,placebo_base_raw,21.462567639590226,bp2,0.8105947026486756,-4208.101996810453,4299.393216628395,,,,"timing-only placebo, 2000 draws; boot_lo / boot_hi = 5th / 95th percentiles; placebo_p = share of draws at or above the actual value"
+T,decomposition,no_alpha_omit,placebo_adj_raw,887.4492301632138,bp2,0.004497751124437781,346.17797718290524,1455.8354257790927,,,,"timing-only placebo, 2000 draws; boot_lo / boot_hi = 5th / 95th percentiles; placebo_p = share of draws at or above the actual value"
+T,decomposition,no_alpha_omit,placebo_cross_base_adj_raw,-756.440576646094,bp2,0.30884557721139433,-2397.9523526089097,867.1197630610973,,,,"timing-only placebo, 2000 draws; boot_lo / boot_hi = 5th / 95th percentiles; placebo_p = share of draws at or above the actual value"
+T,decomposition,no_alpha_omit,placebo_cross_adj_base_raw,-233.74871589589603,bp2,0.031484257871064465,-1891.2512793974424,1520.9580518301814,,,,"timing-only placebo, 2000 draws; boot_lo / boot_hi = 5th / 95th percentiles; placebo_p = share of draws at or above the actual value"
+T,decomposition,no_alpha_omit,placebo_corr_D_AB_raw,0.396021894707415,correlation,0.12343828085957022,0.179011229088751,0.575131753553587,,,,"timing-only placebo, 2000 draws; boot_lo / boot_hi = 5th / 95th percentiles; placebo_p = share of draws at or above the actual value"
+T,decomposition,no_alpha_omit,placebo_total_wins,52.84244040565796,bp2,0.1054472763618191,-2816.231478753352,2998.624232370996,,,,"timing-only placebo, 2000 draws; boot_lo / boot_hi = 5th / 95th percentiles; placebo_p = share of draws at or above the actual value"
+T,decomposition,no_alpha_omit,placebo_base_wins,152.38219343656394,bp2,0.7321339330334833,-2508.938658398666,2934.066701989831,,,,"timing-only placebo, 2000 draws; boot_lo / boot_hi = 5th / 95th percentiles; placebo_p = share of draws at or above the actual value"
+T,decomposition,no_alpha_omit,placebo_adj_wins,805.7799970403477,bp2,0.0004997501249375312,361.540978770264,1247.9563325509098,,,,"timing-only placebo, 2000 draws; boot_lo / boot_hi = 5th / 95th percentiles; placebo_p = share of draws at or above the actual value"
+T,decomposition,no_alpha_omit,placebo_cross_base_adj_wins,-584.4373295234711,bp2,0.5397301349325337,-1834.2583840822176,631.6135431155183,,,,"timing-only placebo, 2000 draws; boot_lo / boot_hi = 5th / 95th percentiles; placebo_p = share of draws at or above the actual value"
+T,decomposition,no_alpha_omit,placebo_cross_adj_base_wins,-320.88242054778243,bp2,0.0029985007496251873,-1471.6516903471882,824.6843421817841,,,,"timing-only placebo, 2000 draws; boot_lo / boot_hi = 5th / 95th percentiles; placebo_p = share of draws at or above the actual value"
+T,decomposition,no_alpha_omit,placebo_corr_D_AB_wins,0.44560496236711405,correlation,,0.24005479493762877,0.6121269468122692,,,,"timing-only placebo, 2000 draws; boot_lo / boot_hi = 5th / 95th percentiles; placebo_p = share of draws at or above the actual value"
+T,decomposition,market_adjusted,placebo_total_raw,-81.27749473918598,bp2,0.26286856571714146,-4707.544829191349,4623.068358249378,,,,"timing-only placebo, 2000 draws; boot_lo / boot_hi = 5th / 95th percentiles; placebo_p = share of draws at or above the actual value"
+T,decomposition,market_adjusted,placebo_base_raw,93.0131840132377,bp2,0.8105947026486756,-6064.4269861082585,6435.508767891064,,,,"timing-only placebo, 2000 draws; boot_lo / boot_hi = 5th / 95th percentiles; placebo_p = share of draws at or above the actual value"
+T,decomposition,market_adjusted,placebo_adj_raw,1422.7092353770386,bp2,0.9030484757621189,-1203.853194021071,4315.824128920065,,,,"timing-only placebo, 2000 draws; boot_lo / boot_hi = 5th / 95th percentiles; placebo_p = share of draws at or above the actual value"
+T,decomposition,market_adjusted,placebo_cross_base_adj_raw,-1314.9202564236791,bp2,0.06746626686656672,-5480.537720136474,2585.600150225884,,,,"timing-only placebo, 2000 draws; boot_lo / boot_hi = 5th / 95th percentiles; placebo_p = share of draws at or above the actual value"
+T,decomposition,market_adjusted,placebo_cross_adj_base_raw,-282.07965770578306,bp2,0.11944027986006997,-4495.5498366865,3809.9783089767957,,,,"timing-only placebo, 2000 draws; boot_lo / boot_hi = 5th / 95th percentiles; placebo_p = share of draws at or above the actual value"
+T,decomposition,market_adjusted,placebo_corr_D_AB_raw,0.17049717573263592,correlation,0.912543728135932,-0.1168047160305488,0.4511788753391959,,,,"timing-only placebo, 2000 draws; boot_lo / boot_hi = 5th / 95th percentiles; placebo_p = share of draws at or above the actual value"
+T,decomposition,market_adjusted,placebo_total_wins,52.84244040565796,bp2,0.1054472763618191,-2816.231478753352,2998.624232370996,,,,"timing-only placebo, 2000 draws; boot_lo / boot_hi = 5th / 95th percentiles; placebo_p = share of draws at or above the actual value"
+T,decomposition,market_adjusted,placebo_base_wins,180.6521019512708,bp2,0.6336831584207896,-3986.621224506638,4453.276975706153,,,,"timing-only placebo, 2000 draws; boot_lo / boot_hi = 5th / 95th percentiles; placebo_p = share of draws at or above the actual value"
+T,decomposition,market_adjusted,placebo_adj_wins,1195.3437136106277,bp2,0.84007996001999,-980.4019100459614,3504.784981970313,,,,"timing-only placebo, 2000 draws; boot_lo / boot_hi = 5th / 95th percentiles; placebo_p = share of draws at or above the actual value"
+T,decomposition,market_adjusted,placebo_cross_base_adj_wins,-1086.7646759985967,bp2,0.12743628185907047,-4148.323213980763,1874.5024064991924,,,,"timing-only placebo, 2000 draws; boot_lo / boot_hi = 5th / 95th percentiles; placebo_p = share of draws at or above the actual value"
+T,decomposition,market_adjusted,placebo_cross_adj_base_wins,-236.388699157644,bp2,0.11444277861069466,-3447.498583999103,3017.8061615381184,,,,"timing-only placebo, 2000 draws; boot_lo / boot_hi = 5th / 95th percentiles; placebo_p = share of draws at or above the actual value"
+T,decomposition,market_adjusted,placebo_corr_D_AB_wins,0.17400237937124502,correlation,,-0.11524533207787392,0.45101412493685533,,,,"timing-only placebo, 2000 draws; boot_lo / boot_hi = 5th / 95th percentiles; placebo_p = share of draws at or above the actual value"
+P,decomposition,verification,max_abs_diff_Y1_recomputed_vs_cache,4.40314806837705e-09,bp,,,,,6095,30,"per-event FF5+MOM recomputation (252-session window ending 21 sessions before the anchor, intercept kept) against the forward cache"
+P,decomposition,verification,max_abs_diff_Y0_recomputed_vs_cache,2.332853910047561e-10,bp,,,,,6095,30,"same loadings, intercept omitted from the expected return, against the cache's no-alpha column"
+P,decomposition,verification,n_events_refit_missing,0.0,count,,,,,6095,30,headline events whose re-fit could not be computed (should be 0)
+P,decomposition,verification,tau2_headline_winsorized_full_panel,1970.733426316436,bp2,,,,,6095,30,cgm.tau2_i1 on the winsorized headline panel rebuilt here; equals the tau2 row of results.csv
+P,decomposition,no_alpha_omit,tau2_total_raw,9253.371618100737,bp2,,,,,6095,30,raw outcomes; headline households; events with both outcomes finite (0 headline events dropped for this comparison)
+P,decomposition,no_alpha_omit,tau2_base_raw,6887.674451501695,bp2,,,,,6095,30,raw outcomes; headline households; events with both outcomes finite (0 headline events dropped for this comparison)
+P,decomposition,no_alpha_omit,tau2_adj_raw,2187.518459212518,bp2,,,,,6095,30,raw outcomes; headline households; events with both outcomes finite (0 headline events dropped for this comparison)
+P,decomposition,no_alpha_omit,tau2_cross_base_adj_raw,1092.9612623588432,bp2,,,,,6095,30,raw outcomes; headline households; events with both outcomes finite (0 headline events dropped for this comparison)
+P,decomposition,no_alpha_omit,tau2_cross_adj_base_raw,-914.7825549723176,bp2,,,,,6095,30,raw outcomes; headline households; events with both outcomes finite (0 headline events dropped for this comparison)
+P,decomposition,no_alpha_omit,identity_gap_raw,-1.8189894035458565e-12,bp2,,,,,6095,30,total minus the sum of the four terms (exact bilinearity: should be ~0)
+P,decomposition,no_alpha_omit,identity_rel_gap_raw,1.965758513348463e-16,ratio,,,,,6095,30,
+P,decomposition,no_alpha_omit,tau2_total_raw_event_wls,9253.37161810079,bp2,,,,,6095,30,estimate_tau2 (event-level WLS with the activity control) on the same raw panel
+P,decomposition,no_alpha_omit,tau2_total_wins,1970.7334263164355,bp2,,,,,6095,30,each outcome winsorized at its own pooled p1/p99 by period; D = Y1w - Yxw
+P,decomposition,no_alpha_omit,tau2_base_wins,2175.247235306802,bp2,,,,,6095,30,each outcome winsorized at its own pooled p1/p99 by period; D = Y1w - Yxw
+P,decomposition,no_alpha_omit,tau2_adj_wins,1957.5194900986694,bp2,,,,,6095,30,each outcome winsorized at its own pooled p1/p99 by period; D = Y1w - Yxw
+P,decomposition,no_alpha_omit,tau2_cross_base_adj_wins,-736.1270770520911,bp2,,,,,6095,30,each outcome winsorized at its own pooled p1/p99 by period; D = Y1w - Yxw
+P,decomposition,no_alpha_omit,tau2_cross_adj_base_wins,-1425.9062220369447,bp2,,,,,6095,30,each outcome winsorized at its own pooled p1/p99 by period; D = Y1w - Yxw
+P,decomposition,no_alpha_omit,identity_gap_wins,-2.2737367544323206e-13,bp2,,,,,6095,30,exact by construction when D is defined on the winsorized outcomes
+P,decomposition,no_alpha_omit,tau2_adj_wins_own_cutoffs,1805.8203275857559,bp2,,,,,6095,30,D winsorized on its own p1/p99 by period
+P,decomposition,no_alpha_omit,tau2_cross_base_adj_wins_own_cutoffs,-787.8407240628869,bp2,,,,,6095,30,
+P,decomposition,no_alpha_omit,tau2_cross_adj_base_wins_own_cutoffs,-1755.7615528024635,bp2,,,,,6095,30,
+P,decomposition,no_alpha_omit,winsorization_nonlinearity_gap,533.2681402892283,bp2,,,,,6095,30,total(winsorized Y1) minus base(winsorized Yx) + the three terms with D winsorized on its own: the non-linearity of winsorization
+P,decomposition,no_alpha_omit,winsorization_effect_total,-7282.638191784301,bp2,,,,,6095,30,winsorized minus raw headline on this sample
+P,decomposition,no_alpha_omit,winsorization_effect_base,-4712.427216194894,bp2,,,,,6095,30,winsorized minus raw alternative on this sample
+P,decomposition,no_alpha_omit,corr_D_AB_raw,0.5600157410673423,correlation,,,,,6095,30,w-weighted correlation across households of the period-A and period-B means of D
+P,decomposition,no_alpha_omit,corr_xD_x1_raw,0.3064629252475684,correlation,,,,,6095,30,w-weighted correlation of the residualized period-A means of D and of Y1
+P,decomposition,no_alpha_omit,mean_D_A_raw,-34.97967039451767,bp,,,,,6095,30,w-weighted mean of household period-A means of D
+P,decomposition,no_alpha_omit,mean_D_B_raw,-62.391188884938785,bp,,,,,6095,30,w-weighted mean of household period-B means of D
+P,decomposition,no_alpha_omit,corr_D_AB_wins,0.6812917899996471,correlation,,,,,6095,30,the same correlation on the winsorized outcomes
+P,decomposition,no_alpha_omit,tau2_alternative_own_sample_wins,2175.247235306797,bp2,,,,,6095,30,"the Table 4 robustness row: the alternative outcome on its own finite sample, eligibility re-applied (differs from tau2_base_wins when the sample differs)"
+P,decomposition,no_alpha_omit,sd_D_event,256.4444234826784,bp,,,,,6095,30,event-level SD of D
+P,decomposition,no_alpha_omit,mean_D_event,-47.59192445295852,bp,,,,,6095,30,event-level mean of D
+P,decomposition,no_alpha_omit,n_events_common,6095.0,count,,,,,6095,30,headline households; events with both outcomes finite (0 headline events dropped for this comparison)
+P,decomposition,no_alpha_omit,n_events_dropped_for_common_sample,0.0,count,,,,,6095,30,
+P,decomposition,no_alpha_omit,mean_compounding_residual,-3.580087711807726,bp,,,,,6095,30,mean of D0 - (-20 x alpha-hat) (bp)
+P,decomposition,no_alpha_omit,sd_compounding_residual,31.683644100433636,bp,,,,,6095,30,
+P,decomposition,no_alpha_omit,mean_20alpha,44.01183674115079,bp,,,,,6095,30,mean of 20 x daily alpha-hat (bp)
+P,decomposition,no_alpha_omit,tau2_total_linear_alpha,9253.371618100737,bp2,,,,,6095,30,D replaced by 20 x alpha-hat (raw outcomes)
+P,decomposition,no_alpha_omit,tau2_base_linear_alpha,7970.575024831323,bp2,,,,,6095,30,D replaced by 20 x alpha-hat (raw outcomes)
+P,decomposition,no_alpha_omit,tau2_adj_linear_alpha,1826.865032658619,bp2,,,,,6095,30,D replaced by 20 x alpha-hat (raw outcomes)
+P,decomposition,no_alpha_omit,tau2_cross_base_adj_linear_alpha,867.5996021838614,bp2,,,,,6095,30,D replaced by 20 x alpha-hat (raw outcomes)
+P,decomposition,no_alpha_omit,tau2_cross_adj_base_linear_alpha,-1411.6680415730657,bp2,,,,,6095,30,D replaced by 20 x alpha-hat (raw outcomes)
+P,decomposition,no_alpha_omit,identity_gap_linear_alpha,-1.8189894035458565e-12,bp2,,,,,6095,30,
+P,decomposition,no_alpha_refit,tau2_total_raw,9253.371618100737,bp2,,,,,6095,30,raw outcomes; headline households; events with both outcomes finite (0 headline events dropped for this comparison)
+P,decomposition,no_alpha_refit,tau2_base_raw,6735.608370144458,bp2,,,,,6095,30,raw outcomes; headline households; events with both outcomes finite (0 headline events dropped for this comparison)
+P,decomposition,no_alpha_refit,tau2_adj_raw,2222.4184472945667,bp2,,,,,6095,30,raw outcomes; headline households; events with both outcomes finite (0 headline events dropped for this comparison)
+P,decomposition,no_alpha_refit,tau2_cross_base_adj_raw,1153.5077909264076,bp2,,,,,6095,30,raw outcomes; headline households; events with both outcomes finite (0 headline events dropped for this comparison)
+P,decomposition,no_alpha_refit,tau2_cross_adj_base_raw,-858.162990264694,bp2,,,,,6095,30,raw outcomes; headline households; events with both outcomes finite (0 headline events dropped for this comparison)
+P,decomposition,no_alpha_refit,identity_gap_raw,0.0,bp2,,,,,6095,30,total minus the sum of the four terms (exact bilinearity: should be ~0)
+P,decomposition,no_alpha_refit,identity_rel_gap_raw,0.0,ratio,,,,,6095,30,
+P,decomposition,no_alpha_refit,tau2_total_raw_event_wls,9253.37161810079,bp2,,,,,6095,30,estimate_tau2 (event-level WLS with the activity control) on the same raw panel
+P,decomposition,no_alpha_refit,tau2_total_wins,1970.7334263164355,bp2,,,,,6095,30,each outcome winsorized at its own pooled p1/p99 by period; D = Y1w - Yxw
+P,decomposition,no_alpha_refit,tau2_base_wins,2231.7945518820525,bp2,,,,,6095,30,each outcome winsorized at its own pooled p1/p99 by period; D = Y1w - Yxw
+P,decomposition,no_alpha_refit,tau2_adj_wins,1951.164100541057,bp2,,,,,6095,30,each outcome winsorized at its own pooled p1/p99 by period; D = Y1w - Yxw
+P,decomposition,no_alpha_refit,tau2_cross_base_adj_wins,-702.7601137818862,bp2,,,,,6095,30,each outcome winsorized at its own pooled p1/p99 by period; D = Y1w - Yxw
+P,decomposition,no_alpha_refit,tau2_cross_adj_base_wins,-1509.4651123247877,bp2,,,,,6095,30,each outcome winsorized at its own pooled p1/p99 by period; D = Y1w - Yxw
+P,decomposition,no_alpha_refit,identity_gap_wins,2.2737367544323206e-13,bp2,,,,,6095,30,exact by construction when D is defined on the winsorized outcomes
+P,decomposition,no_alpha_refit,tau2_adj_wins_own_cutoffs,1793.0315916730544,bp2,,,,,6095,30,D winsorized on its own p1/p99 by period
+P,decomposition,no_alpha_refit,tau2_cross_base_adj_wins_own_cutoffs,-776.2749037042577,bp2,,,,,6095,30,
+P,decomposition,no_alpha_refit,tau2_cross_adj_base_wins_own_cutoffs,-1759.9249541910722,bp2,,,,,6095,30,
+P,decomposition,no_alpha_refit,winsorization_nonlinearity_gap,482.10714065665866,bp2,,,,,6095,30,total(winsorized Y1) minus base(winsorized Yx) + the three terms with D winsorized on its own: the non-linearity of winsorization
+P,decomposition,no_alpha_refit,winsorization_effect_total,-7282.638191784301,bp2,,,,,6095,30,winsorized minus raw headline on this sample
+P,decomposition,no_alpha_refit,winsorization_effect_base,-4503.813818262405,bp2,,,,,6095,30,winsorized minus raw alternative on this sample
+P,decomposition,no_alpha_refit,corr_D_AB_raw,0.5591328116218622,correlation,,,,,6095,30,w-weighted correlation across households of the period-A and period-B means of D
+P,decomposition,no_alpha_refit,corr_xD_x1_raw,0.31864256338752533,correlation,,,,,6095,30,w-weighted correlation of the residualized period-A means of D and of Y1
+P,decomposition,no_alpha_refit,mean_D_A_raw,-34.59073204566079,bp,,,,,6095,30,w-weighted mean of household period-A means of D
+P,decomposition,no_alpha_refit,mean_D_B_raw,-62.68695882121358,bp,,,,,6095,30,w-weighted mean of household period-B means of D
+P,decomposition,no_alpha_refit,corr_D_AB_wins,0.6726622427924767,correlation,,,,,6095,30,the same correlation on the winsorized outcomes
+P,decomposition,no_alpha_refit,sd_D_event,256.55019626586926,bp,,,,,6095,30,event-level SD of D
+P,decomposition,no_alpha_refit,mean_D_event,-47.5743249542994,bp,,,,,6095,30,event-level mean of D
+P,decomposition,no_alpha_refit,n_events_common,6095.0,count,,,,,6095,30,headline households; events with both outcomes finite (0 headline events dropped for this comparison)
+P,decomposition,no_alpha_refit,n_events_dropped_for_common_sample,0.0,count,,,,,6095,30,
+P,decomposition,no_alpha_refit,mean_E0r_minus_E0,0.017599498661529413,bp,,,,,6095,30,expected-return leg: re-fitted without intercept minus intercept omitted (bp)
+P,decomposition,no_alpha_refit,sd_E0r_minus_E0,10.299721933873291,bp,,,,,6095,30,
+P,decomposition,no_alpha_refit,mean_abs_E0r_minus_E0,5.361543495402171,bp,,,,,6095,30,
+P,decomposition,market_adjusted,tau2_total_raw,9253.371618100737,bp2,,,,,6095,30,raw outcomes; headline households; events with both outcomes finite (0 headline events dropped for this comparison)
+P,decomposition,market_adjusted,tau2_base_raw,3321.77749525002,bp2,,,,,6095,30,raw outcomes; headline households; events with both outcomes finite (0 headline events dropped for this comparison)
+P,decomposition,market_adjusted,tau2_adj_raw,4857.452945784073,bp2,,,,,6095,30,raw outcomes; headline households; events with both outcomes finite (0 headline events dropped for this comparison)
+P,decomposition,market_adjusted,tau2_cross_base_adj_raw,-948.5931337763964,bp2,,,,,6095,30,raw outcomes; headline households; events with both outcomes finite (0 headline events dropped for this comparison)
+P,decomposition,market_adjusted,tau2_cross_adj_base_raw,2022.7343108430427,bp2,,,,,6095,30,raw outcomes; headline households; events with both outcomes finite (0 headline events dropped for this comparison)
+P,decomposition,market_adjusted,identity_gap_raw,-3.637978807091713e-12,bp2,,,,,6095,30,total minus the sum of the four terms (exact bilinearity: should be ~0)
+P,decomposition,market_adjusted,identity_rel_gap_raw,3.931517026696926e-16,ratio,,,,,6095,30,
+P,decomposition,market_adjusted,tau2_total_raw_event_wls,9253.37161810079,bp2,,,,,6095,30,estimate_tau2 (event-level WLS with the activity control) on the same raw panel
+P,decomposition,market_adjusted,tau2_total_wins,1970.7334263164355,bp2,,,,,6095,30,each outcome winsorized at its own pooled p1/p99 by period; D = Y1w - Yxw
+P,decomposition,market_adjusted,tau2_base_wins,741.3121697200451,bp2,,,,,6095,30,each outcome winsorized at its own pooled p1/p99 by period; D = Y1w - Yxw
+P,decomposition,market_adjusted,tau2_adj_wins,2990.0062563134848,bp2,,,,,6095,30,each outcome winsorized at its own pooled p1/p99 by period; D = Y1w - Yxw
+P,decomposition,market_adjusted,tau2_cross_base_adj_wins,-1999.8007847391716,bp2,,,,,6095,30,each outcome winsorized at its own pooled p1/p99 by period; D = Y1w - Yxw
+P,decomposition,market_adjusted,tau2_cross_adj_base_wins,239.21578502207709,bp2,,,,,6095,30,each outcome winsorized at its own pooled p1/p99 by period; D = Y1w - Yxw
+P,decomposition,market_adjusted,identity_gap_wins,2.2737367544323206e-13,bp2,,,,,6095,30,exact by construction when D is defined on the winsorized outcomes
+P,decomposition,market_adjusted,tau2_adj_wins_own_cutoffs,3540.4317370920007,bp2,,,,,6095,30,D winsorized on its own p1/p99 by period
+P,decomposition,market_adjusted,tau2_cross_base_adj_wins_own_cutoffs,-1737.9473555923335,bp2,,,,,6095,30,
+P,decomposition,market_adjusted,tau2_cross_adj_base_wins_own_cutoffs,795.6105609729171,bp2,,,,,6095,30,
+P,decomposition,market_adjusted,winsorization_nonlinearity_gap,-1368.673685876194,bp2,,,,,6095,30,total(winsorized Y1) minus base(winsorized Yx) + the three terms with D winsorized on its own: the non-linearity of winsorization
+P,decomposition,market_adjusted,winsorization_effect_total,-7282.638191784301,bp2,,,,,6095,30,winsorized minus raw headline on this sample
+P,decomposition,market_adjusted,winsorization_effect_base,-2580.465325529975,bp2,,,,,6095,30,winsorized minus raw alternative on this sample
+P,decomposition,market_adjusted,corr_D_AB_raw,0.4240392010710577,correlation,,,,,6095,30,w-weighted correlation across households of the period-A and period-B means of D
+P,decomposition,market_adjusted,corr_xD_x1_raw,0.31525244927022367,correlation,,,,,6095,30,w-weighted correlation of the residualized period-A means of D and of Y1
+P,decomposition,market_adjusted,mean_D_A_raw,-67.32122049612975,bp,,,,,6095,30,w-weighted mean of household period-A means of D
+P,decomposition,market_adjusted,mean_D_B_raw,-65.65103970144058,bp,,,,,6095,30,w-weighted mean of household period-B means of D
+P,decomposition,market_adjusted,corr_D_AB_wins,0.3442103476915338,correlation,,,,,6095,30,the same correlation on the winsorized outcomes
+P,decomposition,market_adjusted,tau2_alternative_own_sample_wins,1199.592258486575,bp2,,,,,6132,30,"the Table 4 robustness row: the alternative outcome on its own finite sample, eligibility re-applied (differs from tau2_base_wins when the sample differs)"
+P,decomposition,market_adjusted,sd_D_event,538.7844808162964,bp,,,,,6095,30,event-level SD of D
+P,decomposition,market_adjusted,mean_D_event,-61.994737226951905,bp,,,,,6095,30,event-level mean of D
+P,decomposition,market_adjusted,n_events_common,6095.0,count,,,,,6095,30,headline households; events with both outcomes finite (0 headline events dropped for this comparison)
+P,decomposition,market_adjusted,n_events_dropped_for_common_sample,0.0,count,,,,,6095,30,
+P,decomposition,no_alpha_omit,placebo_total_raw,-85.78523195907607,bp2,0.008995502248875561,-5716.97756846589,5468.78604362042,,,,"timing-only placebo, 2000 draws; boot_lo / boot_hi = 5th / 95th percentiles; placebo_p = share of draws at or above the actual value"
+P,decomposition,no_alpha_omit,placebo_base_raw,237.01613788913488,bp2,0.0239880059970015,-5048.497704358411,5158.48847328879,,,,"timing-only placebo, 2000 draws; boot_lo / boot_hi = 5th / 95th percentiles; placebo_p = share of draws at or above the actual value"
+P,decomposition,no_alpha_omit,placebo_adj_raw,983.7030754377699,bp2,0.0079960019990005,457.3051873062684,1607.8978245088074,,,,"timing-only placebo, 2000 draws; boot_lo / boot_hi = 5th / 95th percentiles; placebo_p = share of draws at or above the actual value"
+P,decomposition,no_alpha_omit,placebo_cross_base_adj_raw,-805.103134318741,bp2,0.025987006496751622,-2383.860205331931,756.5790039858393,,,,"timing-only placebo, 2000 draws; boot_lo / boot_hi = 5th / 95th percentiles; placebo_p = share of draws at or above the actual value"
+P,decomposition,no_alpha_omit,placebo_cross_adj_base_raw,-501.4013109672399,bp2,0.664167916041979,-2475.185816268355,1426.1401496384506,,,,"timing-only placebo, 2000 draws; boot_lo / boot_hi = 5th / 95th percentiles; placebo_p = share of draws at or above the actual value"
+P,decomposition,no_alpha_omit,placebo_corr_D_AB_raw,0.44493622172887237,correlation,0.17791104447776113,0.2231553069006535,0.6315601771781044,,,,"timing-only placebo, 2000 draws; boot_lo / boot_hi = 5th / 95th percentiles; placebo_p = share of draws at or above the actual value"
+P,decomposition,no_alpha_omit,placebo_total_wins,135.70406983316062,bp2,0.16091954022988506,-2957.3067382793706,3206.983650641017,,,,"timing-only placebo, 2000 draws; boot_lo / boot_hi = 5th / 95th percentiles; placebo_p = share of draws at or above the actual value"
+P,decomposition,no_alpha_omit,placebo_base_wins,389.5599351470043,bp2,0.15942028985507245,-2562.0685604012965,3409.129717126683,,,,"timing-only placebo, 2000 draws; boot_lo / boot_hi = 5th / 95th percentiles; placebo_p = share of draws at or above the actual value"
+P,decomposition,no_alpha_omit,placebo_adj_wins,890.8602223256007,bp2,0.0004997501249375312,432.65349476938167,1360.439841480089,,,,"timing-only placebo, 2000 draws; boot_lo / boot_hi = 5th / 95th percentiles; placebo_p = share of draws at or above the actual value"
+P,decomposition,no_alpha_omit,placebo_cross_base_adj_wins,-655.4397350040872,bp2,0.5482258870564718,-1950.539988965801,607.1875803130786,,,,"timing-only placebo, 2000 draws; boot_lo / boot_hi = 5th / 95th percentiles; placebo_p = share of draws at or above the actual value"
+P,decomposition,no_alpha_omit,placebo_cross_adj_base_wins,-489.27635263535706,bp2,0.8895552223888056,-1790.1893403681024,728.1382468645705,,,,"timing-only placebo, 2000 draws; boot_lo / boot_hi = 5th / 95th percentiles; placebo_p = share of draws at or above the actual value"
+P,decomposition,no_alpha_omit,placebo_corr_D_AB_wins,0.4814111420473894,correlation,,0.2720805569066253,0.6576539611891583,,,,"timing-only placebo, 2000 draws; boot_lo / boot_hi = 5th / 95th percentiles; placebo_p = share of draws at or above the actual value"
+P,decomposition,market_adjusted,placebo_total_raw,-85.78523195907607,bp2,0.008995502248875561,-5716.97756846589,5468.78604362042,,,,"timing-only placebo, 2000 draws; boot_lo / boot_hi = 5th / 95th percentiles; placebo_p = share of draws at or above the actual value"
+P,decomposition,market_adjusted,placebo_base_raw,310.13251664518435,bp2,0.19390304847576212,-6209.249286369937,6624.69525398936,,,,"timing-only placebo, 2000 draws; boot_lo / boot_hi = 5th / 95th percentiles; placebo_p = share of draws at or above the actual value"
+P,decomposition,market_adjusted,placebo_adj_raw,1567.3868474988587,bp2,0.03548225887056472,-1277.963607129326,4522.992709677051,,,,"timing-only placebo, 2000 draws; boot_lo / boot_hi = 5th / 95th percentiles; placebo_p = share of draws at or above the actual value"
+P,decomposition,market_adjusted,placebo_cross_base_adj_raw,-1253.0743977903728,bp2,0.45577211394302847,-5237.96614653906,2305.5877179619006,,,,"timing-only placebo, 2000 draws; boot_lo / boot_hi = 5th / 95th percentiles; placebo_p = share of draws at or above the actual value"
+P,decomposition,market_adjusted,placebo_cross_adj_base_raw,-710.2301983127466,bp2,0.1409295352323838,-5468.26526576534,3667.6660225837654,,,,"timing-only placebo, 2000 draws; boot_lo / boot_hi = 5th / 95th percentiles; placebo_p = share of draws at or above the actual value"
+P,decomposition,market_adjusted,placebo_corr_D_AB_raw,0.18078877621000536,correlation,0.08995502248875563,-0.14661040623967464,0.46837102029885574,,,,"timing-only placebo, 2000 draws; boot_lo / boot_hi = 5th / 95th percentiles; placebo_p = share of draws at or above the actual value"
+P,decomposition,market_adjusted,placebo_total_wins,135.70406983316062,bp2,0.16091954022988506,-2957.3067382793706,3206.983650641017,,,,"timing-only placebo, 2000 draws; boot_lo / boot_hi = 5th / 95th percentiles; placebo_p = share of draws at or above the actual value"
+P,decomposition,market_adjusted,placebo_base_wins,414.26940704639645,bp2,0.44127936031984005,-3721.014559161607,4425.0638200084695,,,,"timing-only placebo, 2000 draws; boot_lo / boot_hi = 5th / 95th percentiles; placebo_p = share of draws at or above the actual value"
+P,decomposition,market_adjusted,placebo_adj_wins,1406.73400768938,bp2,0.1359320339830085,-971.5922032420904,3840.5345425853006,,,,"timing-only placebo, 2000 draws; boot_lo / boot_hi = 5th / 95th percentiles; placebo_p = share of draws at or above the actual value"
+P,decomposition,market_adjusted,placebo_cross_base_adj_wins,-1103.1404273780352,bp2,0.7026486756621689,-4331.164544526197,1809.0446976293808,,,,"timing-only placebo, 2000 draws; boot_lo / boot_hi = 5th / 95th percentiles; placebo_p = share of draws at or above the actual value"
+P,decomposition,market_adjusted,placebo_cross_adj_base_wins,-582.1589175245806,bp2,0.3213393303348326,-3828.3664282514387,2613.741188083595,,,,"timing-only placebo, 2000 draws; boot_lo / boot_hi = 5th / 95th percentiles; placebo_p = share of draws at or above the actual value"
+P,decomposition,market_adjusted,placebo_corr_D_AB_wins,0.19088526215371826,correlation,,-0.13048269055874157,0.48038480825790175,,,,"timing-only placebo, 2000 draws; boot_lo / boot_hi = 5th / 95th percentiles; placebo_p = share of draws at or above the actual value"

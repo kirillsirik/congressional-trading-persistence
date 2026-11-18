@@ -1,0 +1,10 @@
+{
+  "input": "data/v4/round2/closeout/closeout_2026-11-10/inputs/principal_household_means.csv",
+  "input_sha256": "fd5d6677b326def5e98cc2c0c9ca56618372c8c74c92adfdb0a6edb70a447e52",
+  "n_boot": 4999,
+  "seed_convention": "sha256(tau/event_share|clock|household bootstrap) first 8 hex digits",
+  "projection": "Refit [1,log(1+n_A)] using geometric weights times household multiplicity in every resample.",
+  "cutoffs": "Held fixed; supplied winsorized means must already implement separately winsorized purchase outcomes.",
+  "original_order_requirement": "household_index must retain original sorted household order to reproduce original random selections.",
+  "precision": "All output values retained at machine precision; no reviewer rough value is used."
+}

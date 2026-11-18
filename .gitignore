@@ -1,0 +1,56 @@
+# Environment and credentials
+.env
+.venv/
+venv/
+*.pem
+*.key
+.pgpass
+
+# Licensed and restricted inputs, local settings and run outputs (never committed)
+configs/paths.yaml
+reports/
+.canonical_run.lock
+data/raw/
+data/processed/
+data/v4/restricted/
+outputs/
+outputs_v2/
+*.parquet
+*.sqlite
+
+# Regenerable caches
+data/v4/round2/high_resolution/*.npz
+build/
+paper/build/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+
+# OS and editors
+.DS_Store
+.idea/
+.vscode/
+
+# Command log and run record of the continuation analysis (rewritten on every run)
+data/v4/writing_sample/computation_2026-11-11/logs/
+
+# Intermediate files that make exhibits rewrites and that the paper does not print from
+paper/generated/*
+!paper/generated/v4_placeholders.tex
+!paper/generated/results_macros.tex
+!paper/generated/existing_rerun_macros.tex
+paper/revised_generated/*
+!paper/revised_generated/abcd_overrides.tex
+paper/coherence_generated/
+paper/writing_sample_generated/core_table_provenance.csv
+paper/writing_sample_generated/exhibit_sources.json
+paper/writing_sample_generated/figure3_manifest.json
+paper/figures/*
+!paper/figures/writing_sample_*.pdf
+!paper/figures/annals_figure3_detection_trade.pdf
+!paper/figures/detection_figures_validation.json
+data/v4/writing_sample/manifest.json

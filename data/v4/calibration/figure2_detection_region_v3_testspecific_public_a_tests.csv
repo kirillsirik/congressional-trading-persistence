@@ -1,0 +1,33 @@
+test,test_name,analysis_set,fraction,k,H_mean,variant,effect_bp_at_target,effect_se_bp,status,max_power_on_grid,n_panels,grid,panel_set
+T1_blk20_2s,block-clustered mean test,all,0.02,,,raw,,,not_reached,0.066,500,power,A0_P_purchase_AB_L20_both_nodup
+T1_blk20_2s,block-clustered mean test,all,0.05,,,raw,,,not_reached,0.204,500,power,A0_P_purchase_AB_L20_both_nodup
+T1_blk20_2s,block-clustered mean test,all,0.1,,,raw,,,not_reached,0.672,500,power,A0_P_purchase_AB_L20_both_nodup
+T1_blk20_2s,block-clustered mean test,all,0.2,,,raw,279.64694261071367,9.655205844350132,interpolated,0.988,500,power,A0_P_purchase_AB_L20_both_nodup
+T1_blk20_2s,block-clustered mean test,all,0.5,112.81,225.71,wins,73.82238113781278,1.674752727517034,interpolated,1.0,500,power_x,A0_P_purchase_AB_L20_both_alllines
+T1_blk20_2s,block-clustered mean test,all,1.0,225.71,225.71,wins,30.394706078270826,0.3810578815611436,interpolated,1.0,500,power_x,A0_P_purchase_AB_L20_both_alllines
+T2_I1cal_ES,placebo-test tau2,R1,0.0333333333333333,1.0,30.0,wins,,,not_reached,0.702,500,power_k,A0_P_purchase_AB_L20_both_alllines
+T2_I1cal_ES,placebo-test tau2,R1,0.0666666666666666,2.0,30.0,wins,589.5130741692063,13.487959572193848,interpolated,0.948,500,power_k,A0_P_purchase_AB_L20_both_alllines
+T2_I1cal_ES,placebo-test tau2,R1,0.1333333333333333,4.0,30.0,wins,354.7423698098272,5.930268667328909,interpolated,1.0,500,power_k,A0_P_purchase_AB_L20_both_alllines
+T2_I1cal_ES,placebo-test tau2,R1,0.2666666666666666,8.0,30.0,wins,268.37353751767535,6.9575658225951935,interpolated,1.0,500,power_k,A0_P_purchase_AB_L20_both_alllines
+T2_I1cal_ES,placebo-test tau2,R1,0.5,15.0,30.0,wins,196.5641197090501,4.129605522594368,interpolated,1.0,500,power_x,A0_P_purchase_AB_L20_both_alllines
+T2_I1cal_ES,placebo-test tau2,R1,1.0,30.0,30.0,wins,,,not_reached,0.08,500,power_x,A0_P_purchase_AB_L20_both_alllines
+T2_I2b_ES,household bootstrap tau2,R1,0.0333333333333333,1.0,30.0,wins,,,not_reached,0.164,500,power_k,A0_P_purchase_AB_L20_both_alllines
+T2_I2b_ES,household bootstrap tau2,R1,0.0666666666666666,2.0,30.0,wins,,,not_reached,0.432,500,power_k,A0_P_purchase_AB_L20_both_alllines
+T2_I2b_ES,household bootstrap tau2,R1,0.1333333333333333,4.0,30.0,wins,403.0250648186233,26.964244913714104,interpolated,0.982,500,power_k,A0_P_purchase_AB_L20_both_alllines
+T2_I2b_ES,household bootstrap tau2,R1,0.2666666666666666,8.0,30.0,wins,253.20006546534603,8.2749696493738,interpolated,1.0,500,power_k,A0_P_purchase_AB_L20_both_alllines
+T2_I2b_ES,household bootstrap tau2,R1,0.5,15.0,30.0,wins,187.5671795272698,3.5190171582337877,interpolated,1.0,500,power_x,A0_P_purchase_AB_L20_both_alllines
+T2_I2b_ES,household bootstrap tau2,R1,1.0,30.0,30.0,wins,,,not_reached,0.098,500,power_x,A0_P_purchase_AB_L20_both_alllines
+T3,best-household test,n20,0.0090166447261644,1.0,110.906,wins,610.3298033204582,16.52462015226483,interpolated,0.914,500,power_k,A0_P_purchase_AB_L20_both_alllines
+T3,best-household test,n20,0.0180332894523289,2.0,110.906,wins,391.19553619407463,10.483669306548087,interpolated,0.992,500,power_k,A0_P_purchase_AB_L20_both_alllines
+T3,best-household test,n20,0.0360665789046579,4.0,110.906,wins,277.4157484415555,7.06897973559327,interpolated,1.0,500,power_k,A0_P_purchase_AB_L20_both_alllines
+T3,best-household test,n20,0.0721331578093159,8.0,110.906,wins,191.93595577329543,3.2294054491130435,interpolated,1.0,500,power_k,A0_P_purchase_AB_L20_both_alllines
+T3,best-household test,n20,0.1,11.0,110.906,wins,177.54944601352474,2.080223672076683,interpolated,1.0,500,power_x,A0_P_purchase_AB_L20_both_alllines
+T3,best-household test,n20,0.2,22.0,110.906,wins,156.02649603153634,1.6905194789631546,interpolated,1.0,500,power_x,A0_P_purchase_AB_L20_both_alllines
+T3,best-household test,n20,0.5,55.906,110.906,wins,105.89018028373052,5.703543765154488,interpolated,1.0,500,power_x,A0_P_purchase_AB_L20_both_alllines
+T3,best-household test,n20,1.0,110.906,110.906,wins,80.09118122390159,0.8147046796432178,interpolated,1.0,500,power_x,A0_P_purchase_AB_L20_both_alllines
+T4_z2,tail test,all,0.02,,,raw,,,not_reached,0.362,500,power,A0_P_purchase_AB_L20_both_nodup
+T4_z2,tail test,all,0.05,,,raw,,,not_reached,0.764,500,power,A0_P_purchase_AB_L20_both_nodup
+T4_z2,tail test,all,0.1,,,raw,579.0463189063942,11.201422731168106,interpolated,0.98,500,power,A0_P_purchase_AB_L20_both_nodup
+T4_z2,tail test,all,0.2,,,raw,329.3250365087815,4.618544848602251,interpolated,1.0,500,power,A0_P_purchase_AB_L20_both_nodup
+T4_z2,tail test,all,0.5,112.81,225.71,wins,158.74010519681994,2.122873354736622,interpolated,1.0,500,power_x,A0_P_purchase_AB_L20_both_alllines
+T4_z2,tail test,all,1.0,225.71,225.71,wins,81.64915619556022,1.0701884471844596,interpolated,1.0,500,power_x,A0_P_purchase_AB_L20_both_alllines

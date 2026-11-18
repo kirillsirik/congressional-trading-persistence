@@ -1,0 +1,3 @@
+test,test_name,variant,effect_bp_at_target,effect_se_bp,status,max_power_on_grid,n_panels,grid,panel_set
+T2_I1cal_ES,placebo-test tau2,wins,111.54961572444468,2.855327722158849,interpolated,0.998,500,power_w3,A0_P_purchase_AB_L20_both_alllines
+T2_I2b_ES,household bootstrap tau2,wins,101.74035415562886,3.81385188552672,interpolated,1.0,500,power_w3,A0_P_purchase_AB_L20_both_alllines

@@ -1,0 +1,18 @@
+{
+  "results_sha256": "03bf8763ebdbbe844e2df547d9e4d87b130e073e395585f884645ad10affa14c",
+  "script_sha256": "1f4a7e9f41d84d0e80728b1e6741e30d1ff6fc49f3521930b462ae994643781b",
+  "outputs": {
+    "pdf": "d9f860c5471dc9f771c2fe0cc2222e7e2038f299a04ee205630e2f249ef6374b",
+    "png": "97be5a06d36ddfd1d611bc493a0316923cc52070cde57e78452c6bb3ef87424d"
+  },
+  "lambda_hat": 0.057107048402366,
+  "marker": {
+    "K": -768.6052665171478,
+    "joint_low": -2934.8091256364305,
+    "joint_high": 1972.651457676743
+  },
+  "roots": [
+    0.4292594157711253
+  ],
+  "note": "separate sensitivity; the original affine Figure 3 is unchanged and carries no marker"
+}

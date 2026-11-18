@@ -1,0 +1,7 @@
+stage,n_in,n_out,no_usable_public_date,before_sample_start,amendment_exact_duplicate,no_purchase_or_sale_interpretation,unresolved_security_match,failed_common_stock_screen,collapsed_repeated_lots
+public_date_and_sample_window,98409,98399,10.0,0.0,0.0,0.0,0.0,0.0,0.0
+amendment_exact_duplicates,98399,97599,0.0,0.0,800.0,0.0,0.0,0.0,0.0
+purchase_sale_filter,97599,96844,0.0,0.0,0.0,755.0,0.0,0.0,0.0
+security_matching,96844,66158,0.0,0.0,0.0,0.0,30686.0,0.0,0.0
+common_stock_screen,66158,66158,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+collapse_to_signals,66158,52018,0.0,0.0,0.0,0.0,0.0,0.0,14140.0

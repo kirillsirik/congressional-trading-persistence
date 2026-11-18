@@ -1,0 +1,29 @@
+field,original,dedup,ledger_key,description
+official_records,70028.0,70028.0,t1.official_records,official-source transaction records
+vendor_records,28381.0,28381.0,t1.vendor_records,retained Capitol Trades records
+assembled_records,98409.0,98409.0,t1.parsed_records_total,assembled transaction records
+observed_official_dates,70737.0,70737.0,t1.observed_official_dates,records with observed official public dates
+vendor_proxy_dates,27662.0,27662.0,t1.vendor_one_day_proxies,records using the vendor-date proxy
+matched_records,66158.0,66158.0,t1.matched_transactions,CRSP-matched common-stock transaction records
+matched_vendor_duplicates,4128.0,4128.0,,matched vendor records that duplicate an official transaction (all-lines rule input)
+signals,52018.0,52018.0,t1.unique_signals,distinct public directional signals
+mixed_signals,7512.0,7512.0,t1.mixed_direction_excluded,mixed-direction signals excluded
+nonmixed_signals,44506.0,44506.0,,non-mixed signals
+duplicate_signals_removed,0.0,3352.0,,non-mixed signals removed by the duplicate rule
+signals_after_rule,44506.0,41154.0,,non-mixed signals after the duplicate rule
+signals_complete_h20,42976.0,39724.0,t1.complete_h20_outcomes,signals with complete 20-day outcomes (the estimation sample)
+households_all_signals,330.0,330.0,t1.households,households among the non-mixed signals (after the rule)
+households_h20,325.0,325.0,t1.concentration.n_households,households in the 20-day sample
+securities,2404.0,2404.0,t1.securities,securities among the non-mixed signals (after the rule)
+purchases_h20,20603.0,19152.0,,purchase signals in the 20-day sample
+sales_h20,22373.0,20572.0,,sale signals in the 20-day sample
+official_source_h20,31879.0,31879.0,,official-source signals in the 20-day sample
+vendor_source_h20,11097.0,7845.0,,vendor-source signals in the 20-day sample
+observed_date_h20,31968.0,31968.0,,20-day-sample signals with an observed official public date
+proxy_date_h20,11008.0,7756.0,,20-day-sample signals with the vendor-date proxy
+top_1_share,0.1420560312732688,0.15368542946329675,t1.concentration.top_1_share,largest household share of the 20-day sample
+top_5_share,0.31203462397617276,0.31595509012184075,t1.concentration.top_5_share,top five household share
+top_10_share,0.42453927773641104,0.4203252441848756,t1.concentration.top_10_share,top ten household share
+herfindahl,0.0350768428336112,0.037172622400575464,t1.concentration.herfindahl,Herfindahl index of household shares
+effective_households,28.50883714773166,26.901518790466586,t1.concentration.effective_household_count,Herfindahl-implied effective household count
+blocks_h20,157.0,157.0,,20-trading-day blocks of the 20-day sample's anchors

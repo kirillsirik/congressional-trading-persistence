@@ -1,0 +1,36 @@
+# Author (PI) parse-review attestation — REQUIRED before the canonical run.
+#
+# The canonical release operates under the author-review assumption: existing
+# parser outputs are accepted as correct after author review. This file is the
+# machine-readable record of that review. Software (including any AI agent)
+# MUST NEVER fill in status: APPROVED, the date, or the attestation hash; only
+# the human author may sign. The canonical entry point validates this file and
+# refuses to run while status is PENDING.
+#
+# To sign: review the parser outputs and the source-linked validation
+# materials (see docs/two_clock_lock/CANONICAL_RUNBOOK.md §"Author review"),
+# then set status: APPROVED, fill date (YYYY-MM-DD), and set
+# signature_or_attestation_hash to the SHA-256 of this file's statement block
+# or any personal attestation token you choose to record.
+
+status: APPROVED
+reviewer_id: PI-01
+review_scope:
+  official_electronic_records: true
+  parsed_scanned_records: true
+  critical_fields:
+    - filer
+    - report_identifier
+    - transaction_date
+    - public_date
+    - asset_description
+    - ticker_or_security_identifier
+    - direction
+    - owner
+    - amount_bracket
+statement: >
+  The author reviewed the parser outputs and source-linked validation
+  materials and accepts the resulting parsed records for the canonical
+  historical analysis.
+date: 2026-08-18
+signature_or_attestation_hash: e0d19a47c76f0c1e585b967e43f8d88fb23bbe1cd4b1aa6d9e9ece2f8818f46a

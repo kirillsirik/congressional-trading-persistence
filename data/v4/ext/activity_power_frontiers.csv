@@ -1,0 +1,145 @@
+clock,k,selection,test,test_name,target_power,grid_min_mu_bp,mu_bp_at_target,mu_se_bp,affected_share_at_target,status,max_power_on_grid,n_grid_points,n_panels,size_correct,grid
+T,1,random,T1_blk20_2s,block-clustered mean test,0.8,,,,,> grid,0.072,6,500,True,activity_power
+T,1,random,T2_I1cal_ES,placebo-test tau2,0.8,1600.0,1161.9382848914604,26.637459037120145,0.02637517913767406,interpolated,0.956,6,500,True,activity_power
+T,1,random,T2_I2b_ES,household bootstrap tau2,0.8,,,,,> grid,0.168,6,500,True,activity_power
+T,1,random,T3,best-household test,0.8,400.0,336.0097261731389,8.431812536073213,0.02583286527548547,interpolated,1.0,6,500,True,activity_power
+T,1,random,T4_z2,tail test,0.8,,,,,> grid,0.72,6,500,True,activity_power
+T,1,random,T4_z3,T4_z3,0.8,,,,,> grid,0.784,6,500,True,activity_power
+T,1,most_active,T1_blk20_2s,block-clustered mean test,0.8,,,,,> grid,0.082,6,500,True,activity_power
+T,1,most_active,T2_I1cal_ES,placebo-test tau2,0.8,400.0,332.34306910565476,3.2259073800998856,0.13803596207795868,interpolated,1.0,6,500,True,activity_power
+T,1,most_active,T2_I2b_ES,household bootstrap tau2,0.8,,,,,> grid,0.158,6,500,True,activity_power
+T,1,most_active,T3,best-household test,0.8,200.0,155.00910300873142,1.617378737528156,0.13803596207795868,interpolated,1.0,6,500,True,activity_power
+T,1,most_active,T4_z2,tail test,0.8,800.0,455.3550455408835,20.09109558907565,0.13803596207795868,interpolated,1.0,6,500,True,activity_power
+T,1,most_active,T4_z3,T4_z3,0.8,800.0,647.1901283812607,4.462454138276957,0.13803596207795868,interpolated,1.0,6,500,True,activity_power
+T,1,least_active,T1_blk20_2s,block-clustered mean test,0.8,,,,,> grid,0.068,6,500,True,activity_power
+T,1,least_active,T2_I1cal_ES,placebo-test tau2,0.8,,,,,> grid,0.3,6,500,True,activity_power
+T,1,least_active,T2_I2b_ES,household bootstrap tau2,0.8,,,,,> grid,0.144,6,500,True,activity_power
+T,1,least_active,T3,best-household test,0.8,1600.0,1488.615289236832,22.441905320371834,0.0031652789898091384,interpolated,0.866,6,500,True,activity_power
+T,1,least_active,T4_z2,tail test,0.8,,,,,> grid,0.064,6,500,True,activity_power
+T,1,least_active,T4_z3,T4_z3,0.8,,,,,> grid,0.096,6,500,True,activity_power
+T,2,random,T1_blk20_2s,block-clustered mean test,0.8,,,,,> grid,0.076,6,500,True,activity_power
+T,2,random,T2_I1cal_ES,placebo-test tau2,0.8,800.0,639.4216872351006,11.909685199773573,0.053333501563183346,interpolated,0.996,6,500,True,activity_power
+T,2,random,T2_I2b_ES,household bootstrap tau2,0.8,,,,,> grid,0.404,6,500,True,activity_power
+T,2,random,T3,best-household test,0.8,400.0,219.56002133519382,11.895972295634627,0.04851383998385748,interpolated,1.0,6,500,True,activity_power
+T,2,random,T4_z2,tail test,0.8,1600.0,850.8406071502105,54.99149938850122,0.0534271465309447,interpolated,0.964,6,500,True,activity_power
+T,2,random,T4_z3,T4_z3,0.8,1600.0,1124.818335474897,24.814071140078635,0.05251107525608135,interpolated,0.982,6,500,True,activity_power
+T,2,most_active,T1_blk20_2s,block-clustered mean test,0.8,,,,,> grid,0.234,6,500,True,activity_power
+T,2,most_active,T2_I1cal_ES,placebo-test tau2,0.8,400.0,303.14331330207955,4.051735860065433,0.2556840166994544,interpolated,1.0,6,500,True,activity_power
+T,2,most_active,T2_I2b_ES,household bootstrap tau2,0.8,,,,,> grid,0.396,6,500,True,activity_power
+T,2,most_active,T3,best-household test,0.8,200.0,134.28399433060522,3.2745350056769063,0.2556840166994544,interpolated,1.0,6,500,True,activity_power
+T,2,most_active,T4_z2,tail test,0.8,400.0,309.8076028334874,3.7011414807136913,0.2556840166994544,interpolated,1.0,6,500,True,activity_power
+T,2,most_active,T4_z3,T4_z3,0.8,800.0,526.9223452209183,13.957195968602186,0.2556840166994544,interpolated,1.0,6,500,True,activity_power
+T,2,least_active,T1_blk20_2s,block-clustered mean test,0.8,,,,,> grid,0.092,6,500,True,activity_power
+T,2,least_active,T2_I1cal_ES,placebo-test tau2,0.8,1600.0,1481.0141438862386,23.786807562310138,0.007798188298197461,interpolated,0.866,6,500,True,activity_power
+T,2,least_active,T2_I2b_ES,household bootstrap tau2,0.8,,,,,> grid,0.404,6,500,True,activity_power
+T,2,least_active,T3,best-household test,0.8,1600.0,805.5091573166003,49.13775697359154,0.007798188298197461,interpolated,1.0,6,500,True,activity_power
+T,2,least_active,T4_z2,tail test,0.8,,,,,> grid,0.178,6,500,True,activity_power
+T,2,least_active,T4_z3,T4_z3,0.8,,,,,> grid,0.22,6,500,True,activity_power
+T,4,random,T1_blk20_2s,block-clustered mean test,0.8,,,,,> grid,0.154,6,500,True,activity_power
+T,4,random,T2_I1cal_ES,placebo-test tau2,0.8,400.0,363.1247124998471,6.438227266926443,0.10700921283317776,interpolated,1.0,6,500,True,activity_power
+T,4,random,T2_I2b_ES,household bootstrap tau2,0.8,800.0,427.03065001920544,23.4313113555543,0.1077597706230023,interpolated,1.0,6,500,True,activity_power
+T,4,random,T3,best-household test,0.8,200.0,166.5856045818706,2.01345141868206,0.10254852250744854,interpolated,1.0,6,500,True,activity_power
+T,4,random,T4_z2,tail test,0.8,800.0,552.9181262869184,13.55846611703552,0.1068667341126871,interpolated,1.0,6,500,True,activity_power
+T,4,random,T4_z3,T4_z3,0.8,800.0,673.1045294058433,7.00650850708379,0.10618684575680135,interpolated,1.0,6,500,True,activity_power
+T,4,most_active,T1_blk20_2s,block-clustered mean test,0.8,200.0,172.88020970040182,4.298498100639441,0.39439844700305,interpolated,1.0,6,500,True,activity_power
+T,4,most_active,T2_I1cal_ES,placebo-test tau2,0.8,400.0,318.49710891751647,2.9898661706023018,0.39439844700305,interpolated,1.0,6,500,True,activity_power
+T,4,most_active,T2_I2b_ES,household bootstrap tau2,0.8,400.0,310.95463459602615,3.386751649539574,0.39439844700305,interpolated,1.0,6,500,True,activity_power
+T,4,most_active,T3,best-household test,0.8,100.0,92.32980988005546,1.4209678096076557,0.39439844700305,interpolated,1.0,6,500,True,activity_power
+T,4,most_active,T4_z2,tail test,0.8,400.0,211.78036056746086,11.407087530308981,0.39439844700305,interpolated,1.0,6,500,True,activity_power
+T,4,most_active,T4_z3,T4_z3,0.8,400.0,335.1547977490366,3.6924043451029562,0.39439844700305,interpolated,1.0,6,500,True,activity_power
+T,4,least_active,T1_blk20_2s,block-clustered mean test,0.8,,,,,> grid,0.184,6,500,True,activity_power
+T,4,least_active,T2_I1cal_ES,placebo-test tau2,0.8,1600.0,856.8835160841544,44.79737638362486,0.01756245163764136,interpolated,1.0,6,500,True,activity_power
+T,4,least_active,T2_I2b_ES,household bootstrap tau2,0.8,1600.0,885.536469924556,42.75921606549702,0.01756245163764136,interpolated,0.998,6,500,True,activity_power
+T,4,least_active,T3,best-household test,0.8,400.0,350.8394088161149,3.7213904023592828,0.01756245163764136,interpolated,1.0,6,500,True,activity_power
+T,4,least_active,T4_z2,tail test,0.8,,,,,> grid,0.76,6,500,True,activity_power
+T,4,least_active,T4_z3,T4_z3,0.8,1600.0,1388.9457706038697,9.569815853261549,0.01756245163764136,interpolated,0.96,6,500,True,activity_power
+T,8,random,T1_blk20_2s,block-clustered mean test,0.8,1600.0,1047.5076601399794,131.98361727379154,0.2092166338099086,interpolated,0.844,6,500,True,activity_power
+T,8,random,T2_I1cal_ES,placebo-test tau2,0.8,400.0,270.10606066961475,6.571813575340698,0.21025073231667155,interpolated,1.0,6,500,True,activity_power
+T,8,random,T2_I2b_ES,household bootstrap tau2,0.8,400.0,260.7588195620657,7.207178752239081,0.2101094667368793,interpolated,1.0,6,500,True,activity_power
+T,8,random,T3,best-household test,0.8,200.0,134.43423531777015,3.3380449683619506,0.20799664249679858,interpolated,1.0,6,500,True,activity_power
+T,8,random,T4_z2,tail test,0.8,400.0,319.73039400751344,4.774532614096453,0.210927255888411,interpolated,1.0,6,500,True,activity_power
+T,8,random,T4_z3,T4_z3,0.8,800.0,539.5730088126103,12.894193372711475,0.2114616940205845,interpolated,1.0,6,500,True,activity_power
+T,8,most_active,T1_blk20_2s,block-clustered mean test,0.8,100.0,84.15939112820335,1.5842710959956539,0.568167011877234,interpolated,1.0,6,500,True,activity_power
+T,8,most_active,T2_I1cal_ES,placebo-test tau2,0.8,400.0,316.67515038590403,3.3575576550975623,0.568167011877234,interpolated,1.0,6,500,True,activity_power
+T,8,most_active,T2_I2b_ES,household bootstrap tau2,0.8,400.0,293.7411639567011,4.637128260969975,0.568167011877234,interpolated,1.0,6,500,True,activity_power
+T,8,most_active,T3,best-household test,0.8,100.0,85.36426597878817,0.8911507785524518,0.568167011877234,interpolated,1.0,6,500,True,activity_power
+T,8,most_active,T4_z2,tail test,0.8,200.0,156.59724411750864,2.4243547076232344,0.568167011877234,interpolated,1.0,6,500,True,activity_power
+T,8,most_active,T4_z3,T4_z3,0.8,400.0,289.7650753366372,4.81006825274274,0.568167011877234,interpolated,1.0,6,500,True,activity_power
+T,8,least_active,T1_blk20_2s,block-clustered mean test,0.8,,,,,> grid,0.596,6,500,True,activity_power
+T,8,least_active,T2_I1cal_ES,placebo-test tau2,0.8,800.0,586.4614177708303,9.210421056175878,0.042668853442960994,interpolated,1.0,6,500,True,activity_power
+T,8,least_active,T2_I2b_ES,household bootstrap tau2,0.8,800.0,521.5176391241314,14.414357504478161,0.042668853442960994,interpolated,1.0,6,500,True,activity_power
+T,8,least_active,T3,best-household test,0.8,400.0,234.69209200092513,9.441146759563754,0.042668853442960994,interpolated,1.0,6,500,True,activity_power
+T,8,least_active,T4_z2,tail test,0.8,800.0,710.6109053416731,7.396972530495467,0.042668853442960994,interpolated,1.0,6,500,True,activity_power
+T,8,least_active,T4_z3,T4_z3,0.8,1600.0,1007.936839915899,31.81785595273755,0.042668853442960994,interpolated,1.0,6,500,True,activity_power
+P,1,random,T1_blk20_2s,block-clustered mean test,0.8,,,,,> grid,0.068,6,500,True,activity_power
+P,1,random,T2_I1cal_ES,placebo-test tau2,0.8,1600.0,1084.4178951675951,33.52006800453051,0.033707172278309924,interpolated,0.956,6,500,True,activity_power
+P,1,random,T2_I2b_ES,household bootstrap tau2,0.8,,,,,> grid,0.17,6,500,True,activity_power
+P,1,random,T3,best-household test,0.8,400.0,367.21458904340767,12.152190853202216,0.033526124258281734,interpolated,0.992,6,500,True,activity_power
+P,1,random,T4_z2,tail test,0.8,,,,,> grid,0.754,6,500,True,activity_power
+P,1,random,T4_z3,T4_z3,0.8,1600.0,1565.0987894169027,41.57358655030741,0.03360386678698835,interpolated,0.814,6,500,True,activity_power
+P,1,most_active,T1_blk20_2s,block-clustered mean test,0.8,,,,,> grid,0.066,6,500,True,activity_power
+P,1,most_active,T2_I1cal_ES,placebo-test tau2,0.8,400.0,343.85925629837124,4.5896156241348125,0.1348589669737151,interpolated,1.0,6,500,True,activity_power
+P,1,most_active,T2_I2b_ES,household bootstrap tau2,0.8,,,,,> grid,0.166,6,500,True,activity_power
+P,1,most_active,T3,best-household test,0.8,200.0,168.98627514249344,1.1338551118707556,0.1348589669737151,interpolated,1.0,6,500,True,activity_power
+P,1,most_active,T4_z2,tail test,0.8,800.0,596.3962500493903,8.285320673641253,0.1348589669737151,interpolated,1.0,6,500,True,activity_power
+P,1,most_active,T4_z3,T4_z3,0.8,800.0,683.159392299432,5.1168588646742705,0.1348589669737151,interpolated,1.0,6,500,True,activity_power
+P,1,least_active,T1_blk20_2s,block-clustered mean test,0.8,,,,,> grid,0.062,6,500,True,activity_power
+P,1,least_active,T2_I1cal_ES,placebo-test tau2,0.8,,,,,> grid,0.364,6,500,True,activity_power
+P,1,least_active,T2_I2b_ES,household bootstrap tau2,0.8,,,,,> grid,0.158,6,500,True,activity_power
+P,1,least_active,T3,best-household test,0.8,,,,,> grid,0.674,6,500,True,activity_power
+P,1,least_active,T4_z2,tail test,0.8,,,,,> grid,0.074,6,500,True,activity_power
+P,1,least_active,T4_z3,T4_z3,0.8,,,,,> grid,0.056,6,500,True,activity_power
+P,2,random,T1_blk20_2s,block-clustered mean test,0.8,,,,,> grid,0.078,6,500,True,activity_power
+P,2,random,T2_I1cal_ES,placebo-test tau2,0.8,800.0,591.3259082075269,13.107019923095171,0.06617907763690548,interpolated,1.0,6,500,True,activity_power
+P,2,random,T2_I2b_ES,household bootstrap tau2,0.8,,,,,> grid,0.426,6,500,True,activity_power
+P,2,random,T3,best-household test,0.8,200.0,197.97907908051369,4.362876088148979,0.06762203835822952,interpolated,1.0,6,500,True,activity_power
+P,2,random,T4_z2,tail test,0.8,800.0,752.0250240318823,14.280870610938612,0.0662843547252359,interpolated,0.964,6,500,True,activity_power
+P,2,random,T4_z3,T4_z3,0.8,1600.0,979.678033507301,37.197880694548054,0.06752136788114292,interpolated,0.984,6,500,True,activity_power
+P,2,most_active,T1_blk20_2s,block-clustered mean test,0.8,,,,,> grid,0.18,6,500,True,activity_power
+P,2,most_active,T2_I1cal_ES,placebo-test tau2,0.8,400.0,302.3904454969284,4.580786779838274,0.2682009290807665,interpolated,1.0,6,500,True,activity_power
+P,2,most_active,T2_I2b_ES,household bootstrap tau2,0.8,,,,,> grid,0.444,6,500,True,activity_power
+P,2,most_active,T3,best-household test,0.8,200.0,152.3979120651883,1.8159013327720832,0.2682009290807665,interpolated,1.0,6,500,True,activity_power
+P,2,most_active,T4_z2,tail test,0.8,400.0,336.1583284831071,3.722991106402214,0.2682009290807665,interpolated,1.0,6,500,True,activity_power
+P,2,most_active,T4_z3,T4_z3,0.8,800.0,597.1358027843644,8.227519594808962,0.2682009290807665,interpolated,1.0,6,500,True,activity_power
+P,2,least_active,T1_blk20_2s,block-clustered mean test,0.8,,,,,> grid,0.076,6,500,True,activity_power
+P,2,least_active,T2_I1cal_ES,placebo-test tau2,0.8,1600.0,1530.9929769311352,29.168711328184216,0.008914835088359304,interpolated,0.836,6,500,True,activity_power
+P,2,least_active,T2_I2b_ES,household bootstrap tau2,0.8,,,,,> grid,0.358,6,500,True,activity_power
+P,2,least_active,T3,best-household test,0.8,1600.0,1048.491966457614,28.366740303896176,0.008914835088359304,interpolated,1.0,6,500,True,activity_power
+P,2,least_active,T4_z2,tail test,0.8,,,,,> grid,0.118,6,500,True,activity_power
+P,2,least_active,T4_z3,T4_z3,0.8,,,,,> grid,0.088,6,500,True,activity_power
+P,4,random,T1_blk20_2s,block-clustered mean test,0.8,,,,,> grid,0.174,6,500,True,activity_power
+P,4,random,T2_I1cal_ES,placebo-test tau2,0.8,400.0,348.0224389960014,5.775651803358509,0.1301800934820881,interpolated,1.0,6,500,True,activity_power
+P,4,random,T2_I2b_ES,household bootstrap tau2,0.8,400.0,385.99927314730735,10.168322799207486,0.1295360164112272,interpolated,1.0,6,500,True,activity_power
+P,4,random,T3,best-household test,0.8,200.0,168.28302766579944,1.9992160503663767,0.1336379728787227,interpolated,1.0,6,500,True,activity_power
+P,4,random,T4_z2,tail test,0.8,800.0,506.35038708392267,16.20469107419307,0.1309553815444796,interpolated,0.998,6,500,True,activity_power
+P,4,random,T4_z3,T4_z3,0.8,800.0,667.848541915184,5.209720825181985,0.1328821558861734,interpolated,1.0,6,500,True,activity_power
+P,4,most_active,T1_blk20_2s,block-clustered mean test,0.8,200.0,175.57911067985532,4.871572354201811,0.4141202381663304,interpolated,1.0,6,500,True,activity_power
+P,4,most_active,T2_I1cal_ES,placebo-test tau2,0.8,400.0,274.6562494009816,6.345082833315549,0.4141202381663304,interpolated,1.0,6,500,True,activity_power
+P,4,most_active,T2_I2b_ES,household bootstrap tau2,0.8,400.0,269.1800385264712,6.80754804815496,0.4141202381663304,interpolated,1.0,6,500,True,activity_power
+P,4,most_active,T3,best-household test,0.8,200.0,102.03939240935587,6.029034085090886,0.4141202381663304,interpolated,1.0,6,500,True,activity_power
+P,4,most_active,T4_z2,tail test,0.8,400.0,217.770271025099,10.896209024771338,0.4141202381663304,interpolated,1.0,6,500,True,activity_power
+P,4,most_active,T4_z3,T4_z3,0.8,400.0,350.79574028556317,4.400573467222826,0.4141202381663304,interpolated,1.0,6,500,True,activity_power
+P,4,least_active,T1_blk20_2s,block-clustered mean test,0.8,,,,,> grid,0.17,6,500,True,activity_power
+P,4,least_active,T2_I1cal_ES,placebo-test tau2,0.8,1600.0,871.0810841003961,43.58483609908536,0.020873318662777356,interpolated,1.0,6,500,True,activity_power
+P,4,least_active,T2_I2b_ES,household bootstrap tau2,0.8,1600.0,877.1012317961926,43.91906293139605,0.020873318662777356,interpolated,0.996,6,500,True,activity_power
+P,4,least_active,T3,best-household test,0.8,400.0,361.75916965690203,4.407533102504264,0.020873318662777356,interpolated,1.0,6,500,True,activity_power
+P,4,least_active,T4_z2,tail test,0.8,,,,,> grid,0.792,6,500,True,activity_power
+P,4,least_active,T4_z3,T4_z3,0.8,1600.0,1387.7598138294554,7.96674331927671,0.020873318662777356,interpolated,0.97,6,500,True,activity_power
+P,8,random,T1_blk20_2s,block-clustered mean test,0.8,800.0,536.3136315837718,30.611474710214623,0.26830302671706746,interpolated,0.92,6,500,True,activity_power
+P,8,random,T2_I1cal_ES,placebo-test tau2,0.8,400.0,258.06633190974605,7.5960151319188505,0.2683223677499607,interpolated,1.0,6,500,True,activity_power
+P,8,random,T2_I2b_ES,household bootstrap tau2,0.8,400.0,240.02054391562055,9.16186974929572,0.2682374169352844,interpolated,1.0,6,500,True,activity_power
+P,8,random,T3,best-household test,0.8,200.0,134.89325220315266,3.2235483431778666,0.26735411623802147,interpolated,1.0,6,500,True,activity_power
+P,8,random,T4_z2,tail test,0.8,400.0,300.03958222446926,4.366702215029506,0.26849896480236657,interpolated,1.0,6,500,True,activity_power
+P,8,random,T4_z3,T4_z3,0.8,800.0,497.62828607662584,16.451968324175347,0.26843907404076833,interpolated,1.0,6,500,True,activity_power
+P,8,most_active,T1_blk20_2s,block-clustered mean test,0.8,100.0,78.9304481764157,1.3508752285011276,0.6158506601947511,interpolated,1.0,6,500,True,activity_power
+P,8,most_active,T2_I1cal_ES,placebo-test tau2,0.8,400.0,336.56314231664265,3.8958080119572505,0.6158506601947511,interpolated,1.0,6,500,True,activity_power
+P,8,most_active,T2_I2b_ES,household bootstrap tau2,0.8,400.0,315.98061761118066,4.170423982571686,0.6158506601947511,interpolated,1.0,6,500,True,activity_power
+P,8,most_active,T3,best-household test,0.8,100.0,90.86911050541944,1.1574822632462556,0.6158506601947511,interpolated,1.0,6,500,True,activity_power
+P,8,most_active,T4_z2,tail test,0.8,200.0,158.1635680700739,1.9402896617674592,0.6158506601947511,interpolated,1.0,6,500,True,activity_power
+P,8,most_active,T4_z3,T4_z3,0.8,400.0,305.4870261829286,3.724140893796695,0.6158506601947511,interpolated,1.0,6,500,True,activity_power
+P,8,least_active,T1_blk20_2s,block-clustered mean test,0.8,,,,,> grid,0.606,6,500,True,activity_power
+P,8,least_active,T2_I1cal_ES,placebo-test tau2,0.8,800.0,580.2141041904899,10.303243577803116,0.05633144596123889,interpolated,1.0,6,500,True,activity_power
+P,8,least_active,T2_I2b_ES,household bootstrap tau2,0.8,800.0,524.631469133433,14.464350838641321,0.05633144596123889,interpolated,1.0,6,500,True,activity_power
+P,8,least_active,T3,best-household test,0.8,400.0,288.44612590016806,4.915838671395533,0.05633144596123889,interpolated,1.0,6,500,True,activity_power
+P,8,least_active,T4_z2,tail test,0.8,800.0,700.0051029162375,6.564667027103646,0.05633144596123889,interpolated,1.0,6,500,True,activity_power
+P,8,least_active,T4_z3,T4_z3,0.8,1600.0,914.8583517727575,39.82499323662407,0.05633144596123889,interpolated,1.0,6,500,True,activity_power

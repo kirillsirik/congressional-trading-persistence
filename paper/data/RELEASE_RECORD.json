@@ -1,0 +1,27 @@
+{
+  "authorization": {
+    "attestation_date": "2026-08-18",
+    "attestation_reviewer": "PI-01",
+    "attestation_status": "APPROVED",
+    "branch": "design/top-journal-two-clock",
+    "config_sha256": "f1e3d7bb255d60b27ad72e6ac54b03e8aa4cb6411318fd6c4b1c2d181f6e0d51",
+    "head_sha": "00408b49a69fe6ba60affc3b4aa6659577189363"
+  },
+  "freeze_hash": "cf1894d3b3b77caf412d92254cdfb70a18d48278f07f69278a3ed6452ea7bf4f",
+  "mode": "canonical",
+  "outputs": {
+    "canonical_dir": "<canonical-output-directory>",
+    "n_figures": 3,
+    "n_ledger_keys": 363,
+    "n_tables": 6
+  },
+  "paper": "built main.tex",
+  "sources": {
+    "ct_parquet_sha256": "0e85b72f1eb4819becd49905ad2eca79454d17465582d008e8999c3173bf5a1d",
+    "ct_records": 41538,
+    "ct_snapshot": "20260721_221640",
+    "official_normalized_sha256": "906fb819b65cb2dc8aa2d8e518a49b1bdd5bcc5671301e603612d1472c2c3bcf",
+    "official_state_db_bytes": 130019328,
+    "project_root": "<restricted-project-root>"
+  }
+}

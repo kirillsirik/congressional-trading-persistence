@@ -1,0 +1,11 @@
+field,value,description
+official_records,70028,official-source transaction records
+vendor_records,28381,retained Capitol Trades records
+scan_linked_records,719,retained records linked to unparsed official filings (both dates observed)
+vendor_only_records,27662,retained vendor-only records (vendor-date proxy)
+assembled_records,98409,assembled transaction records
+removed_signals,3352,non-mixed signals removed by the duplicate rule
+removed_signal_records,3610,retained vendor records that belong to a removed signal
+removed_signal_records_scan_linked,0,of which linked to unparsed official filings
+removed_signal_records_vendor_only,3610,of which vendor-only
+vendor_records_after_rule,24771,retained Capitol Trades records not in a removed signal

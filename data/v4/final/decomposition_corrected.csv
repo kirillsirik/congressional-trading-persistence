@@ -1,0 +1,169 @@
+clock,analysis,variant,statistic,value,unit,placebo_p,boot_lo,boot_hi,se_block,n_events,n_households,notes
+T,decomposition_corrected,corrected|no_alpha_omit,tau2_total_raw,985.3009091892903,bp2,,,,,8346,40,raw outcomes
+T,decomposition_corrected,corrected|no_alpha_omit,tau2_base_raw,-2383.518461830813,bp2,,,,,8346,40,raw outcomes
+T,decomposition_corrected,corrected|no_alpha_omit,tau2_adj_raw,1963.3569536140647,bp2,,,,,8346,40,raw outcomes
+T,decomposition_corrected,corrected|no_alpha_omit,tau2_cross_base_adj_raw,-162.3782809729937,bp2,,,,,8346,40,raw outcomes
+T,decomposition_corrected,corrected|no_alpha_omit,tau2_cross_adj_base_raw,1567.840698379032,bp2,,,,,8346,40,raw outcomes
+T,decomposition_corrected,corrected|no_alpha_omit,identity_gap_raw,5.684341886080801e-13,bp2,,,,,8346,40,
+T,decomposition_corrected,corrected|no_alpha_omit,corr_D_AB_raw,0.5254750592696986,correlation,,,,,8346,40,
+T,decomposition_corrected,corrected|no_alpha_omit,tau2_total_wins,2147.195311033781,bp2,,,,,8346,40,each outcome winsorized at the committed cutoffs; D = Y1w - Yxw
+T,decomposition_corrected,corrected|no_alpha_omit,tau2_base_wins,-811.5782795073652,bp2,,,,,8346,40,each outcome winsorized at the committed cutoffs; D = Y1w - Yxw
+T,decomposition_corrected,corrected|no_alpha_omit,tau2_adj_wins,1942.2608082498364,bp2,,,,,8346,40,each outcome winsorized at the committed cutoffs; D = Y1w - Yxw
+T,decomposition_corrected,corrected|no_alpha_omit,tau2_cross_base_adj_wins,-482.9822237933676,bp2,,,,,8346,40,each outcome winsorized at the committed cutoffs; D = Y1w - Yxw
+T,decomposition_corrected,corrected|no_alpha_omit,tau2_cross_adj_base_wins,1499.4950060846768,bp2,,,,,8346,40,each outcome winsorized at the committed cutoffs; D = Y1w - Yxw
+T,decomposition_corrected,corrected|no_alpha_omit,identity_gap_wins,4.547473508864641e-13,bp2,,,,,8346,40,
+T,decomposition_corrected,corrected|no_alpha_omit,corr_D_AB_wins,0.5799692958448682,correlation,,,,,8346,40,
+T,decomposition_corrected,corrected|market_adjusted,tau2_total_raw,985.3009091892903,bp2,,,,,8346,40,raw outcomes
+T,decomposition_corrected,corrected|market_adjusted,tau2_base_raw,-2363.182710003829,bp2,,,,,8346,40,raw outcomes
+T,decomposition_corrected,corrected|market_adjusted,tau2_adj_raw,-748.2886639004483,bp2,,,,,8346,40,raw outcomes
+T,decomposition_corrected,corrected|market_adjusted,tau2_cross_base_adj_raw,1810.9292862986142,bp2,,,,,8346,40,raw outcomes
+T,decomposition_corrected,corrected|market_adjusted,tau2_cross_adj_base_raw,2285.842996794954,bp2,,,,,8346,40,raw outcomes
+T,decomposition_corrected,corrected|market_adjusted,identity_gap_raw,-7.958078640513122e-13,bp2,,,,,8346,40,
+T,decomposition_corrected,corrected|market_adjusted,corr_D_AB_raw,-0.0893919457655639,correlation,,,,,8346,40,
+T,decomposition_corrected,corrected|market_adjusted,tau2_total_wins,2147.195311033781,bp2,,,,,8346,40,each outcome winsorized at the committed cutoffs; D = Y1w - Yxw
+T,decomposition_corrected,corrected|market_adjusted,tau2_base_wins,-197.11291790842736,bp2,,,,,8346,40,each outcome winsorized at the committed cutoffs; D = Y1w - Yxw
+T,decomposition_corrected,corrected|market_adjusted,tau2_adj_wins,-225.38309216496248,bp2,,,,,8346,40,each outcome winsorized at the committed cutoffs; D = Y1w - Yxw
+T,decomposition_corrected,corrected|market_adjusted,tau2_cross_base_adj_wins,837.7599166436072,bp2,,,,,8346,40,each outcome winsorized at the committed cutoffs; D = Y1w - Yxw
+T,decomposition_corrected,corrected|market_adjusted,tau2_cross_adj_base_wins,1731.931404463563,bp2,,,,,8346,40,each outcome winsorized at the committed cutoffs; D = Y1w - Yxw
+T,decomposition_corrected,corrected|market_adjusted,identity_gap_wins,4.547473508864641e-13,bp2,,,,,8346,40,
+T,decomposition_corrected,corrected|market_adjusted,corr_D_AB_wins,-0.0218450096284298,correlation,,,,,8346,40,
+T,decomposition_corrected,common_cohort|no_alpha_omit,tau2_total_raw,947.270658960634,bp2,,,,,8259,38,raw outcomes
+T,decomposition_corrected,common_cohort|no_alpha_omit,tau2_base_raw,-2417.6056720040706,bp2,,,,,8259,38,raw outcomes
+T,decomposition_corrected,common_cohort|no_alpha_omit,tau2_adj_raw,1983.8659651135913,bp2,,,,,8259,38,raw outcomes
+T,decomposition_corrected,common_cohort|no_alpha_omit,tau2_cross_base_adj_raw,-180.0101648843489,bp2,,,,,8259,38,raw outcomes
+T,decomposition_corrected,common_cohort|no_alpha_omit,tau2_cross_adj_base_raw,1561.0205307354631,bp2,,,,,8259,38,raw outcomes
+T,decomposition_corrected,common_cohort|no_alpha_omit,identity_gap_raw,-9.094947017729282e-13,bp2,,,,,8259,38,
+T,decomposition_corrected,common_cohort|no_alpha_omit,corr_D_AB_raw,0.528289739242725,correlation,,,,,8259,38,
+T,decomposition_corrected,common_cohort|no_alpha_omit,tau2_total_wins,2117.005891817203,bp2,,,,,8259,38,each outcome winsorized at the committed cutoffs; D = Y1w - Yxw
+T,decomposition_corrected,common_cohort|no_alpha_omit,tau2_base_wins,-839.4620808155663,bp2,,,,,8259,38,each outcome winsorized at the committed cutoffs; D = Y1w - Yxw
+T,decomposition_corrected,common_cohort|no_alpha_omit,tau2_adj_wins,1963.9809866991911,bp2,,,,,8259,38,each outcome winsorized at the committed cutoffs; D = Y1w - Yxw
+T,decomposition_corrected,common_cohort|no_alpha_omit,tau2_cross_base_adj_wins,-493.3886047780988,bp2,,,,,8259,38,each outcome winsorized at the committed cutoffs; D = Y1w - Yxw
+T,decomposition_corrected,common_cohort|no_alpha_omit,tau2_cross_adj_base_wins,1485.8755907116783,bp2,,,,,8259,38,each outcome winsorized at the committed cutoffs; D = Y1w - Yxw
+T,decomposition_corrected,common_cohort|no_alpha_omit,identity_gap_wins,-1.3642420526593924e-12,bp2,,,,,8259,38,
+T,decomposition_corrected,common_cohort|no_alpha_omit,corr_D_AB_wins,0.5832278925535506,correlation,,,,,8259,38,
+T,decomposition_corrected,common_cohort|market_adjusted,tau2_total_raw,947.270658960634,bp2,,,,,8259,38,raw outcomes
+T,decomposition_corrected,common_cohort|market_adjusted,tau2_base_raw,-2650.886635625882,bp2,,,,,8259,38,raw outcomes
+T,decomposition_corrected,common_cohort|market_adjusted,tau2_adj_raw,-814.7677781046767,bp2,,,,,8259,38,raw outcomes
+T,decomposition_corrected,common_cohort|market_adjusted,tau2_cross_base_adj_raw,2025.5758181823387,bp2,,,,,8259,38,raw outcomes
+T,decomposition_corrected,common_cohort|market_adjusted,tau2_cross_adj_base_raw,2387.3492545088534,bp2,,,,,8259,38,raw outcomes
+T,decomposition_corrected,common_cohort|market_adjusted,identity_gap_raw,5.684341886080801e-13,bp2,,,,,8259,38,
+T,decomposition_corrected,common_cohort|market_adjusted,corr_D_AB_raw,-0.10182997332270269,correlation,,,,,8259,38,
+T,decomposition_corrected,common_cohort|market_adjusted,tau2_total_wins,2117.005891817203,bp2,,,,,8259,38,each outcome winsorized at the committed cutoffs; D = Y1w - Yxw
+T,decomposition_corrected,common_cohort|market_adjusted,tau2_base_wins,-357.30941338908735,bp2,,,,,8259,38,each outcome winsorized at the committed cutoffs; D = Y1w - Yxw
+T,decomposition_corrected,common_cohort|market_adjusted,tau2_adj_wins,-270.65833505321575,bp2,,,,,8259,38,each outcome winsorized at the committed cutoffs; D = Y1w - Yxw
+T,decomposition_corrected,common_cohort|market_adjusted,tau2_cross_base_adj_wins,958.3845279628122,bp2,,,,,8259,38,each outcome winsorized at the committed cutoffs; D = Y1w - Yxw
+T,decomposition_corrected,common_cohort|market_adjusted,tau2_cross_adj_base_wins,1786.5891122966955,bp2,,,,,8259,38,each outcome winsorized at the committed cutoffs; D = Y1w - Yxw
+T,decomposition_corrected,common_cohort|market_adjusted,identity_gap_wins,-1.3642420526593924e-12,bp2,,,,,8259,38,
+T,decomposition_corrected,common_cohort|market_adjusted,corr_D_AB_wins,-0.032926486314389394,correlation,,,,,8259,38,
+T,decomposition_corrected,baseline|no_alpha_omit,tau2_total_raw,1427.658606849599,bp2,,,,,7964,38,raw outcomes
+T,decomposition_corrected,baseline|no_alpha_omit,tau2_base_raw,-2069.3545620372674,bp2,,,,,7964,38,raw outcomes
+T,decomposition_corrected,baseline|no_alpha_omit,tau2_adj_raw,1916.3031028399766,bp2,,,,,7964,38,raw outcomes
+T,decomposition_corrected,baseline|no_alpha_omit,tau2_cross_base_adj_raw,-256.9217769455917,bp2,,,,,7964,38,raw outcomes
+T,decomposition_corrected,baseline|no_alpha_omit,tau2_cross_adj_base_raw,1837.6318429924845,bp2,,,,,7964,38,raw outcomes
+T,decomposition_corrected,baseline|no_alpha_omit,identity_gap_raw,-2.9558577807620168e-12,bp2,,,,,7964,38,
+T,decomposition_corrected,baseline|no_alpha_omit,corr_D_AB_raw,0.5297779352374837,correlation,,,,,7964,38,
+T,decomposition_corrected,baseline|no_alpha_omit,tau2_total_wins,2263.582638487745,bp2,,,,,7964,38,each outcome winsorized at the committed cutoffs; D = Y1w - Yxw
+T,decomposition_corrected,baseline|no_alpha_omit,tau2_base_wins,-828.8193092685003,bp2,,,,,7964,38,each outcome winsorized at the committed cutoffs; D = Y1w - Yxw
+T,decomposition_corrected,baseline|no_alpha_omit,tau2_adj_wins,1877.3478288672093,bp2,,,,,7964,38,each outcome winsorized at the committed cutoffs; D = Y1w - Yxw
+T,decomposition_corrected,baseline|no_alpha_omit,tau2_cross_base_adj_wins,-642.4540909484485,bp2,,,,,7964,38,each outcome winsorized at the committed cutoffs; D = Y1w - Yxw
+T,decomposition_corrected,baseline|no_alpha_omit,tau2_cross_adj_base_wins,1857.5082098374855,bp2,,,,,7964,38,each outcome winsorized at the committed cutoffs; D = Y1w - Yxw
+T,decomposition_corrected,baseline|no_alpha_omit,identity_gap_wins,-9.094947017729282e-13,bp2,,,,,7964,38,
+T,decomposition_corrected,baseline|no_alpha_omit,corr_D_AB_wins,0.5813625928623091,correlation,,,,,7964,38,
+T,decomposition_corrected,baseline|market_adjusted,tau2_total_raw,1427.658606849599,bp2,,,,,7964,38,raw outcomes
+T,decomposition_corrected,baseline|market_adjusted,tau2_base_raw,-2828.922222050628,bp2,,,,,7964,38,raw outcomes
+T,decomposition_corrected,baseline|market_adjusted,tau2_adj_raw,-607.4188983724623,bp2,,,,,7964,38,raw outcomes
+T,decomposition_corrected,baseline|market_adjusted,tau2_cross_base_adj_raw,2240.4679973838697,bp2,,,,,7964,38,raw outcomes
+T,decomposition_corrected,baseline|market_adjusted,tau2_cross_adj_base_raw,2623.531729888818,bp2,,,,,7964,38,raw outcomes
+T,decomposition_corrected,baseline|market_adjusted,identity_gap_raw,1.8189894035458565e-12,bp2,,,,,7964,38,
+T,decomposition_corrected,baseline|market_adjusted,corr_D_AB_raw,-0.07079174700289784,correlation,,,,,7964,38,
+T,decomposition_corrected,baseline|market_adjusted,tau2_total_wins,2263.582638487745,bp2,,,,,7964,38,each outcome winsorized at the committed cutoffs; D = Y1w - Yxw
+T,decomposition_corrected,baseline|market_adjusted,tau2_base_wins,-615.2682362514986,bp2,,,,,7964,38,each outcome winsorized at the committed cutoffs; D = Y1w - Yxw
+T,decomposition_corrected,baseline|market_adjusted,tau2_adj_wins,-135.12782736029152,bp2,,,,,7964,38,each outcome winsorized at the committed cutoffs; D = Y1w - Yxw
+T,decomposition_corrected,baseline|market_adjusted,tau2_cross_base_adj_wins,876.1208653945869,bp2,,,,,7964,38,each outcome winsorized at the committed cutoffs; D = Y1w - Yxw
+T,decomposition_corrected,baseline|market_adjusted,tau2_cross_adj_base_wins,2137.8578367049477,bp2,,,,,7964,38,each outcome winsorized at the committed cutoffs; D = Y1w - Yxw
+T,decomposition_corrected,baseline|market_adjusted,identity_gap_wins,4.547473508864641e-13,bp2,,,,,7964,38,
+T,decomposition_corrected,baseline|market_adjusted,corr_D_AB_wins,-0.007824632296791149,correlation,,,,,7964,38,
+P,decomposition_corrected,corrected|no_alpha_omit,tau2_total_raw,9530.52469248703,bp2,,,,,6352,32,raw outcomes
+P,decomposition_corrected,corrected|no_alpha_omit,tau2_base_raw,7085.266627554019,bp2,,,,,6352,32,raw outcomes
+P,decomposition_corrected,corrected|no_alpha_omit,tau2_adj_raw,1985.2249660358302,bp2,,,,,6352,32,raw outcomes
+P,decomposition_corrected,corrected|no_alpha_omit,tau2_cross_base_adj_raw,1301.0925215485895,bp2,,,,,6352,32,raw outcomes
+P,decomposition_corrected,corrected|no_alpha_omit,tau2_cross_adj_base_raw,-841.0594226514097,bp2,,,,,6352,32,raw outcomes
+P,decomposition_corrected,corrected|no_alpha_omit,identity_gap_raw,0.0,bp2,,,,,6352,32,
+P,decomposition_corrected,corrected|no_alpha_omit,corr_D_AB_raw,0.5037457050527483,correlation,,,,,6352,32,
+P,decomposition_corrected,corrected|no_alpha_omit,tau2_total_wins,2569.287441528856,bp2,,,,,6352,32,each outcome winsorized at the committed cutoffs; D = Y1w - Yxw
+P,decomposition_corrected,corrected|no_alpha_omit,tau2_base_wins,2601.3916316678715,bp2,,,,,6352,32,each outcome winsorized at the committed cutoffs; D = Y1w - Yxw
+P,decomposition_corrected,corrected|no_alpha_omit,tau2_adj_wins,1856.1491380133941,bp2,,,,,6352,32,each outcome winsorized at the committed cutoffs; D = Y1w - Yxw
+P,decomposition_corrected,corrected|no_alpha_omit,tau2_cross_base_adj_wins,-568.3723376608318,bp2,,,,,6352,32,each outcome winsorized at the committed cutoffs; D = Y1w - Yxw
+P,decomposition_corrected,corrected|no_alpha_omit,tau2_cross_adj_base_wins,-1319.880990491578,bp2,,,,,6352,32,each outcome winsorized at the committed cutoffs; D = Y1w - Yxw
+P,decomposition_corrected,corrected|no_alpha_omit,identity_gap_wins,4.547473508864641e-13,bp2,,,,,6352,32,
+P,decomposition_corrected,corrected|no_alpha_omit,corr_D_AB_wins,0.6307773599057858,correlation,,,,,6352,32,
+P,decomposition_corrected,corrected|market_adjusted,tau2_total_raw,9530.52469248703,bp2,,,,,6352,32,raw outcomes
+P,decomposition_corrected,corrected|market_adjusted,tau2_base_raw,3496.1470314116373,bp2,,,,,6352,32,raw outcomes
+P,decomposition_corrected,corrected|market_adjusted,tau2_adj_raw,4958.408203853809,bp2,,,,,6352,32,raw outcomes
+P,decomposition_corrected,corrected|market_adjusted,tau2_cross_base_adj_raw,-931.0319173045427,bp2,,,,,6352,32,raw outcomes
+P,decomposition_corrected,corrected|market_adjusted,tau2_cross_adj_base_raw,2007.0013745261258,bp2,,,,,6352,32,raw outcomes
+P,decomposition_corrected,corrected|market_adjusted,identity_gap_raw,0.0,bp2,,,,,6352,32,
+P,decomposition_corrected,corrected|market_adjusted,corr_D_AB_raw,0.4583829602800158,correlation,,,,,6352,32,
+P,decomposition_corrected,corrected|market_adjusted,tau2_total_wins,2569.287441528856,bp2,,,,,6352,32,each outcome winsorized at the committed cutoffs; D = Y1w - Yxw
+P,decomposition_corrected,corrected|market_adjusted,tau2_base_wins,864.5876807518782,bp2,,,,,6352,32,each outcome winsorized at the committed cutoffs; D = Y1w - Yxw
+P,decomposition_corrected,corrected|market_adjusted,tau2_adj_wins,3133.9087820656596,bp2,,,,,6352,32,each outcome winsorized at the committed cutoffs; D = Y1w - Yxw
+P,decomposition_corrected,corrected|market_adjusted,tau2_cross_base_adj_wins,-1847.4607151602984,bp2,,,,,6352,32,each outcome winsorized at the committed cutoffs; D = Y1w - Yxw
+P,decomposition_corrected,corrected|market_adjusted,tau2_cross_adj_base_wins,418.2516938716161,bp2,,,,,6352,32,each outcome winsorized at the committed cutoffs; D = Y1w - Yxw
+P,decomposition_corrected,corrected|market_adjusted,identity_gap_wins,9.094947017729282e-13,bp2,,,,,6352,32,
+P,decomposition_corrected,corrected|market_adjusted,corr_D_AB_wins,0.38175937883485406,correlation,,,,,6352,32,
+P,decomposition_corrected,common_cohort|no_alpha_omit,tau2_total_raw,9536.522352015103,bp2,,,,,6283,30,raw outcomes
+P,decomposition_corrected,common_cohort|no_alpha_omit,tau2_base_raw,7122.092924126413,bp2,,,,,6283,30,raw outcomes
+P,decomposition_corrected,common_cohort|no_alpha_omit,tau2_adj_raw,2008.9995272011463,bp2,,,,,6283,30,raw outcomes
+P,decomposition_corrected,common_cohort|no_alpha_omit,tau2_cross_base_adj_raw,1275.2102233982193,bp2,,,,,6283,30,raw outcomes
+P,decomposition_corrected,common_cohort|no_alpha_omit,tau2_cross_adj_base_raw,-869.7803227106762,bp2,,,,,6283,30,raw outcomes
+P,decomposition_corrected,common_cohort|no_alpha_omit,identity_gap_raw,1.8189894035458565e-12,bp2,,,,,6283,30,
+P,decomposition_corrected,common_cohort|no_alpha_omit,corr_D_AB_raw,0.51017163611896,correlation,,,,,6283,30,
+P,decomposition_corrected,common_cohort|no_alpha_omit,tau2_total_wins,2564.4060012491555,bp2,,,,,6283,30,each outcome winsorized at the committed cutoffs; D = Y1w - Yxw
+P,decomposition_corrected,common_cohort|no_alpha_omit,tau2_base_wins,2617.7508757577184,bp2,,,,,6283,30,each outcome winsorized at the committed cutoffs; D = Y1w - Yxw
+P,decomposition_corrected,common_cohort|no_alpha_omit,tau2_adj_wins,1880.9529793263175,bp2,,,,,6283,30,each outcome winsorized at the committed cutoffs; D = Y1w - Yxw
+P,decomposition_corrected,common_cohort|no_alpha_omit,tau2_cross_base_adj_wins,-583.9319004998838,bp2,,,,,6283,30,each outcome winsorized at the committed cutoffs; D = Y1w - Yxw
+P,decomposition_corrected,common_cohort|no_alpha_omit,tau2_cross_adj_base_wins,-1350.3659533349967,bp2,,,,,6283,30,each outcome winsorized at the committed cutoffs; D = Y1w - Yxw
+P,decomposition_corrected,common_cohort|no_alpha_omit,identity_gap_wins,0.0,bp2,,,,,6283,30,
+P,decomposition_corrected,common_cohort|no_alpha_omit,corr_D_AB_wins,0.6383643449879741,correlation,,,,,6283,30,
+P,decomposition_corrected,common_cohort|market_adjusted,tau2_total_raw,9536.522352015103,bp2,,,,,6283,30,raw outcomes
+P,decomposition_corrected,common_cohort|market_adjusted,tau2_base_raw,3389.125006908765,bp2,,,,,6283,30,raw outcomes
+P,decomposition_corrected,common_cohort|market_adjusted,tau2_adj_raw,5051.177914084224,bp2,,,,,6283,30,raw outcomes
+P,decomposition_corrected,common_cohort|market_adjusted,tau2_cross_base_adj_raw,-854.3687002290973,bp2,,,,,6283,30,raw outcomes
+P,decomposition_corrected,common_cohort|market_adjusted,tau2_cross_adj_base_raw,1950.5881312512108,bp2,,,,,6283,30,raw outcomes
+P,decomposition_corrected,common_cohort|market_adjusted,identity_gap_raw,1.8189894035458565e-12,bp2,,,,,6283,30,
+P,decomposition_corrected,common_cohort|market_adjusted,corr_D_AB_raw,0.4659425164856823,correlation,,,,,6283,30,
+P,decomposition_corrected,common_cohort|market_adjusted,tau2_total_wins,2564.4060012491555,bp2,,,,,6283,30,each outcome winsorized at the committed cutoffs; D = Y1w - Yxw
+P,decomposition_corrected,common_cohort|market_adjusted,tau2_base_wins,823.5157063836626,bp2,,,,,6283,30,each outcome winsorized at the committed cutoffs; D = Y1w - Yxw
+P,decomposition_corrected,common_cohort|market_adjusted,tau2_adj_wins,3208.5737757063803,bp2,,,,,6283,30,each outcome winsorized at the committed cutoffs; D = Y1w - Yxw
+P,decomposition_corrected,common_cohort|market_adjusted,tau2_cross_base_adj_wins,-1828.2921453299032,bp2,,,,,6283,30,each outcome winsorized at the committed cutoffs; D = Y1w - Yxw
+P,decomposition_corrected,common_cohort|market_adjusted,tau2_cross_adj_base_wins,360.60866448901686,bp2,,,,,6283,30,each outcome winsorized at the committed cutoffs; D = Y1w - Yxw
+P,decomposition_corrected,common_cohort|market_adjusted,identity_gap_wins,-1.3642420526593924e-12,bp2,,,,,6283,30,
+P,decomposition_corrected,common_cohort|market_adjusted,corr_D_AB_wins,0.39145169038241867,correlation,,,,,6283,30,
+P,decomposition_corrected,baseline|no_alpha_omit,tau2_total_raw,9253.371618100737,bp2,,,,,6095,30,raw outcomes
+P,decomposition_corrected,baseline|no_alpha_omit,tau2_base_raw,6887.674451501695,bp2,,,,,6095,30,raw outcomes
+P,decomposition_corrected,baseline|no_alpha_omit,tau2_adj_raw,2187.518459212518,bp2,,,,,6095,30,raw outcomes
+P,decomposition_corrected,baseline|no_alpha_omit,tau2_cross_base_adj_raw,1092.9612623588432,bp2,,,,,6095,30,raw outcomes
+P,decomposition_corrected,baseline|no_alpha_omit,tau2_cross_adj_base_raw,-914.7825549723176,bp2,,,,,6095,30,raw outcomes
+P,decomposition_corrected,baseline|no_alpha_omit,identity_gap_raw,-1.8189894035458565e-12,bp2,,,,,6095,30,
+P,decomposition_corrected,baseline|no_alpha_omit,corr_D_AB_raw,0.5600157410673423,correlation,,,,,6095,30,
+P,decomposition_corrected,baseline|no_alpha_omit,tau2_total_wins,1970.7334263164355,bp2,,,,,6095,30,each outcome winsorized at the committed cutoffs; D = Y1w - Yxw
+P,decomposition_corrected,baseline|no_alpha_omit,tau2_base_wins,2175.247235306802,bp2,,,,,6095,30,each outcome winsorized at the committed cutoffs; D = Y1w - Yxw
+P,decomposition_corrected,baseline|no_alpha_omit,tau2_adj_wins,1957.5194900986694,bp2,,,,,6095,30,each outcome winsorized at the committed cutoffs; D = Y1w - Yxw
+P,decomposition_corrected,baseline|no_alpha_omit,tau2_cross_base_adj_wins,-736.1270770520911,bp2,,,,,6095,30,each outcome winsorized at the committed cutoffs; D = Y1w - Yxw
+P,decomposition_corrected,baseline|no_alpha_omit,tau2_cross_adj_base_wins,-1425.9062220369447,bp2,,,,,6095,30,each outcome winsorized at the committed cutoffs; D = Y1w - Yxw
+P,decomposition_corrected,baseline|no_alpha_omit,identity_gap_wins,-2.2737367544323206e-13,bp2,,,,,6095,30,
+P,decomposition_corrected,baseline|no_alpha_omit,corr_D_AB_wins,0.6812917899996471,correlation,,,,,6095,30,
+P,decomposition_corrected,baseline|market_adjusted,tau2_total_raw,9253.371618100737,bp2,,,,,6095,30,raw outcomes
+P,decomposition_corrected,baseline|market_adjusted,tau2_base_raw,3321.77749525002,bp2,,,,,6095,30,raw outcomes
+P,decomposition_corrected,baseline|market_adjusted,tau2_adj_raw,4857.452945784073,bp2,,,,,6095,30,raw outcomes
+P,decomposition_corrected,baseline|market_adjusted,tau2_cross_base_adj_raw,-948.5931337763964,bp2,,,,,6095,30,raw outcomes
+P,decomposition_corrected,baseline|market_adjusted,tau2_cross_adj_base_raw,2022.7343108430427,bp2,,,,,6095,30,raw outcomes
+P,decomposition_corrected,baseline|market_adjusted,identity_gap_raw,-3.637978807091713e-12,bp2,,,,,6095,30,
+P,decomposition_corrected,baseline|market_adjusted,corr_D_AB_raw,0.4240392010710577,correlation,,,,,6095,30,
+P,decomposition_corrected,baseline|market_adjusted,tau2_total_wins,1970.7334263164355,bp2,,,,,6095,30,each outcome winsorized at the committed cutoffs; D = Y1w - Yxw
+P,decomposition_corrected,baseline|market_adjusted,tau2_base_wins,741.3121697200451,bp2,,,,,6095,30,each outcome winsorized at the committed cutoffs; D = Y1w - Yxw
+P,decomposition_corrected,baseline|market_adjusted,tau2_adj_wins,2990.0062563134848,bp2,,,,,6095,30,each outcome winsorized at the committed cutoffs; D = Y1w - Yxw
+P,decomposition_corrected,baseline|market_adjusted,tau2_cross_base_adj_wins,-1999.8007847391716,bp2,,,,,6095,30,each outcome winsorized at the committed cutoffs; D = Y1w - Yxw
+P,decomposition_corrected,baseline|market_adjusted,tau2_cross_adj_base_wins,239.21578502207709,bp2,,,,,6095,30,each outcome winsorized at the committed cutoffs; D = Y1w - Yxw
+P,decomposition_corrected,baseline|market_adjusted,identity_gap_wins,2.2737367544323206e-13,bp2,,,,,6095,30,
+P,decomposition_corrected,baseline|market_adjusted,corr_D_AB_wins,0.3442103476915338,correlation,,,,,6095,30,

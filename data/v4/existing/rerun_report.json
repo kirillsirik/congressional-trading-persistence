@@ -1,0 +1,8 @@
+{
+  "n_in": 44506,
+  "n_dropped": 3352,
+  "n_out": 41154,
+  "n_dedup_official_only": 32659,
+  "n_dedup_excl_two_vendor_households": 33356,
+  "max_abs_reproduction_diff_decimal": 1.0711917464156784e-16
+}

@@ -1,0 +1,16 @@
+# Official-source pipeline configuration.
+# data_root defaults to <DROPBOX_PROJECT_ROOT>/data/official when unset;
+# override with OFFICIAL_DATA_ROOT or --data-root.
+
+start_year: 2012
+end_year: auto            # never hardcode a terminal year
+request_interval_seconds: 2.0
+max_retries: 4
+ocr_enabled: false        # scanned filings quarantine to review until OCR validated
+confidence_review_threshold: 0.8
+
+# Senate eFD collection requires the statutory-use acknowledgment (see the
+# Senate eFD terms of use). Set the environment variable
+# SENATE_EFD_USAGE_ACKNOWLEDGED=true (preferred, per-operator) or flip this
+# after documenting the permitted use.
+senate_usage_acknowledged: false

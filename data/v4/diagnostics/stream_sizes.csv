@@ -1,0 +1,13 @@
+dup_filter,clock,direction,n_events
+none,P,purchase,20945
+none,P,sale,22748
+none,T,purchase,28232
+none,T,sale,28436
+drop_dup_primary,P,purchase,19448
+drop_dup_primary,P,sale,20893
+drop_dup_primary,T,purchase,28232
+drop_dup_primary,T,sale,28436
+official_only,P,purchase,15380
+official_only,P,sale,16809
+official_only,T,purchase,20664
+official_only,T,sale,21121

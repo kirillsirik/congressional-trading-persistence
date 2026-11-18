@@ -1,0 +1,26 @@
+stage,unit,baseline,corrected,difference,note
+"matched, amendment-deduplicated, directional lines with entry dates (timed)",line,66158.0,67372,1214.0,"repaired: 1607 eligible unresolved lines, 1322 resolved by the ticker-and-date rule, 108 dated beyond the return calendar, 1214 entering"
+signals after the collapse (incl. mixed),signal,52018.0,52895,877.0,877 new signal keys; 167 repaired lots join existing keys
+mixed-direction signals excluded,signal,7512.0,7670,158.0,mixed on the union: released signals newly mixed plus new signals mixed on creation
+non-mixed signals without an entry session,signal,813.0,821,8.0,
+vendor duplicate signals excluded (all lines duplicate an official transaction),signal,3352.0,3355,3.0,audit re-run on the union: repaired official lines reveal further vendor copies
+de-duplicated non-mixed signals with an entry session (universe),signal,40341.0,41049,708.0,
+complete 20-day market-adjusted outcome on the record,signal,39724.0,40428,704.0,
+incomplete: end_of_sample_truncation,signal,469.0,472,3.0,
+incomplete: missing_return_days,signal,54.0,54,0.0,
+incomplete: no_security_returns,signal,94.0,95,1.0,
+endpoint-censored windows completed on the July 2026 slice,signal,,472,,
+delisting windows verified and valued (terminal payoff once),signal,,53,,53 delisted windows without an outcome; verified 53
+residual missing outcomes after completion,signal,,96,,
+signals in the primary corrected spread,signal,39724.0,40953,1229.0,
+households in the spread,household,325.0,333,8.0,
+transaction-clock purchases in periods A and B (de-duplicated),purchase,24224.0,24809,585.0,
+transaction-clock purchases with a factor outcome,purchase,24010.0,24585,575.0,
+transaction-clock households with purchases in both periods,household,62.0,64,2.0,
+transaction-clock persistence households (rule R1),household,38.0,40,2.0,common cohort 38
+transaction-clock persistence-sample purchases,purchase,7964.0,8346,382.0,common cohort 8259
+public-clock purchases in periods A and B (de-duplicated),purchase,17220.0,17593,373.0,
+public-clock purchases with a factor outcome,purchase,17093.0,17463,370.0,
+public-clock households with purchases in both periods,household,58.0,58,0.0,
+public-clock persistence households (rule R1),household,30.0,32,2.0,common cohort 30
+public-clock persistence-sample purchases,purchase,6095.0,6352,257.0,common cohort 6283

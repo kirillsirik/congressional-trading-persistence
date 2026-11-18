@@ -1,0 +1,20 @@
+\small\setlength{\tabcolsep}{5pt}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lS[table-format=2.0]S[table-format=-4.0]S[table-format=-4.0]S[table-format=-4.0]S[table-format=4.0]@{}}
+\toprule
+Specification & \multicolumn{1}{c}{Households} & \multicolumn{1}{c}{Factor-only} & \multicolumn{1}{c}{Event-study} & \multicolumn{1}{c}{\shortstack{Benchmark\\gap}} & \multicolumn{1}{c}{\shortstack{Charge\\covariance}} \\
+\midrule
+\multicolumn{6}{l}{\textit{Trade date}} \\
+Baseline & 38 & -829 & 2,264 & 3,092 & 1,877 \\
+Unwinsorized & 38 & -2,069 & 1,428 & 3,497 & 1,916 \\
+Same-stock exclusion & 37 & -1,232 & 1,874 & 3,107 & 1,585 \\
+Calendar exclusion & 27 & -1,674 & -709 & 965 & 1,418 \\
+Extended sample & 40 & -812 & 2,147 & 2,959 & 1,942 \\
+\addlinespace
+\multicolumn{6}{l}{\textit{Disclosure date}} \\
+Baseline & 30 & 2,175 & 1,971 & -205 & 1,958 \\
+Unwinsorized & 30 & 6,888 & 9,253 & 2,366 & 2,188 \\
+Same-stock exclusion & 30 & 2,621 & 2,843 & 222 & 1,936 \\
+Calendar exclusion & 23 & 2,762 & 3,544 & 782 & 1,498 \\
+Extended sample & 32 & 2,601 & 2,569 & -32 & 1,856 \\
+\bottomrule
+\end{tabular*}

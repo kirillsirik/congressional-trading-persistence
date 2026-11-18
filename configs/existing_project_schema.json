@@ -1,0 +1,272 @@
+{
+  "schema_name": "trading_on_disclosure_canonical_trade_record",
+  "schema_version": "1.0",
+  "source_of_truth": [
+    "docs/interfaces.md",
+    "src/congressional_trading/scraping/schemas.py",
+    "src/congressional_trading/data/clean_capitol_trades.py",
+    "src/congressional_trading/config.py",
+    "src/congressional_trading/data/clean_capitol_trades.py canonical_cols+extra_cols (authoritative)"
+  ],
+  "compatibility_columns": {
+    "politician_name": {
+      "dtype": "str",
+      "nullable": false
+    },
+    "legislator_id": {
+      "dtype": "str",
+      "nullable": false
+    },
+    "party": {
+      "dtype": "str",
+      "nullable": true,
+      "allowed": [
+        "Democrat",
+        "Republican",
+        "Other"
+      ]
+    },
+    "chamber": {
+      "dtype": "str",
+      "nullable": false,
+      "allowed": [
+        "House",
+        "Senate"
+      ]
+    },
+    "state": {
+      "dtype": "str",
+      "nullable": true
+    },
+    "issuer_name": {
+      "dtype": "str",
+      "nullable": false
+    },
+    "ticker_raw": {
+      "dtype": "str",
+      "nullable": true
+    },
+    "ticker_clean": {
+      "dtype": "str",
+      "nullable": true
+    },
+    "trade_date": {
+      "dtype": "date",
+      "nullable": false
+    },
+    "published_date": {
+      "dtype": "date",
+      "nullable": false
+    },
+    "filing_date": {
+      "dtype": "date",
+      "nullable": true
+    },
+    "disclosure_lag_days": {
+      "dtype": "int",
+      "nullable": true
+    },
+    "transaction_type_raw": {
+      "dtype": "str",
+      "nullable": false
+    },
+    "transaction_type_clean": {
+      "dtype": "str",
+      "nullable": false,
+      "allowed": [
+        "buy",
+        "sell",
+        "exchange",
+        "receive",
+        "other"
+      ]
+    },
+    "buy_indicator": {
+      "dtype": "int01",
+      "nullable": false
+    },
+    "owner_raw": {
+      "dtype": "str",
+      "nullable": true
+    },
+    "owner_clean": {
+      "dtype": "str",
+      "nullable": false,
+      "allowed": [
+        "self",
+        "spouse",
+        "joint",
+        "child",
+        "undisclosed"
+      ]
+    },
+    "size_raw": {
+      "dtype": "str",
+      "nullable": true
+    },
+    "size_lower": {
+      "dtype": "float",
+      "nullable": true
+    },
+    "size_upper": {
+      "dtype": "float",
+      "nullable": true
+    },
+    "size_midpoint_geometric": {
+      "dtype": "float",
+      "nullable": true
+    },
+    "size_midpoint_arithmetic": {
+      "dtype": "float",
+      "nullable": true
+    },
+    "size_top_coded_flag": {
+      "dtype": "int01",
+      "nullable": false
+    },
+    "price_raw": {
+      "dtype": "str",
+      "nullable": true
+    },
+    "price_numeric": {
+      "dtype": "float",
+      "nullable": true
+    },
+    "stable_record_key": {
+      "dtype": "str",
+      "nullable": false
+    },
+    "row_content_hash": {
+      "dtype": "str",
+      "nullable": false
+    },
+    "parser_warning": {
+      "dtype": "str",
+      "nullable": true
+    },
+    "trade_id": {
+      "dtype": "int",
+      "nullable": false
+    },
+    "senate_indicator": {
+      "dtype": "int01",
+      "nullable": false
+    },
+    "republican_indicator": {
+      "dtype": "int01",
+      "nullable": false
+    },
+    "power_committee": {
+      "dtype": "int01",
+      "nullable": false
+    },
+    "is_common_stock_candidate": {
+      "dtype": "int01",
+      "nullable": false
+    },
+    "power_committee_names": {
+      "dtype": "str",
+      "nullable": true
+    },
+    "conflicting_duplicate_flag": {
+      "dtype": "int01",
+      "nullable": false
+    }
+  },
+  "size_brackets": {
+    "1K\u201315K": [
+      1001,
+      15000
+    ],
+    "15K\u201350K": [
+      15001,
+      50000
+    ],
+    "50K\u2013100K": [
+      50001,
+      100000
+    ],
+    "100K\u2013250K": [
+      100001,
+      250000
+    ],
+    "250K\u2013500K": [
+      250001,
+      500000
+    ],
+    "500K\u20131M": [
+      500001,
+      1000000
+    ],
+    "1M\u20135M": [
+      1000001,
+      5000000
+    ],
+    "5M\u201325M": [
+      5000001,
+      25000000
+    ],
+    "25M\u201350M": [
+      25000001,
+      50000000
+    ],
+    "50M+": [
+      50000001,
+      50000001
+    ]
+  },
+  "stable_record_key_fields": [
+    "politician_name",
+    "ticker_clean",
+    "issuer_name",
+    "trade_date",
+    "published_date",
+    "transaction_type_clean",
+    "owner_clean",
+    "size_raw"
+  ],
+  "date_semantics": {
+    "trade_date": "legislator execution date",
+    "published_date": "event basis; Capitol Trades publication date in the existing data; official filing/received date in the official-source compatibility export (documented divergence)",
+    "filing_date": "official filing date when separately available"
+  },
+  "canonical_columns_in_order": [
+    "trade_id",
+    "stable_record_key",
+    "politician_name",
+    "legislator_id",
+    "party",
+    "chamber",
+    "state",
+    "issuer_name",
+    "ticker_raw",
+    "ticker_clean",
+    "trade_date",
+    "published_date",
+    "filing_date",
+    "disclosure_lag_days",
+    "transaction_type_raw",
+    "transaction_type_clean",
+    "buy_indicator",
+    "owner_raw",
+    "owner_clean",
+    "size_raw",
+    "size_lower",
+    "size_upper",
+    "size_midpoint_geometric",
+    "size_midpoint_arithmetic",
+    "size_top_coded_flag",
+    "senate_indicator",
+    "republican_indicator",
+    "power_committee",
+    "is_common_stock_candidate"
+  ],
+  "extra_columns": [
+    "power_committee_names",
+    "price_raw",
+    "parser_warning",
+    "row_content_hash",
+    "conflicting_duplicate_flag"
+  ],
+  "notes": "Contract derived from the cleaning stage's own column lists, not from docs/interfaces.md, which omits trade_id, the indicator columns, power_committee(_names), is_common_stock_candidate and conflicting_duplicate_flag."
+}

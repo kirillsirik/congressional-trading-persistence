@@ -1,0 +1,77 @@
+{
+  "boot_draws": 4999,
+  "band_draws": 4999,
+  "n_in": 44506,
+  "n_dropped": 3352,
+  "n_out": 41154,
+  "date_gap": {
+    "removed_by_rule": 0,
+    "retained_overlap": {
+      "n": 719,
+      "mean_gap_days": 1.6592489568845619,
+      "median_gap_days": 1.0,
+      "share_gap_one": 0.3810848400556328
+    },
+    "in_signals": {
+      "n": 129,
+      "mean_gap_days": 2.2248062015503876,
+      "median_gap_days": 2.0,
+      "share_gap_one": 0.29457364341085274
+    },
+    "dedup_nonmixed_signals": {
+      "n": 113,
+      "mean_gap_days": 2.256637168141593,
+      "median_gap_days": 2.0,
+      "share_gap_one": 0.2831858407079646
+    }
+  },
+  "max_abs_block_interval_diff_decimal": 9.77950359581925e-17,
+  "max_abs_full_results_diff": 1.7319479184152442e-14,
+  "portfolio_daily": {
+    "original": {
+      "mean_open_lots": 38.07349156419789,
+      "share_days_no_position": 0.10866456963111239,
+      "share_days_cash_bound": 0.8839004861309694,
+      "share_days_fully_invested": 0.6268229911352587,
+      "share_days_at_lot_cap": 0.26336860165856446,
+      "rejected_max_open_lots": 12845,
+      "rejected_cash_or_cap": 2161,
+      "rejected_timing": 299
+    },
+    "dedup": {
+      "mean_open_lots": 37.91535601944524,
+      "share_days_no_position": 0.10866456963111239,
+      "share_days_cash_bound": 0.8839004861309694,
+      "share_days_fully_invested": 0.6193880468973406,
+      "share_days_at_lot_cap": 0.24506720045753502,
+      "rejected_max_open_lots": 11386,
+      "rejected_cash_or_cap": 2199,
+      "rejected_timing": 254
+    },
+    "share_days_same_invested_fraction": 0.9170717758078353
+  },
+  "max_abs_event_study_diff": 9.93129189996722e-17,
+  "event_study_original": {
+    "purchase_paths": 19923,
+    "sale_paths": 21737,
+    "n_draws": 4999,
+    "purchase_critical": 2.6580759338625715,
+    "purchase_days_band_excludes_zero": 0,
+    "sale_critical": 2.675920174164644,
+    "sale_days_band_excludes_zero": 0,
+    "difference_critical": 2.838743937068473,
+    "difference_days_band_excludes_zero": 0
+  },
+  "event_study_dedup": {
+    "purchase_paths": 18600,
+    "sale_paths": 20047,
+    "n_draws": 4999,
+    "purchase_critical": 2.6517660329937027,
+    "purchase_days_band_excludes_zero": 0,
+    "sale_critical": 2.6679498025174757,
+    "sale_days_band_excludes_zero": 0,
+    "difference_critical": 2.8011236166050257,
+    "difference_days_band_excludes_zero": 0
+  },
+  "seconds": 57.1
+}

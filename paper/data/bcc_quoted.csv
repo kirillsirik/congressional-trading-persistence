@@ -1,0 +1,8 @@
+macro,value,page,location,description
+BccQuotedTrades,"64,127",36,"Table 3, p. 36 (printed 35); Section 4.1, p. 15 (printed 14)","disclosed transactions in their estimation sample"
+BccQuotedTraders,435,39,"Table 6, p. 39 (printed 38)","traders carried in their member-level posterior summaries"
+BccQuotedSurveyN,989,12,"Section 3.1, p. 12 (printed 11)","survey participants (Prolific, March 2025)"
+BccQuotedSurveyPrevalencePct,67,18,"Section 5.1, p. 18 (printed 17); fitted in Section 3.2, p. 14 (printed 13)","survey prior mean of pi, the share of congressional traders who ever trade on private information, in per cent; Beta(3.60, 1.74) with mean 0.672, which the abstract calls two-thirds"
+BccQuotedSurveyEffectPct,36,18,"Section 5.1, p. 18 (printed 17); abstract, p. 1; Section 3.2, p. 14 (printed 13)","survey prior mean of mu, the expected profit per informed trade, in per cent; Gamma(4.78, 0.0748) with mean 0.358 and mode 0.283"
+BccQuotedExtensivePct,92.5,37,"Table 4, p. 37 (printed 36); Section 5.1, p. 18 (printed 17)","posterior mean of pi, the share of traders inferred ever to trade on private information, in per cent; not a share of trades"
+BccQuotedHdiSharePct,9.8,47,"Figure 7 caption, p. 47; Section 5.3, p. 21 (printed 20), which rounds it to 10","share of traders whose 95 per cent highest-density interval for expected per-trade profitability excludes zero, in per cent"

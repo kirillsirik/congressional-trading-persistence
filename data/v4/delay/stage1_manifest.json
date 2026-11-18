@@ -1,0 +1,108 @@
+{
+ "selection": {
+  "purchase": {
+   "direction": "purchase",
+   "period": "A",
+   "lag_range": [
+    1.0,
+    365.0
+   ],
+   "n_events_T": 56668,
+   "n_direction": 28232,
+   "n_direction_period": 10298,
+   "n_lag_observed": 10298,
+   "n_lag_unobserved": 0,
+   "n_lag_negative": 12,
+   "n_lag_zero": 36,
+   "n_lag_over_max": 1014,
+   "n_selected": 9236,
+   "n_selected_lag_ge_key_cut": 3616,
+   "n_households": 135,
+   "n_anchor_dates": 1416,
+   "outcome_h20_reasons": {
+    "ok": 9138,
+    "insufficient_estimation_window": 85,
+    "missing_return_days": 13
+   },
+   "outcome_h10_reasons": {
+    "ok": 9139,
+    "insufficient_estimation_window": 85,
+    "missing_return_days": 12
+   },
+   "winsor_cutoffs_bp": {
+    "h20": {
+     "lo_bp": -2580.3169999999996,
+     "hi_bp": 2493.9135,
+     "source": "pooled_outcome_distribution.csv"
+    },
+    "h10": {
+     "lo_bp": -1847.385,
+     "hi_bp": 1672.7315,
+     "source": "pooled_outcome_distribution.csv"
+    }
+   }
+  },
+  "sale": {
+   "direction": "sale",
+   "period": "A",
+   "lag_range": [
+    1.0,
+    365.0
+   ],
+   "n_events_T": 56668,
+   "n_direction": 28436,
+   "n_direction_period": 10091,
+   "n_lag_observed": 10091,
+   "n_lag_unobserved": 0,
+   "n_lag_negative": 16,
+   "n_lag_zero": 40,
+   "n_lag_over_max": 684,
+   "n_selected": 9351,
+   "n_selected_lag_ge_key_cut": 3556,
+   "n_households": 171,
+   "n_anchor_dates": 1375,
+   "outcome_h20_reasons": {
+    "ok": 9229,
+    "insufficient_estimation_window": 93,
+    "missing_return_days": 29
+   },
+   "outcome_h10_reasons": {
+    "ok": 9247,
+    "insufficient_estimation_window": 93,
+    "missing_return_days": 11
+   },
+   "winsor_cutoffs_bp": {
+    "h20": {
+     "lo_bp": -2721.999222064945,
+     "hi_bp": 2840.1934789386723,
+     "source": "sale_sample_pooled_p1_p99"
+    },
+    "h10": {
+     "lo_bp": -1832.9615160573137,
+     "hi_bp": 1997.371442723891,
+     "source": "sale_sample_pooled_p1_p99"
+    }
+   }
+  }
+ },
+ "trigger": {
+  "spec": [
+   "S1_loglag_hhfe_ymfe",
+   "purchase",
+   "h20",
+   "raw",
+   "log_lag"
+  ],
+  "t_stat": 0.43337540605863234,
+  "abs_t": 0.43337540605863234,
+  "threshold": 2.5,
+  "triggered": false,
+  "coef_bp": 8.306924561323825,
+  "se_bp": 19.16796487569939,
+  "n_events": 9138,
+  "n_households": 135,
+  "n_dates": 1413
+ },
+ "runtime_seconds": 8.1,
+ "n_result_rows": 104
+}

@@ -1,0 +1,765 @@
+{
+  "activity_power": {
+    "checkpoints": "data/v4/restricted/c/checkpoints/activity_power",
+    "clocks": [
+      "T",
+      "P"
+    ],
+    "draws": "0-499",
+    "grid": "activity_power",
+    "hh_draws": 499,
+    "inputs": [
+      {
+        "n_files": 80,
+        "path": "data/v4/restricted/c/checkpoints/size_common",
+        "sha256_of_names": "e39bbaae2abe28733c657478b6091691937efa54bc24e319f61f940c5a5b1ff5",
+        "use": "T3 / T4 / I1cal references from draws 1000-1999"
+      },
+      {
+        "clock": "T",
+        "n_files": 20,
+        "path": "data/v4/restricted/n/panels/T/N2/A0_T_purchase_AB_L20_both_keepdups",
+        "set_name": "A0_T_purchase_AB_L20_both_keepdups",
+        "use": "centered placebo draws 0-499"
+      },
+      {
+        "clock": "P",
+        "n_files": 20,
+        "path": "data/v4/restricted/n/panels/P/N2/A0_P_purchase_AB_L20_both_alllines",
+        "set_name": "A0_P_purchase_AB_L20_both_alllines",
+        "use": "centered placebo draws 0-499"
+      },
+      {
+        "bytes": 4489,
+        "path": "data/v4/pooled/pooled_outcome_distribution.csv",
+        "sha256": "54e48422fe05d89b97a0cf53c342d1ddc8e4b01eb275e3ccb60746f98af9e2b3",
+        "use": "pooled p1/p99 winsorization cutoffs"
+      },
+      {
+        "bytes": 1297,
+        "path": "data/v4/calibration/size_common.csv",
+        "sha256": "d6b29d7b8883ef646b5ae442288a32bf3102952d6d3c49b89492810d80ce3b43",
+        "use": "size_common.csv, zero-effect draws 0-999"
+      }
+    ],
+    "k_grid": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "mu_grid_bp": [
+      50.0,
+      100.0,
+      200.0,
+      400.0,
+      800.0,
+      1600.0
+    ],
+    "n_panels": 500,
+    "outputs": [
+      "data/v4/ext/activity_power_surface.csv",
+      "data/v4/ext/activity_power_frontiers.csv",
+      "data/v4/ext/activity_power_size.csv"
+    ],
+    "plan": "docs/v4/extension_plan_2026-10-19.md",
+    "run_seconds": 1174.6,
+    "selections": [
+      "random",
+      "most_active",
+      "least_active"
+    ],
+    "tests": [
+      "T1_blk20_2s",
+      "T2_I1cal_ES",
+      "T2_I2b_ES",
+      "T3",
+      "T4_z2",
+      "T4_z3"
+    ],
+    "written_at": "2026-10-19T14:42:28"
+  },
+  "decompose": {
+    "inputs": [
+      {
+        "bytes": 2680,
+        "path": "data/v4/restricted/n/forward_cache_manifest.json",
+        "sha256": "64911c6f4e3b7fdcc3ce753b0ca51dc5b06cf583c6343be4ee66a7521e3b4777"
+      },
+      {
+        "bytes": 3398104,
+        "path": "data/v4/restricted/data/events_T.parquet",
+        "sha256": "692424edd4da6c7aa71447383839b42537db572e7ae04836f7388029a212c406"
+      },
+      {
+        "bytes": 2213516,
+        "path": "data/v4/restricted/data/events_P.parquet",
+        "sha256": "d317887c8bfd9407de85200a363ebfc3cc3ed165df9ac869c5b855fd98200d2d"
+      },
+      {
+        "bytes": 4489,
+        "path": "data/v4/pooled/pooled_outcome_distribution.csv",
+        "sha256": "54e48422fe05d89b97a0cf53c342d1ddc8e4b01eb275e3ccb60746f98af9e2b3"
+      }
+    ],
+    "placebo_sets": {
+      "P": "A0_P_purchase_AB_L20_both_alllines",
+      "T": "A0_T_purchase_AB_L20_both_keepdups"
+    },
+    "plan": "docs/v4/extension_plan_2026-10-19.md",
+    "seconds": 199.5,
+    "written_at": "2026-10-19T14:26:41"
+  },
+  "delisting": {
+    "inputs": [
+      {
+        "bytes": 156623016,
+        "path": "data/v4/restricted/n/daily.parquet",
+        "sha256": "5bc488f88dcbb6963a8b3c3de020ffd997399a173a15cf8526bdb795f57c2488"
+      },
+      {
+        "bytes": 31044206,
+        "path": "outputs/frames/signals.csv",
+        "sha256": "2bc22eeffe1ac5b4dbadf41dfbeabfae0658e6f194c538b69dc39cb71af75dab"
+      },
+      {
+        "bytes": 3398104,
+        "path": "data/v4/restricted/data/events_T.parquet",
+        "sha256": "692424edd4da6c7aa71447383839b42537db572e7ae04836f7388029a212c406"
+      }
+    ],
+    "plan": "docs/v4/extension_plan_2026-10-19.md",
+    "seconds": 3.5,
+    "written_at": "2026-10-19T22:12:33"
+  },
+  "endpoint": {
+    "inputs": [
+      {
+        "bytes": 3735821,
+        "path": "<dropbox>/raw/crsp/crsp_v2_daily_202607_202607.csv.gz",
+        "sha256": "5993fa13b315421b8ff63616e466f50c718c2ed277605e9db2fc0f25cc8697fa"
+      },
+      {
+        "bytes": 156623016,
+        "path": "data/v4/restricted/n/daily.parquet",
+        "sha256": "5bc488f88dcbb6963a8b3c3de020ffd997399a173a15cf8526bdb795f57c2488"
+      },
+      {
+        "bytes": 31044206,
+        "path": "outputs/frames/signals.csv",
+        "sha256": "2bc22eeffe1ac5b4dbadf41dfbeabfae0658e6f194c538b69dc39cb71af75dab"
+      }
+    ],
+    "n_dropped": 3352,
+    "n_in": 44506,
+    "n_no_entry": 813,
+    "n_out": 41154,
+    "n_signals": 44506,
+    "n_universe": 40341,
+    "plan": "docs/v4/extension_plan_2026-10-19.md",
+    "seconds": 1.6,
+    "written_at": "2026-10-19T20:37:19"
+  },
+  "forward": {
+    "inputs": [
+      {
+        "bytes": 2213516,
+        "path": "data/v4/restricted/data/events_P.parquet",
+        "rows": 20945,
+        "sha256": "d317887c8bfd9407de85200a363ebfc3cc3ed165df9ac869c5b855fd98200d2d"
+      },
+      {
+        "bytes": 2006792,
+        "path": "data/v4/restricted/data/event_duplicate_flags.parquet",
+        "sha256": "568f2232d2940a5ce3b71458578705ff7d0f57cb0b34ecb3490e9be1d0a35384"
+      },
+      {
+        "bytes": 322803711,
+        "path": "data/v4/restricted/n/forward_cache.parquet",
+        "sha256": "052a0a980c6c029361d50faed29f77ab5f411cd682ffd5e4b44f4364250cd8cd"
+      },
+      {
+        "bytes": 4489,
+        "path": "data/v4/pooled/pooled_outcome_distribution.csv",
+        "sha256": "54e48422fe05d89b97a0cf53c342d1ddc8e4b01eb275e3ccb60746f98af9e2b3"
+      },
+      {
+        "bytes": 95867,
+        "path": "<dropbox>/data/processed/benchmark_daily_2014plus.parquet",
+        "rows": 3518,
+        "sha256": "6e604436ae39c78b0f9b60981e840fc4e6d90a4e3291b7a6234678410e0ca5f0"
+      }
+    ],
+    "min_scored": 10,
+    "n_draws": 2000,
+    "outputs": [
+      "data/v4/ext/forward_prediction.csv",
+      "data/v4/ext/forward_prediction_by_year.csv"
+    ],
+    "plan": "docs/v4/extension_plan_2026-10-19.md",
+    "seed": 2392261564,
+    "written_at": "2026-10-19T14:27:14",
+    "year_ends": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024
+    ]
+  },
+  "forward_historical": {
+    "cutoff_rule": "historical",
+    "inputs": [
+      {
+        "bytes": 2213516,
+        "path": "data/v4/restricted/data/events_P.parquet",
+        "rows": 20945,
+        "sha256": "d317887c8bfd9407de85200a363ebfc3cc3ed165df9ac869c5b855fd98200d2d"
+      },
+      {
+        "bytes": 2006792,
+        "path": "data/v4/restricted/data/event_duplicate_flags.parquet",
+        "sha256": "568f2232d2940a5ce3b71458578705ff7d0f57cb0b34ecb3490e9be1d0a35384"
+      },
+      {
+        "bytes": 322803711,
+        "path": "data/v4/restricted/n/forward_cache.parquet",
+        "sha256": "052a0a980c6c029361d50faed29f77ab5f411cd682ffd5e4b44f4364250cd8cd"
+      },
+      {
+        "bytes": 4489,
+        "path": "data/v4/pooled/pooled_outcome_distribution.csv",
+        "sha256": "54e48422fe05d89b97a0cf53c342d1ddc8e4b01eb275e3ccb60746f98af9e2b3"
+      },
+      {
+        "bytes": 95867,
+        "path": "<dropbox>/data/processed/benchmark_daily_2014plus.parquet",
+        "rows": 3518,
+        "sha256": "6e604436ae39c78b0f9b60981e840fc4e6d90a4e3291b7a6234678410e0ca5f0"
+      }
+    ],
+    "min_scored": 10,
+    "n_draws": 2000,
+    "outputs": [
+      "data/v4/ext/forward_prediction_historical.csv",
+      "data/v4/ext/forward_prediction_historical_by_year.csv"
+    ],
+    "plan": "docs/v4/extension_plan_2026-10-19.md",
+    "seed": 2392261564,
+    "written_at": "2026-10-19T20:36:10",
+    "year_ends": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024
+    ]
+  },
+  "history_extraction": {
+    "dpi": 300,
+    "extra_psms": [
+      11
+    ],
+    "grid_run_px": 200,
+    "inputs": [
+      {
+        "bytes": 130019328,
+        "path": "<dropbox>/data/official/state.sqlite",
+        "sha256": "43bb54b657b208360a61aa0dc73ff074a4a2f0be48f53c1fc4fed43c7bd7388b"
+      },
+      {
+        "bytes": 4253814,
+        "path": "<dropbox>/capitol_trades/20260721_221640/canonical_trades.parquet",
+        "sha256": "0e85b72f1eb4819becd49905ad2eca79454d17465582d008e8999c3173bf5a1d"
+      },
+      {
+        "bytes": 20681354,
+        "path": "outputs/frames/matched_transactions.csv",
+        "rows": 66158,
+        "sha256": "96cd01bf99f335ee44e26b5c7d7c22113bcc41841fd9d843afd441385e36d3a1"
+      }
+    ],
+    "max_filings": 0,
+    "plan": "docs/v4/extension_plan_2026-10-19.md",
+    "prescribed_psms": [
+      6,
+      4
+    ],
+    "seconds": 2116.5,
+    "workers": 8,
+    "written_at": "2026-10-19T22:58:12"
+  },
+  "history_recovery": {
+    "ambiguous_names_dropped": 61,
+    "inputs": [
+      {
+        "bytes": 1184538,
+        "path": "data/v4/restricted/ext/two_households/history/extracted_rows.parquet",
+        "rows": 25531,
+        "sha256": "e9f10e74ae13bf7bf78cce312673548a7e16389d81a2612f1de4e20c9eb27492"
+      },
+      {
+        "bytes": 8722,
+        "path": "data/v4/restricted/ext/two_households/history/filings.parquet",
+        "rows": 122,
+        "sha256": "2969e947eb19f74c69e96c071f20be9f99343344f3e7b8796fb8fc3251f17b52"
+      },
+      {
+        "bytes": 20681354,
+        "path": "outputs/frames/matched_transactions.csv",
+        "sha256": "96cd01bf99f335ee44e26b5c7d7c22113bcc41841fd9d843afd441385e36d3a1"
+      },
+      {
+        "bytes": 4253814,
+        "path": "<dropbox>/capitol_trades/20260721_221640/canonical_trades.parquet",
+        "sha256": "0e85b72f1eb4819becd49905ad2eca79454d17465582d008e8999c3173bf5a1d"
+      }
+    ],
+    "name_dictionary_size": 4779,
+    "plan": "docs/v4/extension_plan_2026-10-19.md",
+    "seconds": 12.5,
+    "written_at": "2026-10-19T22:58:53"
+  },
+  "inference": {
+    "inputs": [
+      {
+        "bytes": 22403,
+        "path": "data/v4/calibration/size_null_v2.csv",
+        "sha256": "2b3fc8aac52f6be69603bbd27600c0db3ff71bc8ea70917db076e4d2651b05c8"
+      },
+      {
+        "bytes": 31044206,
+        "path": "outputs/frames/signals.csv",
+        "sha256": "2bc22eeffe1ac5b4dbadf41dfbeabfae0658e6f194c538b69dc39cb71af75dab"
+      },
+      {
+        "bytes": 2680,
+        "path": "data/v4/restricted/n/forward_cache_manifest.json",
+        "sha256": "64911c6f4e3b7fdcc3ce753b0ca51dc5b06cf583c6343be4ee66a7521e3b4777"
+      }
+    ],
+    "plan": "docs/v4/extension_plan_2026-10-19.md",
+    "seconds": 264.9,
+    "written_at": "2026-10-19T14:35:46"
+  },
+  "ledgers": {
+    "inputs": [
+      {
+        "bytes": 586,
+        "path": "outputs/canonical/attrition_ledger.csv",
+        "sha256": "fc73951c59243570abcdbf7113e7dfd217b04bc20201ad3bd5a8f4a80c841b79"
+      },
+      {
+        "bytes": 6824576,
+        "path": "outputs/frames/security_resolution.csv",
+        "sha256": "466b75b27ba573bb72a7f04c38daa9345a4525f65896fda8a00686b0f2534c6a"
+      },
+      {
+        "bytes": 30058632,
+        "path": "outputs/frames/deduplicated_transactions.csv",
+        "sha256": "4628d30aa4a90f61b83971b4a95aa8bf0839af4c1541a223d987d6b06377caa0"
+      },
+      {
+        "bytes": 31044206,
+        "path": "outputs/frames/signals.csv",
+        "sha256": "2bc22eeffe1ac5b4dbadf41dfbeabfae0658e6f194c538b69dc39cb71af75dab"
+      },
+      {
+        "bytes": 20439670,
+        "path": "outputs/frames/canonical_transactions.csv",
+        "sha256": "fec3e953e5a7d6b4c30671c2a828db0796e809d354a47c2df87ed1430a6e5f4a"
+      },
+      {
+        "bytes": 28930707,
+        "path": "outputs/frames/timed_transactions.csv",
+        "sha256": "e818215c475523c3e9b0c8ffa369e876313592beee596118e1364177d383d644"
+      },
+      {
+        "bytes": 3398104,
+        "path": "data/v4/restricted/data/events_T.parquet",
+        "sha256": "692424edd4da6c7aa71447383839b42537db572e7ae04836f7388029a212c406"
+      },
+      {
+        "bytes": 2213516,
+        "path": "data/v4/restricted/data/events_P.parquet",
+        "sha256": "d317887c8bfd9407de85200a363ebfc3cc3ed165df9ac869c5b855fd98200d2d"
+      },
+      {
+        "bytes": 2006792,
+        "path": "data/v4/restricted/data/event_duplicate_flags.parquet",
+        "sha256": "568f2232d2940a5ce3b71458578705ff7d0f57cb0b34ecb3490e9be1d0a35384"
+      },
+      {
+        "bytes": 130019328,
+        "path": "<dropbox>/data/official/state.sqlite",
+        "sha256": "43bb54b657b208360a61aa0dc73ff074a4a2f0be48f53c1fc4fed43c7bd7388b"
+      },
+      {
+        "bytes": 4253814,
+        "path": "<dropbox>/capitol_trades/20260721_221640/canonical_trades.parquet",
+        "sha256": "0e85b72f1eb4819becd49905ad2eca79454d17465582d008e8999c3173bf5a1d"
+      },
+      {
+        "bytes": 1538372673,
+        "path": "<dropbox>/raw/crsp/crsp_v2_daily_1980_present.csv.gz",
+        "sha256": "2a61c97deb6f53db570f1f6d02cb5998af4cfca9827c45ca47d28cc3645302e3"
+      },
+      {
+        "bytes": 20545552,
+        "path": "<dropbox>/raw/crsp/crsp_v2_daily_202604_202606.csv.gz",
+        "sha256": "baee96c123b2fab7c3ebd51a594e8cc14b1acb192c18ec696fc2da12c1c22144"
+      },
+      {
+        "bytes": 3735821,
+        "path": "<dropbox>/raw/crsp/crsp_v2_daily_202607_202607.csv.gz",
+        "sha256": "5993fa13b315421b8ff63616e466f50c718c2ed277605e9db2fc0f25cc8697fa"
+      },
+      {
+        "bytes": 696315,
+        "path": "data/v4/restricted/ext/ledgers/crsp_security_ranges_2012plus.parquet",
+        "sha256": "1282aaa25514165822a6565a6bcc57895430646334f9b1ca8f6e2e340c33418c"
+      }
+    ],
+    "plan": "docs/v4/extension_plan_2026-10-19.md",
+    "seconds": 23.3,
+    "written_at": "2026-10-19T14:36:15"
+  },
+  "overlap": {
+    "inputs": [
+      {
+        "bytes": 2680,
+        "path": "data/v4/restricted/n/forward_cache_manifest.json",
+        "sha256": "64911c6f4e3b7fdcc3ce753b0ca51dc5b06cf583c6343be4ee66a7521e3b4777"
+      },
+      {
+        "bytes": 3398104,
+        "path": "data/v4/restricted/data/events_T.parquet",
+        "sha256": "692424edd4da6c7aa71447383839b42537db572e7ae04836f7388029a212c406"
+      },
+      {
+        "bytes": 2213516,
+        "path": "data/v4/restricted/data/events_P.parquet",
+        "sha256": "d317887c8bfd9407de85200a363ebfc3cc3ed165df9ac869c5b855fd98200d2d"
+      }
+    ],
+    "plan": "docs/v4/extension_plan_2026-10-19.md",
+    "seconds": 236.5,
+    "written_at": "2026-10-19T20:40:10"
+  },
+  "pilot_validation": {
+    "inputs": [
+      {
+        "bytes": 87788,
+        "path": "data/v4/restricted/ext/two_households/pilot/validation/ocr_rows_SEALED.csv",
+        "sha256": "0e08d52ba3c50c0fa5d19de146f6abad001185e1d79ea940aa67c2ce01cd4f55"
+      },
+      {
+        "bytes": 2665,
+        "path": "data/v4/restricted/ext/two_households/pilot/validation/gold/V01.csv",
+        "sha256": "a6a9c2fa4ee77979c3997dcc5f34c705a0222686f6f924b1d35e0c108408f86a"
+      },
+      {
+        "bytes": 2107,
+        "path": "data/v4/restricted/ext/two_households/pilot/validation/gold/V02.csv",
+        "sha256": "b052da0a799d53e25ceef73b270764da28199fe15cd581c9c813a53994a48751"
+      },
+      {
+        "bytes": 2083,
+        "path": "data/v4/restricted/ext/two_households/pilot/validation/gold/V03.csv",
+        "sha256": "4a6cc9ae169b4e3e45c5a6d5d8c045dce213d3b86a71c0db30a24046d6727a7a"
+      },
+      {
+        "bytes": 2185,
+        "path": "data/v4/restricted/ext/two_households/pilot/validation/gold/V04.csv",
+        "sha256": "a480ed44c3ef656533fe6ed73d0fecca101592d59339a8a4f8bff5154550dbeb"
+      },
+      {
+        "bytes": 1993,
+        "path": "data/v4/restricted/ext/two_households/pilot/validation/gold/V05.csv",
+        "sha256": "7487fbbb9ee15be430818dfff934b74c4e6bde958f5cd6838755662c2295c0d9"
+      },
+      {
+        "bytes": 2196,
+        "path": "data/v4/restricted/ext/two_households/pilot/validation/gold/V06.csv",
+        "sha256": "ae28c4d1b415ba72991552bf68cab91f69cc66a427c8d9ba64d53e2556d8304b"
+      },
+      {
+        "bytes": 2173,
+        "path": "data/v4/restricted/ext/two_households/pilot/validation/gold/V07.csv",
+        "sha256": "28dc95fd98ed0b1581c1108ebf078d97b43f33fd9c9f995d9638df18176ee5ed"
+      },
+      {
+        "bytes": 2218,
+        "path": "data/v4/restricted/ext/two_households/pilot/validation/gold/V08.csv",
+        "sha256": "849f2a320959efd632c4a9dfd650377544f96532583589a0f82bc591709e9da0"
+      }
+    ],
+    "plan": "docs/v4/extension_plan_2026-10-19.md",
+    "written_at": "2026-10-19T22:20:08"
+  },
+  "repair": {
+    "inputs": [
+      {
+        "bytes": 960555,
+        "path": "data/v4/restricted/ext/ledgers/tier_d_rows.parquet",
+        "sha256": "0798b15c919e76a658e1cf2b4d66052fe078d1a2a98d0f0fbbcf1c6bb9b9d222"
+      },
+      {
+        "bytes": 28930707,
+        "path": "outputs/frames/timed_transactions.csv",
+        "sha256": "e818215c475523c3e9b0c8ffa369e876313592beee596118e1364177d383d644"
+      },
+      {
+        "bytes": 20681354,
+        "path": "outputs/frames/matched_transactions.csv",
+        "sha256": "96cd01bf99f335ee44e26b5c7d7c22113bcc41841fd9d843afd441385e36d3a1"
+      },
+      {
+        "bytes": 31044206,
+        "path": "outputs/frames/signals.csv",
+        "sha256": "2bc22eeffe1ac5b4dbadf41dfbeabfae0658e6f194c538b69dc39cb71af75dab"
+      },
+      {
+        "bytes": 156623016,
+        "path": "data/v4/restricted/n/daily.parquet",
+        "sha256": "5bc488f88dcbb6963a8b3c3de020ffd997399a173a15cf8526bdb795f57c2488"
+      }
+    ],
+    "plan": "docs/v4/extension_plan_2026-10-19.md",
+    "seconds": 21.2,
+    "written_at": "2026-10-19T22:16:38"
+  },
+  "two_households": {
+    "dpi": 300,
+    "feasible": [],
+    "inputs": [
+      {
+        "bytes": 130019328,
+        "path": "<dropbox>/data/official/state.sqlite",
+        "sha256": "43bb54b657b208360a61aa0dc73ff074a4a2f0be48f53c1fc4fed43c7bd7388b"
+      },
+      {
+        "bytes": 1764,
+        "path": "data/v4/diagnostics/vendor_only_households_official_status.csv",
+        "rows": 30,
+        "sha256": "cb7ef79eb6ba4e044b222d087e7f26b430c8bba411c01dce965d3985028f43b7"
+      },
+      {
+        "bytes": 20681354,
+        "path": "outputs/frames/matched_transactions.csv",
+        "rows": 66158,
+        "sha256": "96cd01bf99f335ee44e26b5c7d7c22113bcc41841fd9d843afd441385e36d3a1"
+      },
+      {
+        "bytes": 4253814,
+        "path": "<dropbox>/capitol_trades/20260721_221640/canonical_trades.parquet",
+        "sha256": "0e85b72f1eb4819becd49905ad2eca79454d17465582d008e8999c3173bf5a1d"
+      },
+      {
+        "bytes": 482312,
+        "path": "outputs/frames/crsp_names.csv",
+        "rows": 11381,
+        "sha256": "4ddc446ab43d8f24b3a122a5007fb5adf44116abfb62a80ee692a3a67ea02a05"
+      },
+      {
+        "bytes": 322803711,
+        "path": "data/v4/restricted/n/forward_cache.parquet",
+        "sha256": "052a0a980c6c029361d50faed29f77ab5f411cd682ffd5e4b44f4364250cd8cd"
+      },
+      {
+        "bytes": 2680,
+        "path": "data/v4/restricted/n/forward_cache_manifest.json",
+        "sha256": "64911c6f4e3b7fdcc3ce753b0ca51dc5b06cf583c6343be4ee66a7521e3b4777"
+      },
+      {
+        "bytes": 3398104,
+        "path": "data/v4/restricted/data/events_T.parquet",
+        "sha256": "692424edd4da6c7aa71447383839b42537db572e7ae04836f7388029a212c406"
+      },
+      {
+        "bytes": 2006792,
+        "path": "data/v4/restricted/data/event_duplicate_flags.parquet",
+        "sha256": "568f2232d2940a5ce3b71458578705ff7d0f57cb0b34ecb3490e9be1d0a35384"
+      },
+      {
+        "bytes": 4489,
+        "path": "data/v4/pooled/pooled_outcome_distribution.csv",
+        "sha256": "54e48422fe05d89b97a0cf53c342d1ddc8e4b01eb275e3ccb60746f98af9e2b3"
+      }
+    ],
+    "ocr_engine": "tesseract 5.5.3",
+    "plan": "docs/v4/extension_plan_2026-10-19.md",
+    "psm": 6,
+    "seconds": 528.1,
+    "workers": 6,
+    "written_at": "2026-10-19T14:50:29"
+  },
+  "two_households_pilot": {
+    "dpi": 300,
+    "extra_psms": [
+      11
+    ],
+    "grid_run_px": 200,
+    "inputs": [
+      {
+        "bytes": 130019328,
+        "path": "<dropbox>/data/official/state.sqlite",
+        "sha256": "43bb54b657b208360a61aa0dc73ff074a4a2f0be48f53c1fc4fed43c7bd7388b"
+      },
+      {
+        "bytes": 482312,
+        "path": "outputs/frames/crsp_names.csv",
+        "rows": 11381,
+        "sha256": "4ddc446ab43d8f24b3a122a5007fb5adf44116abfb62a80ee692a3a67ea02a05"
+      },
+      {
+        "bytes": 4253814,
+        "path": "<dropbox>/capitol_trades/20260721_221640/canonical_trades.parquet",
+        "sha256": "0e85b72f1eb4819becd49905ad2eca79454d17465582d008e8999c3173bf5a1d"
+      },
+      {
+        "bytes": 20681354,
+        "path": "outputs/frames/matched_transactions.csv",
+        "rows": 66158,
+        "sha256": "96cd01bf99f335ee44e26b5c7d7c22113bcc41841fd9d843afd441385e36d3a1"
+      }
+    ],
+    "plan": "docs/v4/extension_plan_2026-10-19.md",
+    "prescribed_psms": [
+      6,
+      4
+    ],
+    "seconds": 225.8,
+    "workers": 6,
+    "written_at": "2026-10-19T21:12:58"
+  },
+  "windows": {
+    "complete_window_checks": {
+      "P/ff5mom": {
+        "all_20_sessions": true,
+        "max_abs_diff_bp": 3.183231456205249e-12,
+        "n_checked": 300,
+        "n_not_finite": 0
+      },
+      "P/market_adjusted": {
+        "all_20_sessions": true,
+        "max_abs_diff_bp": 1.0231815394945443e-12,
+        "n_checked": 300,
+        "n_not_finite": 0
+      },
+      "T/ff5mom": {
+        "all_20_sessions": true,
+        "max_abs_diff_bp": 1.9496155800879933e-09,
+        "n_checked": 300,
+        "n_not_finite": 0
+      },
+      "T/market_adjusted": {
+        "all_20_sessions": true,
+        "max_abs_diff_bp": 0.0,
+        "n_checked": 300,
+        "n_not_finite": 0
+      }
+    },
+    "inputs": [
+      {
+        "bytes": 31044206,
+        "path": "outputs/frames/signals.csv",
+        "rows": 44506,
+        "sha256": "2bc22eeffe1ac5b4dbadf41dfbeabfae0658e6f194c538b69dc39cb71af75dab"
+      },
+      {
+        "bytes": 2213516,
+        "path": "data/v4/restricted/data/events_P.parquet",
+        "sha256": "d317887c8bfd9407de85200a363ebfc3cc3ed165df9ac869c5b855fd98200d2d"
+      },
+      {
+        "bytes": 3398104,
+        "path": "data/v4/restricted/data/events_T.parquet",
+        "sha256": "692424edd4da6c7aa71447383839b42537db572e7ae04836f7388029a212c406"
+      },
+      {
+        "bytes": 2006792,
+        "path": "data/v4/restricted/data/event_duplicate_flags.parquet",
+        "sha256": "568f2232d2940a5ce3b71458578705ff7d0f57cb0b34ecb3490e9be1d0a35384"
+      },
+      {
+        "bytes": 2680,
+        "path": "data/v4/restricted/n/forward_cache_manifest.json",
+        "sha256": "64911c6f4e3b7fdcc3ce753b0ca51dc5b06cf583c6343be4ee66a7521e3b4777"
+      },
+      {
+        "bytes": 322803711,
+        "path": "data/v4/restricted/n/forward_cache.parquet",
+        "sha256": "052a0a980c6c029361d50faed29f77ab5f411cd682ffd5e4b44f4364250cd8cd"
+      },
+      {
+        "bytes": 156623016,
+        "path": "data/v4/restricted/n/daily.parquet",
+        "sha256": "5bc488f88dcbb6963a8b3c3de020ffd997399a173a15cf8526bdb795f57c2488"
+      },
+      {
+        "bytes": 95867,
+        "path": "<dropbox>/data/processed/benchmark_daily_2014plus.parquet",
+        "sha256": "6e604436ae39c78b0f9b60981e840fc4e6d90a4e3291b7a6234678410e0ca5f0"
+      },
+      {
+        "bytes": 1257243,
+        "path": "<dropbox>/raw/factors/factors_daily.csv",
+        "sha256": "69ace15272022c71686e9443f37bedb85ccc230353e7025973fc2f9cb3292293"
+      },
+      {
+        "bytes": 15493,
+        "path": "data/v4/existing/rerun_tables.csv",
+        "sha256": "9c53e0c61b902a67710021b94d44b1b6388d733a75d7f272efbf652f8981f4ad"
+      },
+      {
+        "bytes": 341268,
+        "path": "data/v4/results.csv",
+        "sha256": "e0fc7055de17c15ed37fe8f66beb96a9851377efef0bf58c7323fc5dc95d51ad"
+      },
+      {
+        "bytes": 4489,
+        "path": "data/v4/pooled/pooled_outcome_distribution.csv",
+        "sha256": "54e48422fe05d89b97a0cf53c342d1ddc8e4b01eb275e3ccb60746f98af9e2b3"
+      },
+      {
+        "bytes": 8124,
+        "path": "<dropbox>/v4/ext/ledger_tier_d_classification.csv",
+        "sha256": "9b5c623e991c540cbdac3ee8349846cb2fa99758811eef7b5f4dfc37b169b287"
+      }
+    ],
+    "outputs": [
+      "data/v4/ext/window_audit.csv",
+      "data/v4/ext/partial_window_returns.csv",
+      "data/v4/ext/missing_return_sensitivity.csv",
+      "data/v4/ext/retention_rates.csv",
+      "data/v4/restricted/ext/windows/partial_outcomes.parquet"
+    ],
+    "plan": "docs/v4/extension_plan_2026-10-19.md",
+    "record_level_counts": {
+      "purchase": 855,
+      "sale": 752
+    },
+    "seconds": 9.2,
+    "universe_counts": {
+      "P": {
+        "n_dropped": 3352,
+        "n_in": 44506,
+        "n_no_entry": 813,
+        "n_out": 41154,
+        "n_signals": 44506,
+        "n_universe": 40341
+      },
+      "T_events": 49093
+    },
+    "written_at": "2026-10-19T14:41:09"
+  }
+}

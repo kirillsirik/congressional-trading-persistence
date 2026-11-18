@@ -1,0 +1,10 @@
+stage,n_in,n_out,no_usable_public_date,before_sample_start,amendment_exact_duplicate,no_purchase_or_sale_interpretation,unresolved_security_match,failed_common_stock_screen,collapsed_repeated_lots,mixed_direction_signal,duplicate_of_official_transaction,incomplete_h20_outcome,sample
+public_date_and_sample_window,98409,98399,10.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,both
+amendment_exact_duplicates,98399,97599,0.0,0.0,800.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,both
+purchase_sale_filter,97599,96844,0.0,0.0,0.0,755.0,0.0,0.0,0.0,0.0,0.0,0.0,both
+security_matching,96844,66158,0.0,0.0,0.0,0.0,30686.0,0.0,0.0,0.0,0.0,0.0,both
+common_stock_screen,66158,66158,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,both
+collapse_to_signals,66158,52018,0.0,0.0,0.0,0.0,0.0,0.0,14140.0,0.0,0.0,0.0,both
+mixed_direction_exclusion,52018,44506,0.0,0.0,0.0,0.0,0.0,0.0,0.0,7512.0,0.0,0.0,dedup
+vendor_duplicate_rule,44506,41154,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,3352.0,0.0,dedup
+complete_h20_outcome,41154,39724,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1430.0,dedup

@@ -1,0 +1,12 @@
+{
+  "capitol_trades_snapshot_rows": 41538,
+  "vendor_duplicates_of_parsed_official": 11701,
+  "repeat_scrape_duplicates": 1456,
+  "scan_linked_vendor_rows_retained": 719,
+  "vendor_only_rows_retained": 27662,
+  "official_ptr_census_filings": 11698,
+  "image_only_unparsed_filings": 3979,
+  "amendment_rows_official_lineage": 1244,
+  "amendment_rows_unresolved_lineage": 266,
+  "later_exact_cross_document_duplicates": 800
+}

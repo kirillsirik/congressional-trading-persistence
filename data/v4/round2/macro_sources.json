@@ -1,0 +1,112 @@
+{
+  "RoundTwoTradeSlope": {
+    "value": 0.378724137213963,
+    "formatted": "0.379",
+    "source": "data/v4/results_household_scatter.csv"
+  },
+  "RoundTwoTradeLOOMin": {
+    "value": 708.7317154484804,
+    "formatted": "709",
+    "source": "data/v4/results.csv"
+  },
+  "RoundTwoTradeLOOMax": {
+    "value": 3498.6817135446563,
+    "formatted": "3,499",
+    "source": "data/v4/results.csv"
+  },
+  "RoundTwoTradeLOOMaxAbsChange": {
+    "value": 1554.8509230392647,
+    "formatted": "1,555",
+    "source": "data/v4/results.csv"
+  },
+  "RoundTwoTradeIHH": {
+    "value": 15.419150352608675,
+    "formatted": "15.4",
+    "source": "data/v4/results_household_scatter.csv"
+  },
+  "RoundTwoTradeProductIHH": {
+    "value": 4.951258038664921,
+    "formatted": "4.95",
+    "source": "data/v4/results_household_scatter.csv"
+  },
+  "RoundTwoTradeMaxGeometricWeightPct": {
+    "value": 14.607115942410681,
+    "formatted": "14.6",
+    "source": "data/v4/results_household_scatter.csv"
+  },
+  "RoundTwoTradeNegativeMeanCount": {
+    "value": 89,
+    "formatted": "89",
+    "source": "data/v4/results_rank_sets.csv"
+  },
+  "RoundTwoTradePositiveMeanCount": {
+    "value": 33,
+    "formatted": "33",
+    "source": "data/v4/results_rank_sets.csv"
+  },
+  "RoundTwoTradeBroadHouseholdCount": {
+    "value": 122,
+    "formatted": "122",
+    "source": "data/v4/results_rank_sets.csv"
+  },
+  "RoundTwoTradeAnnualizedPct": {
+    "value": 5.994717505323457,
+    "formatted": "6.0",
+    "source": "data/v4/results.csv"
+  },
+  "RoundTwoDisclosureSlope": {
+    "value": 0.2659757108159303,
+    "formatted": "0.266",
+    "source": "data/v4/results_household_scatter.csv"
+  },
+  "RoundTwoDisclosureLOOMin": {
+    "value": 700.4027904298354,
+    "formatted": "700",
+    "source": "data/v4/results.csv"
+  },
+  "RoundTwoDisclosureLOOMax": {
+    "value": 2650.250323815846,
+    "formatted": "2,650",
+    "source": "data/v4/results.csv"
+  },
+  "RoundTwoDisclosureLOOMaxAbsChange": {
+    "value": 1270.3306358865998,
+    "formatted": "1,270",
+    "source": "data/v4/results.csv"
+  },
+  "RoundTwoDisclosureIHH": {
+    "value": 13.755952673665078,
+    "formatted": "13.8",
+    "source": "data/v4/results_household_scatter.csv"
+  },
+  "RoundTwoDisclosureProductIHH": {
+    "value": 5.145990812967649,
+    "formatted": "5.15",
+    "source": "data/v4/results_household_scatter.csv"
+  },
+  "RoundTwoDisclosureMaxGeometricWeightPct": {
+    "value": 15.15073189133999,
+    "formatted": "15.2",
+    "source": "data/v4/results_household_scatter.csv"
+  },
+  "RoundTwoDisclosureNegativeMeanCount": {
+    "value": 71,
+    "formatted": "71",
+    "source": "data/v4/results_rank_sets.csv"
+  },
+  "RoundTwoDisclosurePositiveMeanCount": {
+    "value": 40,
+    "formatted": "40",
+    "source": "data/v4/results_rank_sets.csv"
+  },
+  "RoundTwoDisclosureBroadHouseholdCount": {
+    "value": 111,
+    "formatted": "111",
+    "source": "data/v4/results_rank_sets.csv"
+  },
+  "RoundTwoDisclosureAnnualizedPct": {
+    "value": 5.593510872090957,
+    "formatted": "5.6",
+    "source": "data/v4/results.csv"
+  }
+}

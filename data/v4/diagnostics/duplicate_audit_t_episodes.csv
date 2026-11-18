@@ -1,0 +1,6 @@
+variant,t_events_total,t_events_with_flagged_line,share_t_events_with_flagged_line,t_lines_flagged,t_events_removed_if_flagged_lines_dropped,t_events_n_lines_changed_only
+primary,56668,4061,0.071663,4128,0,4061
+raw_vendor_date,56668,46,0.000811746,46,0,46
+pm1_day,56668,4065,0.0717336,4132,0,4065
+no_bracket,56668,4249,0.0749806,4330,0,4249
+pm1_day_no_bracket,56668,4249,0.0749806,4330,0,4249

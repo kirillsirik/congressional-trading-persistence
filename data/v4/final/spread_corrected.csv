@@ -1,0 +1,19 @@
+clock,analysis,variant,statistic,value,unit,placebo_p,boot_lo,boot_hi,se_block,n_events,n_households,notes
+P,spread,baseline_record,spread,-2.6481978592826216,bp,,,,13.748643578218092,39724,325,the record (reproduces rerun_tables.csv); 157 blocks
+P,spread,corrected_observed,spread,-3.6754434830563287,bp,,,,14.126692873797273,40428,329,"union sample, observed 20-day outcomes only; 157 blocks; dof 156"
+P,spread,corrected_observed,n_imputed,0.0,count,,,,,40428,,
+P,spread,corrected_july,spread,-1.3177242175810893,bp,,,,14.106694606770379,40900,333,"as above, the 472 endpoint-censored windows completed on the July 2026 slice; 158 blocks; dof 157"
+P,spread,corrected_july,n_imputed,472.0,count,,,,,40900,,
+P,spread,corrected_july_delisting_reinvested,spread,-1.9183404859490167,bp,,,,14.319633822576845,40953,333,"as above plus the 53 verified delisting paths, terminal payoff once, proceeds reinvested at the benchmark (the primary corrected spread); 158 blocks; dof 157"
+P,spread,corrected_july_delisting_reinvested,n_imputed,525.0,count,,,,,40953,,
+P,spread,corrected_july_delisting_cash,spread,-1.8234490227155895,bp,,,,14.314837206839313,40953,333,"as above plus the 53 verified delisting paths, proceeds held in cash; 158 blocks; dof 157"
+P,spread,corrected_july_delisting_cash,n_imputed,525.0,count,,,,,40953,,
+P,spread,corrected_delisting_reinvested_no_july,spread,-4.281445898896289,bp,,,,14.340846329704334,40481,329,union sample with the verified delisting paths (reinvested) but without the July completion; 157 blocks; dof 156
+P,spread,corrected_delisting_reinvested_no_july,n_imputed,53.0,count,,,,,40481,,
+P,spread_ladder,corrected_july_delisting_reinvested,household_x_day,-1.9183404859490167,bp,,,,11.274923789215183,40953,333,"t -0.170, two-sided p 0.865, dof 332; clusters household 333; day 2367; household×day 4907"
+P,spread_ladder,corrected_july_delisting_reinvested,household_x_block20,-1.9183404859490167,bp,,,,14.319633822576845,40953,333,"t -0.134, two-sided p 0.894, dof 157; clusters household 333; block20 158; household×block20 4282"
+P,spread_ladder,corrected_july_delisting_reinvested,household_x_block40,-1.9183404859490167,bp,,,,14.420353786212075,40953,333,"t -0.133, two-sided p 0.895, dof 78; clusters household 333; block40 79; household×block40 3218"
+P,spread_ladder,corrected_july_delisting_reinvested,household_x_block60,-1.9183404859490167,bp,,,,14.610036986235844,40953,333,"t -0.131, two-sided p 0.896, dof 52; clusters household 333; block60 53; household×block60 2622"
+P,spread_ladder,corrected_july_delisting_reinvested,household_x_quarter,-1.9183404859490167,bp,,,,10.328663630035104,40953,333,"t -0.186, two-sided p 0.853, dof 49; clusters household 333; quarter 50; household×quarter 2548"
+P,spread_ladder,corrected_july_delisting_reinvested,household_x_block20_x_security,-1.9183404859490167,bp,,,,14.472759479657642,40953,333,"t -0.133, two-sided p 0.895, dof 157; clusters household 333; block20 158; security 2389; household×block20 4282; household×security 14173; block20×security 30409; household×block20×security 39820"
+P,spread_ladder,corrected_july_delisting_reinvested,household_x_block60_x_security,-1.9183404859490167,bp,,,,14.699492400004585,40953,333,"t -0.131, two-sided p 0.897, dof 52; clusters household 333; block60 53; security 2389; household×block60 2622; household×security 14173; block60×security 20562; household×block60×security 33826"

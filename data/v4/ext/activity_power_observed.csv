@@ -1,0 +1,5 @@
+clock,sample,statistic,value,n_households,n_events,source
+T,households_with_20_purchases,max_t,3.0673476173662717,122,23420,recorded trade dates
+T,persistence_households_purchases,max_t,1.9537813089014644,38,7964,recorded trade dates
+T,persistence_households_purchases,households_with_identical_t_in_full_set,38.0,38,,recorded trade dates
+T,persistence_households_purchases,max_t_critical_value,3.36905840002338,,,size_common winsorized draws 1000-1999

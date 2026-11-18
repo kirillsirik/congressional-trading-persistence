@@ -1,0 +1,619 @@
+{
+  "cache_extension": {
+    "config": {
+      "cache_version": 2,
+      "input_digests": {
+        "benchmark_daily_2014plus.parquet": "6e604436ae39c78b0f9b60981e840fc4e6d90a4e3291b7a6234678410e0ca5f0",
+        "crsp_daily_2014plus.parquet": "acaec015f444868d0035678cd321464b884e83a8eaec55021af0e38e191d75a4",
+        "factors_daily.csv": "69ace15272022c71686e9443f37bedb85ccc230353e7025973fc2f9cb3292293",
+        "local_daily.parquet": "5bc488f88dcbb6963a8b3c3de020ffd997399a173a15cf8526bdb795f57c2488"
+      },
+      "permnos": [
+        11343,
+        14030,
+        14268,
+        16434,
+        16495,
+        17106,
+        17778,
+        18424,
+        23505,
+        29946,
+        61807,
+        83443,
+        85945,
+        89731,
+        89905
+      ]
+    },
+    "inputs": [
+      {
+        "bytes": 108411,
+        "path": "data/v4/restricted/ext/repair/new_episodes.parquet",
+        "sha256": "30b00186af7ce0703d02bfa844bc8f6e2dc5c331df901ee229a90f293e93232f"
+      },
+      {
+        "bytes": 125435,
+        "path": "data/v4/restricted/ext/repair/new_signals_outcomes.parquet",
+        "sha256": "c1e9963c2d2774d0f26a7feef0eb2b7c952bc547a93e8cbcc8494c62621cfe59"
+      },
+      {
+        "bytes": 2680,
+        "path": "data/v4/restricted/n/forward_cache_manifest.json",
+        "sha256": "64911c6f4e3b7fdcc3ce753b0ca51dc5b06cf583c6343be4ee66a7521e3b4777"
+      }
+    ],
+    "key": "e6f225c226d0e97e5dff704e224044e2f96a8898a18cd8981f2031be10b7711b",
+    "n_permnos": 15,
+    "n_rows": 46815,
+    "plan": "docs/v4/final_closeout_plan_2026-11-06.md",
+    "reason_counts_h20": {
+      "factor_gap": 231,
+      "insufficient_estimation_window": 464,
+      "missing_return_days": 9351,
+      "ok": 36769
+    },
+    "seconds": 1.0,
+    "written_at": "2026-11-06T21:20:26"
+  },
+  "cumulative": {
+    "config": {
+      "clocks": [
+        "T",
+        "P"
+      ],
+      "cutoffs": "committed pooled p1/p99 by clock and period",
+      "n_boot": 4999,
+      "primary_spread": "corrected_july_delisting_reinvested",
+      "rule": "R1",
+      "weights": "ES"
+    },
+    "inputs": [
+      {
+        "bytes": 28930707,
+        "path": "outputs/frames/timed_transactions.csv",
+        "sha256": "e818215c475523c3e9b0c8ffa369e876313592beee596118e1364177d383d644"
+      },
+      {
+        "bytes": 20681354,
+        "path": "outputs/frames/matched_transactions.csv",
+        "sha256": "96cd01bf99f335ee44e26b5c7d7c22113bcc41841fd9d843afd441385e36d3a1"
+      },
+      {
+        "bytes": 31044206,
+        "path": "outputs/frames/signals.csv",
+        "sha256": "2bc22eeffe1ac5b4dbadf41dfbeabfae0658e6f194c538b69dc39cb71af75dab"
+      },
+      {
+        "bytes": 960555,
+        "path": "data/v4/restricted/ext/ledgers/tier_d_rows.parquet",
+        "sha256": "0798b15c919e76a658e1cf2b4d66052fe078d1a2a98d0f0fbbcf1c6bb9b9d222"
+      },
+      {
+        "bytes": 2368509,
+        "path": "data/v4/restricted/final/forward_cache_extension.parquet",
+        "sha256": "79dec9c60f662946836794a9d3581a1f9ab29775ce4c115273046b1ce1607920"
+      },
+      {
+        "bytes": 2680,
+        "path": "data/v4/restricted/n/forward_cache_manifest.json",
+        "sha256": "64911c6f4e3b7fdcc3ce753b0ca51dc5b06cf583c6343be4ee66a7521e3b4777"
+      },
+      {
+        "bytes": 156623016,
+        "path": "data/v4/restricted/n/daily.parquet",
+        "sha256": "5bc488f88dcbb6963a8b3c3de020ffd997399a173a15cf8526bdb795f57c2488"
+      },
+      {
+        "bytes": 3735821,
+        "path": "<dropbox>/raw/crsp/crsp_v2_daily_202607_202607.csv.gz",
+        "sha256": "5993fa13b315421b8ff63616e466f50c718c2ed277605e9db2fc0f25cc8697fa"
+      },
+      {
+        "bytes": 3398104,
+        "path": "data/v4/restricted/data/events_T.parquet",
+        "sha256": "692424edd4da6c7aa71447383839b42537db572e7ae04836f7388029a212c406"
+      },
+      {
+        "bytes": 2213516,
+        "path": "data/v4/restricted/data/events_P.parquet",
+        "sha256": "d317887c8bfd9407de85200a363ebfc3cc3ed165df9ac869c5b855fd98200d2d"
+      },
+      {
+        "bytes": 4489,
+        "path": "data/v4/pooled/pooled_outcome_distribution.csv",
+        "sha256": "54e48422fe05d89b97a0cf53c342d1ddc8e4b01eb275e3ccb60746f98af9e2b3"
+      }
+    ],
+    "key": "e16ec66aca15c5f49c8ed1a0d4f91e0a313d5785f5c4d61e65f37817be271e38",
+    "plan": "docs/v4/final_closeout_plan_2026-11-06.md",
+    "seconds": 29.2,
+    "written_at": "2026-11-06T21:27:08"
+  },
+  "duplicate_audit": {
+    "config": {
+      "max_lag_days": 400,
+      "near": 0.9,
+      "routes": {
+        "exact": [
+          "ticker in parentheses",
+          "name, exact"
+        ],
+        "near_exact": [
+          "ticker in parentheses",
+          "name, exact",
+          "name, near-exact"
+        ]
+      }
+    },
+    "exact_rows_kept_pooled": 5657,
+    "exact_rows_kept_route_specific": 5657,
+    "inputs": [
+      {
+        "bytes": 1184538,
+        "path": "data/v4/restricted/ext/two_households/history/extracted_rows.parquet",
+        "rows": 25531,
+        "sha256": "e9f10e74ae13bf7bf78cce312673548a7e16389d81a2612f1de4e20c9eb27492"
+      },
+      {
+        "bytes": 8722,
+        "path": "data/v4/restricted/ext/two_households/history/filings.parquet",
+        "rows": 122,
+        "sha256": "2969e947eb19f74c69e96c071f20be9f99343344f3e7b8796fb8fc3251f17b52"
+      },
+      {
+        "bytes": 20681354,
+        "path": "outputs/frames/matched_transactions.csv",
+        "sha256": "96cd01bf99f335ee44e26b5c7d7c22113bcc41841fd9d843afd441385e36d3a1"
+      },
+      {
+        "bytes": 28930707,
+        "path": "outputs/frames/timed_transactions.csv",
+        "sha256": "e818215c475523c3e9b0c8ffa369e876313592beee596118e1364177d383d644"
+      },
+      {
+        "bytes": 4253814,
+        "path": "<dropbox>/capitol_trades/20260721_221640/canonical_trades.parquet",
+        "sha256": "0e85b72f1eb4819becd49905ad2eca79454d17465582d008e8999c3173bf5a1d"
+      }
+    ],
+    "key": "62764c025ba0937757964881e78f5493f0869fb44e740aa2c772f12b1d34b032",
+    "plan": "docs/v4/final_closeout_plan_2026-11-06.md",
+    "rows_in_pooled_not_route_specific": 0,
+    "rows_in_route_specific_not_pooled": 0,
+    "seconds": 14.2,
+    "suppressed_pooled_all_routes": 6,
+    "suppressed_route_specific_exact": 5,
+    "suppressed_route_specific_near": 6,
+    "written_at": "2026-11-06T21:22:18"
+  },
+  "factor_delisting": {
+    "config": {
+      "benchmark": "rf + alpha + beta'f (FF5+MOM, intercept included)",
+      "estimation": "252/21/60",
+      "horizon": 20
+    },
+    "inputs": [
+      {
+        "bytes": 156623016,
+        "path": "data/v4/restricted/n/daily.parquet",
+        "sha256": "5bc488f88dcbb6963a8b3c3de020ffd997399a173a15cf8526bdb795f57c2488"
+      },
+      {
+        "bytes": 4026423,
+        "path": "data/v4/restricted/final/cumulative/frame_T_corrected.parquet",
+        "sha256": "33cdccbd11007d4ee368bedc8117b43daff72221d3bbb073921f1bdeb79d55af"
+      },
+      {
+        "bytes": 3398104,
+        "path": "data/v4/restricted/data/events_T.parquet",
+        "sha256": "692424edd4da6c7aa71447383839b42537db572e7ae04836f7388029a212c406"
+      },
+      {
+        "bytes": 1257243,
+        "path": "<dropbox>/raw/factors/factors_daily.csv",
+        "sha256": "69ace15272022c71686e9443f37bedb85ccc230353e7025973fc2f9cb3292293"
+      }
+    ],
+    "key": "9773ddc4cc001f8aa793de509f785035c165c60957d4c058fe5eabccc95ed65d",
+    "plan": "docs/v4/final_closeout_plan_2026-11-06.md",
+    "seconds": 1.5,
+    "written_at": "2026-11-06T21:29:28"
+  },
+  "history_recovery_final": {
+    "config": {
+      "max_lag_days": 400,
+      "near": 0.9,
+      "period_end": "2020-12-31",
+      "routes": {
+        "exact": [
+          "ticker in parentheses",
+          "name, exact"
+        ],
+        "near_exact": [
+          "ticker in parentheses",
+          "name, exact",
+          "name, near-exact"
+        ]
+      }
+    },
+    "inputs": [
+      {
+        "bytes": 1565644,
+        "path": "data/v4/restricted/final/history/extracted_rows.parquet",
+        "rows": 32856,
+        "sha256": "84cf002663edea9954553730bd2c0835d9fb009212f9afadac19a4e522e160cc"
+      },
+      {
+        "bytes": 7670,
+        "path": "data/v4/restricted/final/history/filings.parquet",
+        "rows": 146,
+        "sha256": "8227c55bc0ad39d71b1ff9670fe6c382cbb8e95413b25ab508b74afcce36b644"
+      },
+      {
+        "bytes": 20681354,
+        "path": "outputs/frames/matched_transactions.csv",
+        "sha256": "96cd01bf99f335ee44e26b5c7d7c22113bcc41841fd9d843afd441385e36d3a1"
+      },
+      {
+        "bytes": 4253814,
+        "path": "<dropbox>/capitol_trades/20260721_221640/canonical_trades.parquet",
+        "sha256": "0e85b72f1eb4819becd49905ad2eca79454d17465582d008e8999c3173bf5a1d"
+      }
+    ],
+    "key": "53bcecaf5a4a8d4c632ef5ea3726ab92c4c0205319de737763957e6439826496",
+    "n_admissible_rows": 30768,
+    "n_rows_from_2021_filings_admitted": 305,
+    "plan": "docs/v4/final_closeout_plan_2026-11-06.md",
+    "seconds": 12.9,
+    "written_at": "2026-11-06T22:12:43"
+  },
+  "history_reread": {
+    "config": {
+      "angles": [
+        0,
+        90,
+        180,
+        270
+      ],
+      "dpi": 300,
+      "extended_period": [
+        "2021-01-01",
+        "2021-12-31"
+      ],
+      "extra_psms": [
+        11
+      ],
+      "grid_run_px": 200,
+      "min_dates": 3,
+      "prescribed_psms": [
+        6,
+        4
+      ]
+    },
+    "inputs": [
+      {
+        "bytes": 130019328,
+        "path": "<dropbox>/data/official/state.sqlite",
+        "sha256": "43bb54b657b208360a61aa0dc73ff074a4a2f0be48f53c1fc4fed43c7bd7388b"
+      },
+      {
+        "bytes": 4253814,
+        "path": "<dropbox>/capitol_trades/20260721_221640/canonical_trades.parquet",
+        "sha256": "0e85b72f1eb4819becd49905ad2eca79454d17465582d008e8999c3173bf5a1d"
+      },
+      {
+        "bytes": 1184538,
+        "path": "data/v4/restricted/ext/two_households/history/extracted_rows.parquet",
+        "rows": 25531,
+        "sha256": "e9f10e74ae13bf7bf78cce312673548a7e16389d81a2612f1de4e20c9eb27492"
+      },
+      {
+        "bytes": 8722,
+        "path": "data/v4/restricted/ext/two_households/history/filings.parquet",
+        "rows": 122,
+        "sha256": "2969e947eb19f74c69e96c071f20be9f99343344f3e7b8796fb8fc3251f17b52"
+      }
+    ],
+    "key": "f63e0c33aea390caf87eaa35bbac3588fc1c4bb4b7585fda506ce1d88f5499b3",
+    "n_pages_2021": 155,
+    "n_weak_pages": 368,
+    "plan": "docs/v4/final_closeout_plan_2026-11-06.md",
+    "seconds": 2603.0,
+    "workers": 8,
+    "written_at": "2026-11-06T22:03:44"
+  },
+  "power_verification": {
+    "all_verified": true,
+    "config": {},
+    "inputs": [
+      {
+        "bytes": 164221,
+        "path": "data/v4/ext/activity_power_surface.csv",
+        "sha256": "c47de79e153ecdb02789c69b0111858fb560c510ee77697f207a12fa31e52c7a"
+      },
+      {
+        "bytes": 18899,
+        "path": "data/v4/ext/activity_power_frontiers.csv",
+        "sha256": "68548691552c397e4191fa1da494fe33ef5c66d69d8d3432427351c035bcaada"
+      },
+      {
+        "bytes": 1794,
+        "path": "data/v4/ext/activity_power_size.csv",
+        "sha256": "e1343a07a3b2121c4d1d7c2147d63eb4d85144d1a471e70ba721a5681d6aa711"
+      }
+    ],
+    "key": "53c0411889f87a19ad1b91bfb5c50883de7310bbd4c364991f46e1a88fbcf969",
+    "plan": "docs/v4/final_closeout_plan_2026-11-06.md",
+    "seconds": 2.4,
+    "written_at": "2026-11-06T22:16:46"
+  },
+  "reconcile": {
+    "config": {
+      "clocks": [
+        "T",
+        "P"
+      ],
+      "cutoffs": "committed pooled p1/p99 by clock and period",
+      "rule": "R1",
+      "tolerance": 1e-06,
+      "weights": "ES"
+    },
+    "inputs": [
+      {
+        "bytes": 4026423,
+        "path": "data/v4/restricted/final/cumulative/frame_T_corrected.parquet",
+        "sha256": "33cdccbd11007d4ee368bedc8117b43daff72221d3bbb073921f1bdeb79d55af"
+      },
+      {
+        "bytes": 3225883,
+        "path": "data/v4/restricted/final/cumulative/frame_P_corrected.parquet",
+        "sha256": "943c6bb3c0210afa775eb27b1ec9137d86e20312962a4276fbe3aea5f1efa2f8"
+      },
+      {
+        "bytes": 9191,
+        "path": "data/v4/final/persistence_corrected.csv",
+        "sha256": "d7ea46a3f04d294e4d0f9a649dbf589142813a2effa8ff06af8dd16ae812de1a"
+      },
+      {
+        "bytes": 22586,
+        "path": "data/v4/final/decomposition_corrected.csv",
+        "sha256": "618e2c155535ab19f326627996c041cfca5b5dd74984a1b7d8939465f2c505c9"
+      }
+    ],
+    "key": "0c2771a93070de83ef2a6ef11254ec21ffce5c5555a4e0a80edf5637051c7608",
+    "n_rows": 204,
+    "plan": "docs/v4/final_closeout_plan_2026-11-06.md",
+    "seconds": 2.6,
+    "written_at": "2026-11-07T00:58:56"
+  },
+  "reference": {
+    "config": {
+      "batch": 100,
+      "block_length": 20,
+      "max_infeasible_share": 0.1,
+      "max_redraws": 50,
+      "n_draws": 2000,
+      "set_tag": "final",
+      "shift": [
+        40,
+        250
+      ],
+      "specs": [
+        "headline",
+        "equal_household",
+        "pair",
+        "no_alpha",
+        "market_adjusted",
+        "raw_outcome"
+      ]
+    },
+    "inputs": [
+      {
+        "bytes": 2368509,
+        "path": "data/v4/restricted/final/forward_cache_extension.parquet",
+        "sha256": "79dec9c60f662946836794a9d3581a1f9ab29775ce4c115273046b1ce1607920"
+      },
+      {
+        "bytes": 2680,
+        "path": "data/v4/restricted/n/forward_cache_manifest.json",
+        "sha256": "64911c6f4e3b7fdcc3ce753b0ca51dc5b06cf583c6343be4ee66a7521e3b4777"
+      },
+      {
+        "bytes": 4026423,
+        "path": "data/v4/restricted/final/cumulative/frame_T_corrected.parquet",
+        "rows": 50141,
+        "sha256": "33cdccbd11007d4ee368bedc8117b43daff72221d3bbb073921f1bdeb79d55af"
+      },
+      {
+        "bytes": 3225883,
+        "path": "data/v4/restricted/final/cumulative/frame_P_corrected.parquet",
+        "rows": 39174,
+        "sha256": "943c6bb3c0210afa775eb27b1ec9137d86e20312962a4276fbe3aea5f1efa2f8"
+      }
+    ],
+    "key": "5af5f57224916a1960d7e92d3990d337362173aaaf4b7dadaee9cf8f7166b13c",
+    "plan": "docs/v4/final_closeout_plan_2026-11-06.md",
+    "seconds": 1447.9,
+    "written_at": "2026-11-06T21:53:31"
+  },
+  "reproduce": {
+    "config": {
+      "clocks": [
+        "T",
+        "P"
+      ],
+      "spread_test": "TW_P1_E20",
+      "weights": "ES"
+    },
+    "decomposition_max_abs_diff_from_file_bp2": 4.547473508864641e-13,
+    "decomposition_max_abs_identity_gap_bp2": 3.637978807091713e-12,
+    "inputs": [
+      {
+        "bytes": 341268,
+        "path": "data/v4/results.csv",
+        "sha256": "e0fc7055de17c15ed37fe8f66beb96a9851377efef0bf58c7323fc5dc95d51ad"
+      },
+      {
+        "bytes": 15493,
+        "path": "data/v4/existing/rerun_tables.csv",
+        "sha256": "9c53e0c61b902a67710021b94d44b1b6388d733a75d7f272efbf652f8981f4ad"
+      },
+      {
+        "bytes": 44863,
+        "path": "data/v4/ext/decomposition.csv",
+        "sha256": "e36e83faf3ec094c15e68fad6d2854ccf611c4b5f3d7c28d07c7b3a4e920890a"
+      },
+      {
+        "bytes": 3398104,
+        "path": "data/v4/restricted/data/events_T.parquet",
+        "sha256": "692424edd4da6c7aa71447383839b42537db572e7ae04836f7388029a212c406"
+      },
+      {
+        "bytes": 2213516,
+        "path": "data/v4/restricted/data/events_P.parquet",
+        "sha256": "d317887c8bfd9407de85200a363ebfc3cc3ed165df9ac869c5b855fd98200d2d"
+      },
+      {
+        "bytes": 2680,
+        "path": "data/v4/restricted/n/forward_cache_manifest.json",
+        "sha256": "64911c6f4e3b7fdcc3ce753b0ca51dc5b06cf583c6343be4ee66a7521e3b4777"
+      },
+      {
+        "bytes": 31044206,
+        "path": "outputs/frames/signals.csv",
+        "sha256": "2bc22eeffe1ac5b4dbadf41dfbeabfae0658e6f194c538b69dc39cb71af75dab"
+      },
+      {
+        "bytes": 4489,
+        "path": "data/v4/pooled/pooled_outcome_distribution.csv",
+        "sha256": "54e48422fe05d89b97a0cf53c342d1ddc8e4b01eb275e3ccb60746f98af9e2b3"
+      }
+    ],
+    "key": "30199667cf9b554f91235d97981a748a26e2e9dab30606ec9e5baeab02a0fb86",
+    "max_abs_diff": 3.637978807091713e-12,
+    "n_checks": 35,
+    "plan": "docs/v4/final_closeout_plan_2026-11-06.md",
+    "seconds": 7.9,
+    "written_at": "2026-11-06T21:20:32"
+  },
+  "review_set": {
+    "config": {
+      "per_stratum": 8,
+      "seed": 20261106
+    },
+    "inputs": [
+      {
+        "bytes": 1502181,
+        "path": "data/v4/restricted/final/history/recovered_transactions.parquet",
+        "rows": 30768,
+        "sha256": "a4bdec9d5c01b7111d68823afa72747de14e7f2d28e3ece7d13e3d55899e51c1"
+      },
+      {
+        "bytes": 1565644,
+        "path": "data/v4/restricted/final/history/extracted_rows.parquet",
+        "rows": 32856,
+        "sha256": "84cf002663edea9954553730bd2c0835d9fb009212f9afadac19a4e522e160cc"
+      },
+      {
+        "bytes": 76235,
+        "path": "data/v4/final/history_coverage_pages.csv",
+        "sha256": "76e1d21126d1978911e3040ea714f54c5e04928335125ec100847e62889c3a79"
+      }
+    ],
+    "key": "55aa9368a0ec4fd7e52943338ad445d791c29ce7c4a7666c59d80c4cb490bf44",
+    "n_development_rows_excluded": 2648,
+    "n_review_rows": 453,
+    "n_unreadable_pages": 253,
+    "plan": "docs/v4/final_closeout_plan_2026-11-06.md",
+    "seconds": 0.3,
+    "written_at": "2026-11-06T22:29:05"
+  },
+  "size_level_rank": {
+    "config": {
+      "alpha": 0.05,
+      "exchangeable_mc": {
+        "reps": 20000,
+        "seed": 20261107
+      },
+      "n_test": 1000,
+      "placebo_sets": [
+        "default",
+        "keepdups",
+        "corrected_final"
+      ],
+      "rule": "add-one rank of the level, test draws 0-999 against reference draws 1000-1999, and the halves swapped"
+    },
+    "inputs": [
+      {
+        "bytes": 1310423,
+        "path": "data/v4/restricted/e/placebo_stats/placebo_T_N2_default.parquet",
+        "rows": 152000,
+        "sha256": "dc65ea25034c84c9d2a9e63e869358132fe1f57bdf5ee5b2ec5950607caec423"
+      },
+      {
+        "bytes": 1300700,
+        "path": "data/v4/restricted/e/placebo_stats/placebo_T_N1_default.parquet",
+        "rows": 152000,
+        "sha256": "79e41b28bd9c50e910fd7517d1c6e8ed8f6c33713c8d8ddc08c41050c35bf293"
+      },
+      {
+        "bytes": 503520,
+        "path": "data/v4/restricted/final/reference_draw_statistics_T.parquet",
+        "rows": 48000,
+        "sha256": "061fc335bbcfd96d56de1cbf1066fcb692b4ecbbc6f1b76947ebfe6d5538d8a6"
+      },
+      {
+        "bytes": 1264312,
+        "path": "data/v4/restricted/e/placebo_stats/placebo_P_N2_default.parquet",
+        "rows": 150000,
+        "sha256": "df01dbd096e29e9eb508de742453a6545ea22945146034b5fee0fe264663b789"
+      },
+      {
+        "bytes": 10247,
+        "path": "data/v4/restricted/e/placebo_stats/placebo_P_N2_keepdups.parquet",
+        "rows": 500,
+        "sha256": "843c77e331a3220d26724b88149c0c94c67b1c514f71984ea7ec85c053bfcbd1"
+      },
+      {
+        "bytes": 1255979,
+        "path": "data/v4/restricted/e/placebo_stats/placebo_P_N1_default.parquet",
+        "rows": 150000,
+        "sha256": "8ec58e3b59efa505aa1ec21cdbbd095d59cef8a0909f402923f431ea1ee40880"
+      },
+      {
+        "bytes": 10247,
+        "path": "data/v4/restricted/e/placebo_stats/placebo_P_N1_keepdups.parquet",
+        "rows": 500,
+        "sha256": "6e0b87350d3b4374bf1a6a685bcc025a22829641435fd0af933a7880cc0e558a"
+      },
+      {
+        "bytes": 503520,
+        "path": "data/v4/restricted/final/reference_draw_statistics_P.parquet",
+        "rows": 48000,
+        "sha256": "abdf616a294fc974629fa892842c7bbd2afc3dc372ce69fdc16547becc509fdb"
+      },
+      {
+        "bytes": 341268,
+        "path": "data/v4/results.csv",
+        "sha256": "e0fc7055de17c15ed37fe8f66beb96a9851377efef0bf58c7323fc5dc95d51ad"
+      },
+      {
+        "bytes": 19749,
+        "path": "data/v4/final/persistence_corrected_reference.csv",
+        "sha256": "3594c6be433bfbbe4ca8e683ccc888a13000ad2d9e72782125e52d5e1bfcccd1"
+      }
+    ],
+    "key": "7bd531ea06884a00f44c49f2d0d17fedb7e48ae9896870a34a1bc81b41fe26eb",
+    "mc_corr_directions_exch": -0.9189350175981083,
+    "mc_mean_direction_exch": 0.04998585,
+    "mc_mean_pooled_exch": 0.04994802499999999,
+    "mc_reps_exch": 20000,
+    "mc_sd_direction_exch": 0.009747035447380944,
+    "mc_sd_pooled_exch": 0.00195863547196016,
+    "n_rows": 262,
+    "plan": "docs/v4/final_closeout_plan_2026-11-06.md",
+    "seconds": 15.1,
+    "written_at": "2026-11-07T01:11:24"
+  }
+}

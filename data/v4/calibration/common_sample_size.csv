@@ -1,0 +1,3 @@
+clock,sample,n_households_r1,n_households_mean,n_events_mean,n_events_min,n_events_max,n_households_ge20_mean,n_draws
+T,persistence_households_purchases,38,38.0,7938.86,7904,7967,38.0,100
+P,persistence_households_purchases,30,30.0,6067.58,6043,6087,29.97,100

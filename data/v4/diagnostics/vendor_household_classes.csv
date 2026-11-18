@@ -1,0 +1,4 @@
+household_class,n_households,n_households_no_official_line_at_all,vendor_lines,vendor_lines_dup_primary,share_vendor_lines_dup_primary,official_lines_2023plus,official_lines_total,top1_household_vendor_lines,top2_households_vendor_lines,n_households_dup_share_<=0.1,"n_households_dup_share_(0.1,0.5]","n_households_dup_share_(0.5,0.9]",n_households_dup_share_>0.9
+vendor_with_official_2023plus,77,0,4675,4128,0.882995,7847,13494,1232,1750,9,11,17,40
+vendor_without_official_2023plus,21,21,16410,0,0,0,0,13279,16214,21,0,0,0
+all_vendor_households,98,21,21085,4128,0.195779,7847,13494,13279,16214,30,11,17,40
